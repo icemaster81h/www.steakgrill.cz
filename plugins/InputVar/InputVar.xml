@@ -189,7 +189,7 @@ With forest mushrooms.&#13;
 small CZK 49&#13;
 large CZK 55</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
-  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+g)?\n\s*[A-Z].*\.(\nCZK \d+)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Main courses</set>
+  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.(\nCZK \d+)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Main courses</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Mushroom veal stew&#13;
 Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings.&#13;
 CZK 179</var>
@@ -214,17 +214,17 @@ CZK 289</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Hello,
-  a user dish change has been made at $cms-url/listek.
+a user dish change has been made at $cms-url/listek.
 
-  – User: $user
-  – Time of change: $date
-  – User administration: $cms-url/?InputVar
+– User: $user
+– Time of change: $date
+– User administration: $cms-url/?InputVar
 
-  Listing of differences in current content:
-  $diff
+Listing of differences in current content:
+$diff
 
-  -- Use the Reload feature (F5 key) of your browser to show current content.
-  $inputvar-service_plain</message>
+-- Use the Reload feature (F5 key) of your browser to show current content.
+$inputvar-service_plain</message>
   <var id="term-sous-vide" class="term" title="ve vakuu" href="https://cs.wikipedia.org/wiki/Sous-vide" data-term-href-title="Termín sous-vide na Wikipedii" data-term-desc="Sous-vide (z francouzštiny, v překladu znamená „ve vakuu“) je kuchařská metoda, při níž se potraviny připravují ve vzduchotěsném umělohmotném obalu ve vodní lázni s řízenou teplotou.">n/a</var>
   <var id="term-docg" class="term" title="Denominazione di Origine Controllata e Garantita" data-term-desc="Označení DOCG (Denominazione di Origine Controllata e Garantita) platí od roku 1980 pro nejvyšší stupeň kvality v Itálii. Veškeré procesy jsou velmi přísně kontrolovány, včetně původu révy, hektarového výnosu a nadmořské výšky vinic.">n/a</var>
   <var id="term-doc" class="term" title="Denominazione di Origine Controllata" data-term-desc="Označení DOC (Denominazione di Origine Controllata) je druhý nejvyšší stupeň hodnocení italských vín. Vína s tímto označením musí splňovat danou lokalitu, která je uznána pro pěstování dané odrůdy, rovněž musí být dodrženy podmínky maximálního výnosu, délka zrání vína.">n/a</var>
