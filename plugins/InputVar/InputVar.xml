@@ -50,7 +50,7 @@
     <data name="[12]">December</data>
   </fn>
   <fn id="yearformat" fn="strftime" format="%Y"/>
-  <fn id="tmpdateformat" fn="strftime" format="%e. [%m] %Y"/>
+  <fn id="tmpdateformat" fn="strftime" format="[%m] %e, %Y"/>
   <fn id="dateformat" fn="sequence">
     <call>tmpdateformat</call>
     <call>months</call>
