@@ -1,0 +1,76 @@
+/*@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500|Alegreya:400,500|Rasa:400,500');*/
+@import url('https://fonts.googleapis.com/css?family=Rasa:400,500');
+
+#header {
+  display: none;
+}
+body {
+  font-family: 'Rasa', serif !important;
+  font-size: 11pt;
+}
+/*
+body:before {
+  content: url(/files/piktogram.png);
+  display: block;
+  position: fixed;
+  bottom: 0em;
+  right: 0em;
+  z-index: -1;
+}
+*/
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 37pt;
+  margin-top: 10mm !important;
+  font-weight: 500;
+}
+h2 {
+  margin-top: 15mm;
+  font-size: 21pt;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+h1 + p.description {
+  font-size: 15pt;
+  text-align: center;
+}
+h2 + p.description {
+  margin-bottom: 10mm;
+}
+a[href] {
+  border: none;
+}
+dl.card {
+  padding: 0 !important;
+}
+#content dl.card dd {
+  margin: 0;
+}
+#content dl.card dd:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0.25em;
+}
+dl.card dt {
+  font-size: 15pt;
+  font-weight: 500;
+}
+dl.card dd.price > span > span + span,
+dl.card dd.price {
+  font-size: 15pt;
+}
+#footer ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: left !important;
+}
+#footer li:not(.print) {
+  display: none;
+}
+#footer li {
+  color: #777 !important;
+  /* border-top: thin solid #ccc !important; */
+  padding: 0 0.2em !important;
+  margin: 0 !important;
+  text-align: left !important;
+}

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<InputVar>
+
+  <!--
+
+    Element var:
+      - identifikátor
+        atribut id="neco"
+      - funkce
+        nepovinný atribut fn="název funkce"
+      - proměnná
+        nepovinný atribut var="název proměnné"
+      - je proměnná cachovatelná?
+        nepovinný atribut cacheable="[true|false]"
+        výchozí hodnota je true
+      - nepovinný atribut required="required"
+        aplikuje se v případě použití uživatelské editace (níže)
+
+    Element fn:
+      - identifikátor (atribut id="neco")
+      - funkce (atribut fn="název funkce")
+
+    Dostupné funkce:
+      - hash ... vrací otisk textu dle (nepovinného) atributu algo
+        Formát podle http://php.net/manual/en/function.hash-algos.php
+        Výchozím algoritmem je crc32b
+      - strftime ... formátuje datum podle (nepovinného) atributu format
+        Formát podle http://php.net/manual/en/function.strftime.php
+        Výchozím formátem je %m/%d/%Y
+      - sprintf ... formátuje obsah resp. elementy podle obsahu
+        Formát podle http://php.net/manual/en/function.sprintf.php
+      - replace ... nahrazuje obsah elementu podle obsažených elementů data
+        Např. <data name="a">b</data> nahradí všechny "a" v textu za "b"
+      - sequence ... řetězí volání funkcí uvedených v elementech call
+
+  -->
+
+  <fn id="months" fn="replace">
+    <data name="[01]">ledna</data>
+    <data name="[02]">února</data>
+    <data name="[03]">března</data>
+    <data name="[04]">dubna</data>
+    <data name="[05]">května</data>
+    <data name="[06]">června</data>
+    <data name="[07]">července</data>
+    <data name="[08]">srpna</data>
+    <data name="[09]">září</data>
+    <data name="[10]">října</data>
+    <data name="[11]">listopadu</data>
+    <data name="[12]">prosince</data>
+  </fn>
+  <fn id="yearformat" fn="strftime" format="%Y"/>
+  <fn id="tmpdateformat" fn="strftime" format="%e. [%m] %Y"/>
+  <fn id="dateformat" fn="sequence">
+    <call>tmpdateformat</call>
+    <call>months</call>
+  </fn>
+
+  <var id="nodebug">Provozní režim</var>
+  <var id="debug">Ladící režim</var>
+  <var id="servercache">Smazat mezipaměť serveru</var>
+  <var id="filecache">Aktualizovat souborovou mezipaměť</var>
+  <var id="reportbug"><a href="https://bitbucket.org/igwr/cms/issues?status=new&amp;status=open">Odeslat zpětnou vazbu</a></var>
+  <!-- <var id="igcms"><a href="https://dokumenty.internetguru.cz/igcms">Specifikace IGCMS</a></var> -->
+  <var id="codemirror"><a href="https://dokumenty.internetguru.cz/zkratky">Klávesové zkratky CodeMirror</a></var>
+  <var id="version_link"><a href="/%s.php" var="cms-default_release@href" title="Pro nezávislé ladění zdrojových souborů (CSS/JS)">Samostatná větev</a></var>
+  <!--<var id="service_plain">E-Základna, www.e-zakladna.cz</var>-->
+  <!--<var id="service">Na službě: <a href="https://www.e-zakladna.cz/">E-Základna</a></var>-->
+  <var id="service_plain">Nestárnoucí weby, www.nestarnouciweby.cz</var>
+  <var id="service">Na službě: <a href="http://www.nestarnouciweby.cz">Nestárnoucí weby</a></var>
+  <var id="resp">Webmaster: <span var="cms-resp">n/a</span></var>
+  <var id="mtime">Poslední změny: <span var="cms-mtime" fn="inputvar-dateformat">n/a</span></var>
+  <var id="admin">Admin: <span var="cms-admin_id">n/a</span></var>
+  <var id="cyear" fn="yearformat" var="cms-ctime"/>
+  <var id="year" fn="yearformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
+  <var id="today" fn="dateformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
+  <var id="adminmenu">
+    <ul class="adminmenu noprint">
+      <li><a href="?admin">Administrace</a></li>
+      <li><a href="?log">Logy</a></li>
+      <li><a href="?changelog">Historie verzí</a></li>
+      <li><a href="?import">Import</a></li>
+    </ul>
+  </var>
+  <var id="ielt7">
+    <div class="ielte7" style="background: yellow; margin: 0; border: 0.3em solid red;">
+      <dl>
+        <dt>Používáte zastaralou verzi prohlížeče!</dt>
+        <dd><a href="https://support.microsoft.com/cs-cz/help/17621/internet-explorer-downloads">Aktualizujte</a> na vyšší verzi,</dd>
+        <dd>nainstalujte <a href="https://www.google.com/chrome/">alternativní prohlížeč</a> nebo</dd>
+        <dd>kontaktujte správce svého počítače.</dd>
+      </dl>
+    </div>
+  </var>
+
+
+  <!--
+
+    Uživatelská editace
+
+    1) Element set
+      - atribut type: select | text | textarea
+      - atribut for: jaké proměnné se mají editovat
+        - jeden nebo více regulárních výrazů oddělených mezerou
+      - hodnota elementu: název skupiny
+
+    a) Typ select
+      - atribut datalist: proměnné, jejichž hodnoty mohou editované proměnné nabývat
+        - jeden nebo více regulárních výrazů oddělených mezerou
+
+    Například: 2 akce mohou nabývat hodnot a1, a2, a3 nebo empty
+
+      <var id="empty"/>
+      <var id="a1">K nákupu káva zdarma</var>
+      <var id="a2">Sleva na vybrané zboží 50 %</var>
+      <var id="a3">Rozvoz po Praza zdarma</var>
+
+      <var id="akce1" var="empty">Akce 1</var>
+      <var id="akce2" var="empty">Akce 2</var>
+      <set type="select" for="akce\d " datalist="a\d+ empty">Akce</set>
+
+    b) Typ text | textarea
+      - atribut placeholder (nepovinný)
+      - atribut pattern (nepovinný)
+
+    Například:
+
+      <var id="akce1">Nanuk Míša, 12 Kč (sleva 15 %)</var>
+      <var id="akce2">Sušenky BeBe, 19 Kč (sleva 25 %)</var>
+      <set type="text" for="akce\d+"
+        pattern=".[5,20], \d\d Kč \(sleva \d\d %\)"
+        placeholder="Čokoláda Orion, 22 Kč (sleva 20 %)">Akce</set>
+
+    2) Element login (volitelný)
+      - atribut id:  jméno uživatele
+      - atribut password: otisk hesla vytvořený funkcí crypt
+      ^^ například příkazem "openssl passwd -1"
+
+    Například:
+      <login id="admin" password="$1$uvMgWfZe$MZGyiPRqL.YUDT3Jmurya0"/>
+
+    3) Element message
+      - atribut email: email na který se má zpráva poslat
+      - atribut subject: předmět emailu
+      - hodnota elementu: šablona zprávy
+      ^^ dostupné proměnné pro hodnotu elementu a atribut subject: $user, $diff, $date
+
+    Například:
+    <message to="pavel@petrzela.eu" subject="Změna obsahu na webu $cms-url">Dobrý den,
+  na webu $cms-url došlo k uživatelské změně obsahu.
+  - uživatel: $user
+  - čas změny: $date
+  - uživatelská administrace: $cms-url/?InputVar
+  - výsledek: $cms-url/listek
+
+  Následuje výspis rozdílů:
+
+  $diff
+
+  \-\-
+  $inputvar-service_plain
+    </message>
+
+   -->
+  <var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
+  <var id="rezervace">Rezervace jsou možné pouze telefonicky na čísle <em var="inputvar-atel">n/a</em>.</var>
+  <login id="tomas" password="$1$3HNtZKsL$v7wJYFaXYkMXpbsn7cjFu."/>
+  <login id="vita" password="$1$MBdYxW71$Bd0LFhJHOLDei05rHS0Ym0"/>
+  <login id="jarda" password="$1$X8GFDlgb$9m27o5.badtL.GDXcL6It."/>
+  <login id="pavlina" password="$1$4rZZupX0$EkvUI.uEe6v1.aBEqg/vs/"/>
+  <login id="lukas" password="$1$r.Ni58yp$rlzff.yiRUgcDT6sj/UCk/"/>
+  <login id="denisa" password="$1$LOsT4TAm$Xta2qLcq.0Ni2HnNaxoni0"/>
+  <login id="madmann" password="$1$kz8bMcyh$VWB77rxdcjmIEYPp9JN.j/"/>
+  <login id="internetguru" password="$1$AsNyxu6J$QLskDMgRJcJ79a5jfG/iP1"/>
+  <fn id="formatjidlo1" fn="pregreplace" pattern="\s*(.+)\s*\n\s*(.+)([\s\S]*)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Cena:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
+  <fn id="formatjidlo2" fn="pregreplace" pattern="(.+) ([\d]+ Kč)" replacement="&lt;span&gt;&lt;span&gt;$1&lt;/span&gt;&lt;span&gt;$2&lt;/span&gt;&lt;/span&gt;"/>
+  <fn id="formatjidlo3" fn="pregreplace" pattern="(se)(rv)(er)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Cena:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
+  <fn id="formatjidlo" fn="sequence">
+    <call>formatjidlo1</call>
+    <call>formatjidlo2</call>
+    <call>formatjidlo3</call>
+  </fn>
+  <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
+  <var var="cms-server" id="nabidka" required="required">Denní nabídka, 6. prosince 2018</var>
+  <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých místních surovin. Nabídka je pestrá a rozličná a neopakuje se přibližně 2 měsíce.</var>
+  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Kukuřičný Chowder&#13;
+Tradiční americká krémová polévka z kukuřice, slaniny a papriky.&#13;
+malá 49 Kč&#13;
+velká 55 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
+  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n\d+ Kč)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Vepřové výpečky&#13;
+Pomalu pečený vepřový bůček, kysané zelí, naše bramborové knedlíky, smažená vídeňská cibulka.&#13;
+179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
+  <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
+  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce včetně pátku večer, 30. listopadu až 2. prosince 2018</var>
+  <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla připravovaná především v peci, grilovaná a rožněná na dřevě. Připravujeme celé velké kusy zvěře, jako např. 70kg hovězí kýta a rozličná divoká zvěřina – prasata, jehněčí, daňci, mufloni. Pokrmy pečeme při nízké teplotě až 12 hodin, takže jsou šťavnaté a zároveň krásně voní kouřem.</var>
+  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Náš tatarský steak ze svíčkové, 50 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+129 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
+  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Trhané vepřové&#13;
+Pomalu přes noc pečená vepřová kýta, mléčná bramborová kaše, přírodní šťáva, míchaný salát.&#13;
+209 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Náš tatarský steak ze svíčkové, 150 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+289 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
+  <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
+na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
+
+– Uživatel: $user
+– Čas změny: $date
+– Uživatelská administrace: $cms-url/?InputVar
+
+Výspis rozdílů aktuální úpravy:
+
+$diff
+
+-- 
+Pro zobrazení aktuálního obsahu použijte funkci Obnovit (klávesa F5) prohlížeče.
+$inputvar-service_plain</message>
+  <var id="term-sous-vide" class="term" title="ve vakuu" href="https://cs.wikipedia.org/wiki/Sous-vide" data-term-href-title="Termín sous-vide na Wikipedii" data-term-desc="Sous-vide (z francouzštiny, v překladu znamená „ve vakuu“) je kuchařská metoda, při níž se potraviny připravují ve vzduchotěsném umělohmotném obalu ve vodní lázni s řízenou teplotou.">n/a</var>
+  <var id="term-docg" class="term" title="Denominazione di Origine Controllata e Garantita" data-term-desc="Označení DOCG (Denominazione di Origine Controllata e Garantita) platí od roku 1980 pro nejvyšší stupeň kvality v Itálii. Veškeré procesy jsou velmi přísně kontrolovány, včetně původu révy, hektarového výnosu a nadmořské výšky vinic.">n/a</var>
+  <var id="term-doc" class="term" title="Denominazione di Origine Controllata" data-term-desc="Označení DOC (Denominazione di Origine Controllata) je druhý nejvyšší stupeň hodnocení italských vín. Vína s tímto označením musí splňovat danou lokalitu, která je uznána pro pěstování dané odrůdy, rovněž musí být dodrženy podmínky maximálního výnosu, délka zrání vína.">n/a</var>
+  <var id="term-nbsp" class="term" title="Nezlomitelná mezera" href="https://cs.wikipedia.org/wiki/Nezlomiteln%C3%A1_mezera" data-term-href-title="Nezlomitelná mezera na Wikipedii" data-term-desc="Nezlomitelná (či nedělitelná) mezera je speciální typografický znak. Jde o jeden z tzv. bílých znaků. Funguje jako běžná mezera s výjimkou toho, že při automatickém zalomení textu do řádků programy pro zpracování textu v této mezeře řádek nezalomí. Používá se proto tam, kde je rozdělení dvou slov (čísel, symbolů) na různé řádky nežádoucí.">n/a</var>
+  <var id="term-zalomeni-radku" class="term" title="Nevhodné výrazy na konci řádku" href="http://prirucka.ujc.cas.cz/?id=880" data-term-href-title="Zalomení řádků a nevhodné výrazy na jejich konci" data-term-desc="Při úpravě textů by na některých místech nemělo dojít k zalomení řádku, aby text plynule navazoval, jeho členění bylo přehledné a čtení pohodlné.">n/a</var>
+  <var id="term-igp" class="term" title="Indication Géographique Protégée" href="http://www.terroir-francie.cz/klasifikace.html" data-term-desc="Kvalitní vína, která zastupují určitou oblast a jsou spojena s charakteristikami jedné nebo více odrůd révy.">n/a</var>
+</InputVar>

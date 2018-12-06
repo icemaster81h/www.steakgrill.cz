@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/************************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wf-active body {
+  font-family: Roboto, sans-serif;
+}
+.wf-active samp {
+  font-family: Tahoma, sans-serif;
+  /* font-style: italic; */
+}
+strong {
+  font-weight: 600;
+}
+h1, h2, h3 {
+  letter-spacing: 0.02em;
+  color: #981425;
+  font-weight: 400;
+}
+p.description {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #981425;
+  text-shadow: 0 0 0.2em #ffffff;
+}
+samp {
+  color: #a41c20;
+}
+/************************************/
+#header {
+  background: #a41c20;
+}
+#footer {
+  background: #631b1e;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#header,
+#footer {
+  color: white;
+}
+#header a {
+  color: #f1f1f1;
+}
+#header a[href],
+#footer a {
+  color: white;
+  border-color: #ead0d1;
+}
+#footer ul.globalmenu a {
+  text-transform: uppercase;
+  display: block;
+  border: none;
+}
+#footer > ul.globalmenu > li > a.current {
+  font-weight: normal;
+}
+#header > div .globalmenu a.current:before,
+#footer ul.globalmenu a.current:before {
+  content: "●";
+  padding-right: 0.5em;
+  font-size: 1.1em;
+  line-height: 1;
+}
+/************************************/
+.contentbalancer-simple ul {
+  margin: 2em 0;
+  padding: 0;
+}
+.contentbalancer-simple li {
+  list-style: none;
+  margin: 1em 0;
+  text-align: center;
+}
+.contentbalancer-simple li a {
+    /* font-size: 1.1em; */
+    color: #000000;
+    display: block;
+    padding: 1em 2em;
+    margin: 0 0.5em;
+    border-right: thin solid;
+    border-color: #bbb;
+    background: rgb(253, 253, 246);
+}
+@media screen and (min-width: 35em) {
+  .contentbalancer-simple ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /*
+  .contentbalancer-simple {
+    margin: 2.5em auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  .contentbalancer-simple ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -0.1em;
+    padding: 0;
+  }
+  .contentbalancer-simple li {
+    padding: 0 1em;
+    flex-grow: 1;
+    border-left: 0.1em solid rgb(189, 189, 189);
+  }
+  */
+}
+/*
+.contentbalancer-simple li a,
+*/
+form input[type="submit"] {
+  padding: 1em 1.5em;
+  background: #b03034;
+  border-bottom: 0;
+  color: white;
+  display: block;
+  border: none;
+}
+form input[type="text"], form input[type="email"], form input[type="password"], form textarea {
+  padding: 0.5em;
+}
+/************************************/
+#content > .hdesc h1 {
+  /* margin: 1rem 0 0.5rem; */
+}
+#content > .hdesc:not(.listek) h1:not(#steakgrill) {
+  padding: 0;
+}
+#content > .hdesc:not(.listek) h1 span {
+  padding: 0 1rem;
+  display: inline-block;
+}
+#content > .hdesc h1#steakgrill:after {
+  height: 50vw;
+  max-height: 10rem;
+  /* min-height: 7rem; */
+}
+#content > .hdesc:not(.listek) h1:after {
+  content: "";
+  display: block;
+  /* margin: 0 auto 0 auto; */
+  /* width: calc(100% - 1rem); */
+  /* max-width: 20rem; */
+  /* height: 65vh; */
+  /* max-height: 13rem; */
+  background: url(/files/preview/STEAKGRILL-LOGA-2017.png) 50% no-repeat;
+  background-size: contain;
+}
+#content > .hdesc.o_nas h1:after,
+#content > .hdesc.kontakty h1:after {
+  background-image: url("/files/personal2.jpg");
+  background-size: cover;
+  background-position: 50% 15%;
+  max-height: 23rem;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content > .hdesc.kontakty h1:after {
+  background-image: url("/files/steakgrill.jpg");
+  background-size: cover;
+  background-position: 50% 40%;
+}
+.hdesc.steakgrill > div > h1 span {
+  display: none !important;
+}
+.hdesc.steakgrill > div > p {
+  background: rgba(255, 255, 255, 0.78);
+  align-self: flex-end;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 38em;
+  text-align: center;
+}
+/************************************/
+h2.afterimg {
+  padding: 0;
+}
+h2.afterimg span {
+  padding: 0 1rem;
+  display: block;
+}
+h2.afterimg:after {
+  content: "";
+  background-size: cover;
+  background-position: 50% 40%;
+  margin-top: 1em;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45vw;
+  max-height: 12em;
+  min-height: 8em;
+  width: 100%;
+  display: block
+}
+h2#o_nas:after {
+  background-image: url("/files/personal2.jpg");
+  background-position-y: 10%;
+}
+h2#kontakty:after {
+  background-image: url("/files/DSC_4879.jpg");
+}
+h2#polevky:after {
+  background-image: url("/files/jidla/kaldoun.jpg");
+  background-position-y: 40%;
+}
+h2#hamburgery_a_testoviny:after {
+  background-image: url("/files/jidla/hamburger.jpg");
+}
+h2#salatove_talire:after {
+  background-image: url("/files/jidla/salat.jpg");
+}
+h2#z_panve_fritezy_a_woku:after {
+  background-image: url("/files/jidla/wok2.jpg");
+  background-position-y: 10%;
+}
+h2#z_grilu_a_griddlu:after {
+  background-image: url("/files/jidla/ribs.jpg");
+}
+h2#grilovane_steaky:after {
+  background-image: url("/files/jidla/steak.jpg");
+  background-position-y: 50%;
+}
+h2#sladkosti:after {
+  background-image: url("/files/jidla/creme_brulee.jpg");
+}
+h2#pochutiny_omacky:after {
+  background-image: url("/files/jidla/sauce.jpg");
+  background-position-y: 60%;
+}
+h2#prilohy:after {
+  background-image: url("/files/jidla/potato.jpg");
+  background-position-y: 60%;
+}
+h2#detska_jidla:after {
+  background-image: url("/files/jidla/pomodoro.jpg");
+}
+/************************************/
+.usda img {
+  max-height: 15em;
+}
+/************************************/
+ul.akce {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul.akce a {
+  display: inline-flex;
+  margin: 0 0.2em 0.2em 0;
+  align-items: center;
+  padding: 0.2em 0.8em;
+  border: none;
+  background: #d32c2c;
+  color: white;
+}
+ul.akce a[class="fa fa-facebook-official"] {
+  background:#3B5998;
+}
+ul.akce a:before {
+  font-size: 2em;
+  margin-right: 0.5rem;
+  width: 1em;
+}
+@media all and (max-width: 30em) {
+  ul.akce a {
+    min-width: 11.5em;
+    max-width: 100%;
+  }
+}
+/************************************/
+#content > .section > .part {
+  padding: 1em 0;
+}
+#content > .section > .part:nth-child(2n+1) {
+  background: url("/files/restaurant_icons.png");
+  background-color: #fafaee;
+  padding-top: 0.01em;
+  padding-bottom: 0.02em;
+}
+/************************************/
+#header > div {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+}
+#header > div ol.contentlink-bc {
+  padding: 0;
+  padding-right: 1.5em;
+}
+#header > div .globalmenu {
+  margin: 1em 0 0;
+  padding: 0;
+  list-style: none;
+}
+#header > div .globalmenu li {
+  margin: 0;
+}
+#header > div .globalmenu li:first-child {
+  margin-left: 0;
+}
+#header div.hideable-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#header div.hideable-button a {
+  display: inline-block;
+  padding: 1rem;
+}
+#header > div .globalmenu a {
+  text-transform: uppercase;
+  border: none;
+  display: block;
+  padding: 1em 0 1em 2em;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ecf4ff;
+  background: none;
+ }
+#header div.hideable-button span:last-child {
+  display: none;
+}
+#header > div .globalmenu a.current {
+  font-weight: 600;
+  color: white;
+}
+#header .globalmenu-top {
+  position: absolute;
+  background: #a41c20;
+  background: rgba(164, 28, 32, 0.7);
+  /* top: 0; */
+  right: 0;
+  padding-right: 1.5em;
+}
+@media (min-width: 28em) {
+  #header > div .globalmenu li {
+    display: inline-block;
+  }
+}
+@media (min-width: 42em) {
+  #header > div {
+    display: flex;
+  }
+  #header > div ol.contentlink-bc {
+    flex-grow: 1;
+  }
+  #header > div .globalmenu {
+    margin-top: 0;
+  }
+  #header a.hideable-switch {
+    display: none !important;
+  }
+  #header div.globalmenu-top {
+    display: block !important;
+    position: static;
+    padding: 0;
+  }
+  #header > div .globalmenu a {
+    padding: 0;
+    padding-left: 1em;
+  }
+}
+/************************************/
+#footer {
+  padding: 2em 0;
+}
+#footer > ul {
+  margin: 3em auto;
+}
+/************************************/
+.fa-play:before {
+  margin-right: 0.25em;
+  vertical-align: middle;
+  font-size: 0.7em;
+  float: left;
+  line-height: 2em;
+}
+/************************************/
+.card-lm.color :nth-child(2),
+.card-lm.brief :nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+}
+.card-lm.brief :nth-child(2) {
+  margin-bottom: 0;
+}
+.nohide img {
+  padding-top: 1em;
+  /* width: 30%; */
+}
+/************************************/
+.social a {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+}
+.social a:before {
+  margin-right: 0.5rem;
+  font-size: 1.5em;
+}
+.social li:nth-child(3) a:before {
+  margin-right: 1rem;
+}
+/************************************/
+.section > button {
+  padding: 0.5em 1em;
+  border: 0;
+  display: flex;
+  align-items: center;
+  background: #fdfdf6;
+  border-right: thin solid;
+  border-bottom: thin solid;
+  border-color: #bbb;
+  margin: 0 auto;
+}
+.section > button:before {
+  margin-right: 0.5em;
+  font-size: 1.2em;
+}
+/************************************/
+form .hide {
+  display: none;
+}
+/************************************/

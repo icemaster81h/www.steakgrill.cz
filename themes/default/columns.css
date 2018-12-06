@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+div.list.multiple > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+div.list.multiple > div > * {
+  flex: 0 1 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div.list.multiple > div > * {
+  /* padding-top: 1em; */
+  padding-bottom: 1em;
+}
+
+@media screen {
+  div.list.multiple > div > * {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div.list.multiple > div > *.card-lm.figure {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #content dl.card {
+    padding-top: 1em;
+  }
+}
+
+@media screen and (min-width: 28em) {
+  div.list.multiple > div > *.propecenost,
+  div.list.multiple > div > *.usda{
+    flex: 0 1 48%;
+    max-width: 48%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+  }
+}
+
+@media screen and (min-width: 42em) {
+  div.list.multiple > div > *:not(.propecenost):not(.usda):not(.color) {
+    flex: 0 1 48%;
+    max-width: 48%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+  }
+  div.list.multiple > div > *.card-lm.figure {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  div.list.multiple > div > .kontakt {
+    flex: 0 1 42%;
+    max-width: 42%;
+  }
+  #content dl.card {
+    border: medium solid #ecece0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  #content dl.card dd:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0;
+  }
+  body #content > .section > .part:nth-child(2n+1) {
+    padding-bottom: 2em;
+  }
+}
+
+@media (min-width: 52em) {
+  body #content > .hdesc h1 {
+    margin: 1em 0 1em;
+  }
+  div.list.multiple > div > *:not(.video):not(.card):not(.kontakt):not(.mike):not(.color),
+  #content div.list.multiple > div > *.brief {
+    flex: 0 1 31.33%;
+    max-width: 31.3%;
+  }
+  div.list.multiple > div > .kontakt {
+    flex: 0 1 34%;
+    max-width: 34%;
+  }
+  #content div.list.multiple > div > *.usda {
+    flex: 0 1 23%;
+    max-width: 23%;
+  }
+}
+
+
+@media (min-width: 60em) {
+  #content div.list.multiple > div > *.propecenost,
+  #content div.list.multiple > div > *.usda {
+    flex: 0 1 23%;
+    max-width: 23%;
+  }
+}
+
+
+@media screen and (min-width: 18em) {
+  div.list.multiple > div > *.color {
+    border: medium solid #ecece0;
+    flex: 0 1 48%;
+    max-width: 48%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+    margin-bottom: 0.5em;
+  }
+  #content dl.color dd:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 28em) {
+  div.list.multiple > div > *.color {
+    flex: 0 1 31%;
+    max-width: 31%;
+  }
+}
+
+@media screen and (min-width: 42em) {
+  div.list.multiple > div > *.color {
+    flex: 0 1 31%;
+    max-width: 23%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (min-width: 52em) {
+  div.list.multiple > div > *.color {
+    flex: 0 1 18%;
+    max-width: 18%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;    
+  }
+}
+/*
+
+@media (min-width: 70em) {
+  #content div.list.multiple div > *.reference {
+    flex: 0 1 18%;
+    max-width: 18%;
+  }
+}
+
+*/

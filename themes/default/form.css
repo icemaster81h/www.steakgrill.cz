@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+select,
+input:not([type="radio"]) {
+  padding: 0.15em 0.3em;
+}
+
+form dt {
+  font-size: 1rem;
+  max-width: 15em;
+  width: 100%;
+  display: inline-block;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form dd > textarea,
+form dd {
+  max-width: 24em;
+  width: 100%;
+}
+
+form#inputvarform dt {
+  max-width: 100%;
+}
+
+form#inputvarform dd {
+  max-width: 100%;
+}
+
+form#inputvarform dd > textarea {
+  /* padding: 0.5em; */
+  /* padding: 0.5em; */
+  min-height: 9em;
+  width: 100%;
+  max-width: none;
+}
+
+form#inputvarform input[type="text"] {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 43em) {
+  form#inputvarform dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form#inputvarform dd > textarea {
+    min-height: 7em;
+  }
+  form#inputvarform dt {
+    max-width: 30%;
+  }
+
+  form#inputvarform dd {
+    max-width: 70%;
+  }
+}
+
+form dt, form dd {
+  margin: 0.5rem 0;
+}
+
+form dt, form dt+dd {
+  float: none;
+}
+
+form dt, form dt+dd+dd {
+  clear:left;
+}
+
+form dt+dd+dd {
+  font-style: italic;
+  font-weight: normal;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-sizing: border-box;
+}
+
+form fieldset {
+  border-top: 0.15em solid rgb(204, 217, 226);
+}
+
+form dd > textarea {
+  font: inherit;
+  box-sizing: border-box;
+  border: thin solid #ccd9e2;
+}
+
+@media screen and (min-width: 43em) {
+  form:not(form#inputvarform) dt, form:not(form#inputvarform) dt+dd {
+    float: left;
+  }
+  form:not(form#inputvarform) dt+dd+dd {
+    margin-left: 15em;
+  }
+}
+
+@media screen {
+  form dd {
+    margin-left: 0;
+  }
+}
+
+input:not([type='submit']),
+textarea, select {
+  border: thin solid #ccd9e2;
+  padding: 0.2em 0.4em;
+  line-height: 1.5em;
+}
+
+.warning {
+  border-color: #E78181;
+  background-color: #F99F9F;
+}
