@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<InputVar>
-
-  <!--
+<InputVar><!--
 
     Element var:
       - identifikátor
@@ -33,21 +31,19 @@
         Např. <data name="a">b</data> nahradí všechny "a" v textu za "b"
       - sequence ... řetězí volání funkcí uvedených v elementech call
 
-  -->
-
-  <fn id="months" fn="replace">
-    <data name="[01]">ledna</data>
-    <data name="[02]">února</data>
-    <data name="[03]">března</data>
-    <data name="[04]">dubna</data>
-    <data name="[05]">května</data>
-    <data name="[06]">června</data>
-    <data name="[07]">července</data>
-    <data name="[08]">srpna</data>
-    <data name="[09]">září</data>
-    <data name="[10]">října</data>
-    <data name="[11]">listopadu</data>
-    <data name="[12]">prosince</data>
+  --><fn id="months" fn="replace">
+    <data name="[01]">January</data>
+    <data name="[02]">February</data>
+    <data name="[03]">March</data>
+    <data name="[04]">April</data>
+    <data name="[05]">May</data>
+    <data name="[06]">June</data>
+    <data name="[07]">July</data>
+    <data name="[08]">August</data>
+    <data name="[09]">September</data>
+    <data name="[10]">October</data>
+    <data name="[11]">November</data>
+    <data name="[12]">December</data>
   </fn>
   <fn id="yearformat" fn="strftime" format="%Y"/>
   <fn id="tmpdateformat" fn="strftime" format="%e. [%m] %Y"/>
@@ -56,45 +52,35 @@
     <call>months</call>
   </fn>
 
-  <var id="nodebug">Provozní režim</var>
-  <var id="debug">Ladící režim</var>
-  <var id="servercache">Smazat mezipaměť serveru</var>
-  <var id="filecache">Aktualizovat souborovou mezipaměť</var>
-  <var id="reportbug"><a href="https://bitbucket.org/igwr/cms/issues?status=new&amp;status=open">Odeslat zpětnou vazbu</a></var>
-  <!-- <var id="igcms"><a href="https://dokumenty.internetguru.cz/igcms">Specifikace IGCMS</a></var> -->
-  <var id="codemirror"><a href="https://dokumenty.internetguru.cz/zkratky">Klávesové zkratky CodeMirror</a></var>
-  <var id="version_link"><a href="/%s.php" var="cms-default_release@href" title="Pro nezávislé ladění zdrojových souborů (CSS/JS)">Samostatná větev</a></var>
-  <!--<var id="service_plain">E-Základna, www.e-zakladna.cz</var>-->
-  <!--<var id="service">Na službě: <a href="https://www.e-zakladna.cz/">E-Základna</a></var>-->
-  <var id="service_plain">Nestárnoucí weby, www.nestarnouciweby.cz</var>
-  <var id="service">Na službě: <a href="http://www.nestarnouciweby.cz">Nestárnoucí weby</a></var>
+  <var id="nodebug">Operating mode</var>
+  <var id="debug">Debugging mode</var>
+  <var id="servercache">Delete server cache</var>
+  <var id="filecache">Update file cache</var>
+  <var id="reportbug"><a href="https://bitbucket.org/igwr/cms/issues?status=new&amp;status=open">Send feedback</a></var><!-- <var id="igcms"><a href="https://dokumenty.internetguru.cz/igcms">Specifikace IGCMS</a></var> --><var id="codemirror"><a href="https://dokumenty.internetguru.cz/zkratky">CodeMirror keyboard shortcuts</a></var>
+  <var id="version_link"><a href="/%s.php" var="cms-default_release@href" title="Pro nezávislé ladění zdrojových souborů (CSS/JS)">Separate branch</a></var><!--<var id="service_plain">E-Základna, www.e-zakladna.cz</var>--> <!--<var id="service">Na službě: <a href="https://www.e-zakladna.cz/">E-Základna</a></var>--><var id="service_plain">Nestárnoucí weby, www.nestarnouciweby.cz</var>
+  <var id="service">On service: <a href="http://www.nestarnouciweby.cz">Nestárnoucí weby</a></var>
   <var id="resp">Webmaster: <span var="cms-resp">n/a</span></var>
-  <var id="mtime">Poslední změny: <span var="cms-mtime" fn="inputvar-dateformat">n/a</span></var>
+  <var id="mtime">Latest changes: <span var="cms-mtime" fn="inputvar-dateformat">n/a</span></var>
   <var id="admin">Admin: <span var="cms-admin_id">n/a</span></var>
   <var id="cyear" fn="yearformat" var="cms-ctime"/>
-  <var id="year" fn="yearformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
-  <var id="today" fn="dateformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
-  <var id="adminmenu">
+  <var id="year" fn="yearformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff --><var id="today" fn="dateformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff --><var id="adminmenu">
     <ul class="adminmenu noprint">
-      <li><a href="?admin">Administrace</a></li>
-      <li><a href="?log">Logy</a></li>
-      <li><a href="?changelog">Historie verzí</a></li>
+      <li><a href="?admin">Administration</a></li>
+      <li><a href="?log">Logs</a></li>
+      <li><a href="?changelog">Version history</a></li>
       <li><a href="?import">Import</a></li>
     </ul>
   </var>
   <var id="ielt7">
     <div class="ielte7" style="background: yellow; margin: 0; border: 0.3em solid red;">
       <dl>
-        <dt>Používáte zastaralou verzi prohlížeče!</dt>
-        <dd><a href="https://support.microsoft.com/cs-cz/help/17621/internet-explorer-downloads">Aktualizujte</a> na vyšší verzi,</dd>
-        <dd>nainstalujte <a href="https://www.google.com/chrome/">alternativní prohlížeč</a> nebo</dd>
-        <dd>kontaktujte správce svého počítače.</dd>
+        <dt>You are using an outdated browser version!</dt>
+        <dd><a href="https://support.microsoft.com/cs-cz/help/17621/internet-explorer-downloads">Upgrade</a> to a higher version,</dd>
+        <dd>install <a href="https://www.google.com/chrome/">an alternative browser</a> or</dd>
+        <dd>contact your computer administrator.</dd>
       </dl>
     </div>
-  </var>
-
-
-  <!--
+  </var><!--
 
     Uživatelská editace
 
@@ -161,9 +147,8 @@
   $inputvar-service_plain
     </message>
 
-   -->
-  <var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
-  <var id="rezervace">Rezervace jsou možné pouze telefonicky na čísle <em var="inputvar-atel">n/a</em>.</var>
+   --><var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
+  <var id="rezervace">Bookings are accepted only by telephone at <em var="inputvar-atel">n/a</em>.</var>
   <login id="tomas" password="$1$3HNtZKsL$v7wJYFaXYkMXpbsn7cjFu."/>
   <login id="vita" password="$1$MBdYxW71$Bd0LFhJHOLDei05rHS0Ym0"/>
   <login id="jarda" password="$1$X8GFDlgb$9m27o5.badtL.GDXcL6It."/>
@@ -180,53 +165,40 @@
     <call>formatjidlo2</call>
     <call>formatjidlo3</call>
   </fn>
-  <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
-  <var var="cms-server" id="nabidka" required="required">Denní nabídka, 6. prosince 2018</var>
-  <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých místních surovin. Nabídka je pestrá a rozličná a neopakuje se přibližně 2 měsíce.</var>
-  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Kukuřičný Chowder&#13;
-Tradiční americká krémová polévka z kukuřice, slaniny a papriky.&#13;
-malá 49 Kč&#13;
-velká 55 Kč</var>
+  <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Daily offer, date</set>
+  <var var="cms-server" id="nabidka" required="required">Daily offer, November 15, 2018</var>
+  <var var="cms-server" id="nabidka-popis">We cook a lunch menu every weekday using fresh local ingredients. The offers are varied and diverse and do not repeat for about 2 months.</var>
+  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Soups</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Potato soup with forest mushrooms. Small CZK 49. Large CZK 55.</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
-  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n\d+ Kč)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Vepřové výpečky&#13;
-Pomalu pečený vepřový bůček, kysané zelí, naše bramborové knedlíky, smažená vídeňská cibulka.&#13;
-179 Kč</var>
+  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n\d+ Kč)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Main courses</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Mushroom veal stew Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings. CZK 179</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
-  <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce včetně pátku večer, 30. listopadu až 2. prosince 2018</var>
-  <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla připravovaná především v peci, grilovaná a rožněná na dřevě. Připravujeme celé velké kusy zvěře, jako např. 70kg hovězí kýta a rozličná divoká zvěřina – prasata, jehněčí, daňci, mufloni. Pokrmy pečeme při nízké teplotě až 12 hodin, takže jsou šťavnaté a zároveň krásně voní kouřem.</var>
-  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Náš tatarský steak ze svíčkové, 50 g&#13;
-Námi míchaný, topinky s česnekem.&#13;
-129 Kč</var>
+  <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Special, from–to</set>
+  <var var="cms-server" id="vikendova-akce" required="required">Weekend special including Friday evening, November 2–4, 2018</var>
+  <var var="cms-server" id="akce-popis">On weekends, we mostly offer dishes made in an oven, grilled and broiled over wood. We make whole large chunks of game, such as 70kg legs of beef and diverse wild game – boar, lamb, fallow deer, mouflon. We roast our dishes at low temperatures for up to 12 hours, making them juicy and beautifully scented with smoke.</var>
+  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Starters</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Homemade sirloin steak tartare, 50 g, pre-mixed, garlic toast. CZK 129</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
-  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Trhané vepřové&#13;
-Pomalu přes noc pečená vepřová kýta, mléčná bramborová kaše, přírodní šťáva, míchaný salát.&#13;
-209 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Náš tatarský steak ze svíčkové, 150 g&#13;
-Námi míchaný, topinky s česnekem.&#13;
-289 Kč</var>
+  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Main courses</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Beef sirloin in cream sauce known as “svíčková” Matured Uruguayan rump, homemade Carlsbad dumplings, lemon, lingonberries. CZK 209</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Homemade sirloin steak tartare, 150 g, pre-mixed, garlic toast. CZK 289</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
-  <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
-na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
+  <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Hello,
+  a user dish change has been made at $cms-url/listek.
 
-– Uživatel: $user
-– Čas změny: $date
-– Uživatelská administrace: $cms-url/?InputVar
+  – User: $user
+  – Time of change: $date
+  – User administration: $cms-url/?InputVar
 
-Výspis rozdílů aktuální úpravy:
+  Listing of differences in current content:
+  $diff
 
-$diff
-
--- 
-Pro zobrazení aktuálního obsahu použijte funkci Obnovit (klávesa F5) prohlížeče.
-$inputvar-service_plain</message>
+  -- Use the Reload feature (F5 key) of your browser to show current content.
+  $inputvar-service_plain</message>
   <var id="term-sous-vide" class="term" title="ve vakuu" href="https://cs.wikipedia.org/wiki/Sous-vide" data-term-href-title="Termín sous-vide na Wikipedii" data-term-desc="Sous-vide (z francouzštiny, v překladu znamená „ve vakuu“) je kuchařská metoda, při níž se potraviny připravují ve vzduchotěsném umělohmotném obalu ve vodní lázni s řízenou teplotou.">n/a</var>
   <var id="term-docg" class="term" title="Denominazione di Origine Controllata e Garantita" data-term-desc="Označení DOCG (Denominazione di Origine Controllata e Garantita) platí od roku 1980 pro nejvyšší stupeň kvality v Itálii. Veškeré procesy jsou velmi přísně kontrolovány, včetně původu révy, hektarového výnosu a nadmořské výšky vinic.">n/a</var>
   <var id="term-doc" class="term" title="Denominazione di Origine Controllata" data-term-desc="Označení DOC (Denominazione di Origine Controllata) je druhý nejvyšší stupeň hodnocení italských vín. Vína s tímto označením musí splňovat danou lokalitu, která je uznána pro pěstování dané odrůdy, rovněž musí být dodrženy podmínky maximálního výnosu, délka zrání vína.">n/a</var>
