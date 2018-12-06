@@ -183,13 +183,13 @@
   <set type="text" for="nabidka" pattern="Daily Offer, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d, 20\d\d" placeholder="Daily Offer, April 16, 2018">Daily offer, date</set>
   <var var="cms-server" id="nabidka" required="required">Daily Offer, November 15, 2018</var>
   <var var="cms-server" id="nabidka-popis">We cook a lunch menu every weekday using fresh local ingredients. The offers are varied and diverse and do not repeat for about 2 months.</var>
-  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-Z]\D+\n\s*[A-Z].*\.(\n.* CZK \d+){2}" placeholder="Scotch Broth&#10;Description.&#10;small CZK 43&#10;large CZK 49">Soups</set>
+  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-Z]\D+\n\s*[A-Z].*\.(\n.* CZK \d+){2}" placeholder="Potato soup&#10;With forest mushrooms.&#10;small CZK 43&#10;large CZK 49">Soups</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Potato soup&#13;
 With forest mushrooms.&#13;
 small CZK 49&#13;
 large CZK 55</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
-  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.(\nCZK \d+)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Main courses</set>
+  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.(\nCZK \d+)?" placeholder="Mushroom veal stew&#10;Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings.&#10;CZK 179">Main courses</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Mushroom veal stew&#13;
 Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings.&#13;
 CZK 179</var>
@@ -197,13 +197,13 @@ CZK 179</var>
   <set type="text" for="vikendova-akce" pattern="Weekend special(.+)?, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d–\d?\d, 20\d\d" placeholder="Weekend special including Friday evening, November 2–4, 2018">Special, from–to</set>
   <var var="cms-server" id="vikendova-akce" required="required">Weekend special including Friday evening, November 2–4, 2018</var>
   <var var="cms-server" id="akce-popis">On weekends, we mostly offer dishes made in an oven, grilled and broiled over wood. We make whole large chunks of game, such as 70kg legs of beef and diverse wild game – boar, lamb, fallow deer, mouflon. We roast our dishes at low temperatures for up to 12 hours, making them juicy and beautifully scented with smoke.</var>
-  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Starters</set>
+  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Homemade sirloin steak tartare, 50 g&#10;Pre-mixed, garlic toast.&#10;CZK 129">Starters</set>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Homemade sirloin steak tartare, 50 g&#13;
 Pre-mixed, garlic toast.&#13;
 CZK 129</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
-  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Main courses</set>
+  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Beef sirloin in cream sauce known as “svíčková”&#10;Matured Uruguayan rump, homemade Carlsbad dumplings, lemon, lingonberries.&#10;CZK 289">Main courses</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Beef sirloin in cream sauce known as “svíčková”&#13;
 Matured Uruguayan rump, homemade Carlsbad dumplings, lemon, lingonberries.&#13;
 CZK 209</var>
