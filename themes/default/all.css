@@ -193,7 +193,7 @@ dl.card dd.price > span > span:first-child {
   font-size: 1rem;
 }
 dl.card dd.price > span > span + span {
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 dl.card.oneline dd.price {
   display: block;
