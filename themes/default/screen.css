@@ -201,10 +201,12 @@ h2.afterimg:after {
   width: 100%;
   display: block
 }
+h2#about_us:after,
 h2#o_nas:after {
   background-image: url("/files/personal2.jpg");
   background-position-y: 10%;
 }
+h2#contact:after,
 h2#kontakty:after {
   background-image: url("/files/DSC_4879.jpg");
 }
