@@ -210,38 +210,48 @@ h2#contact:after,
 h2#kontakty:after {
   background-image: url("/files/DSC_4879.jpg");
 }
+h2#soups:after,
 h2#polevky:after {
   background-image: url("/files/jidla/kaldoun.jpg");
   background-position-y: 40%;
 }
+h2#hamburgers_and_pasta:after,
 h2#hamburgery_a_testoviny:after {
   background-image: url("/files/jidla/hamburger.jpg");
 }
+h2#salad_platters:after,
 h2#salatove_talire:after {
   background-image: url("/files/jidla/salat.jpg");
 }
+h2#frying_pan_wok:after,
 h2#z_panve_fritezy_a_woku:after {
   background-image: url("/files/jidla/wok2.jpg");
   background-position-y: 10%;
 }
+h2#grill_griddle:after,
 h2#z_grilu_a_griddlu:after {
   background-image: url("/files/jidla/ribs.jpg");
 }
+h2#grilled_steaks:after,
 h2#grilovane_steaky:after {
   background-image: url("/files/jidla/steak.jpg");
   background-position-y: 50%;
 }
+h2#sweets:after,
 h2#sladkosti:after {
   background-image: url("/files/jidla/creme_brulee.jpg");
 }
+h2#condiments_and_sauces:after,
 h2#pochutiny_omacky:after {
   background-image: url("/files/jidla/sauce.jpg");
   background-position-y: 60%;
 }
+h2#side_dishes:after,
 h2#prilohy:after {
   background-image: url("/files/jidla/potato.jpg");
   background-position-y: 60%;
 }
+h2#kids_dishes:after,
 h2#detska_jidla:after {
   background-image: url("/files/jidla/pomodoro.jpg");
 }
