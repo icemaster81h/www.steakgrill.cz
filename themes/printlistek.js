@@ -134,15 +134,15 @@
 
       printWin.document.write('<html><head><link href="//fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin-ext" rel="stylesheet"></head><body>');
 
-      var polevka = document.querySelectorAll("dl.card[data-type='Polévka']")[0].cloneNode(true);
-      var jidlo = document.querySelectorAll("dl.card[data-type='Jídlo']")[0].cloneNode(true);
+      var polevka = document.querySelectorAll("dl.card[data-type='Polévka'], dl.card[data-type='Soup']")[0].cloneNode(true);
+      var jidlo = document.querySelectorAll("dl.card[data-type='Jídlo'], dl.card[data-type='Main meal']")[0].cloneNode(true);
       var wrap = document.createElement('div');
       var div1 = document.createElement('div');
       var div2 = document.createElement('div');
       wrap.appendChild(div1);
       div1.appendChild(div2);
       var h1 = document.createElement('h1');
-      h1.innerHTML = "Denní nabídka";
+      h1.innerHTML = nadpis.title;
       div2.appendChild(h1);
       div2.appendChild(polevka);
       div2.appendChild(jidlo);
@@ -176,6 +176,9 @@
   button.className = 'noprint fa fa-print';
   button.style = "width: 1em; margin-left: 0.5em; white-space: nowrap; overflow: hidden; border: 0; background: none; cursor: pointer;";
   var nadpis = document.getElementById('denni_nabidka');
+  if (!nadpis) {
+    nadpis = document.getElementById('daily_offer');
+  }
   nadpis.appendChild(button);
   button.addEventListener('click', printNabidka, false);
 })()
