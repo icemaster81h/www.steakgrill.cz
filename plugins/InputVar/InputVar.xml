@@ -162,7 +162,7 @@
     </message>
 
    -->
-  <var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
+  <var id="atel"><a href="tel:+420777330050">+420 777 330 050</a></var>
   <var id="rezervace">Bookings are accepted only by telephone at <em var="inputvar-atel">n/a</em>.</var>
   <login id="tomas" password="$1$3HNtZKsL$v7wJYFaXYkMXpbsn7cjFu."/>
   <login id="vita" password="$1$MBdYxW71$Bd0LFhJHOLDei05rHS0Ym0"/>
