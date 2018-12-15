@@ -31,7 +31,7 @@ $inputvar-service_plain</message>
         <input type="hidden" name="ht" value="f4ae4fa4126fedf0cf415ba673cabc2e98ac6afc:MTUzMDg3MDMyMS4zMTcx"/>
         <input type="hidden" name="mc_signupsource" value="hosted"/>
       </dd>
-      <dd><input type="submit" id="submit" value="Registrovat se k odběru"/></dd>
+      <dd><input type="submit" id="submit" value="Register"/></dd>
     </dl>
   </form>
 
@@ -49,7 +49,7 @@ $inputvar-service_plain</message>
       <dd><textarea id="msg" required="required" var="inputvar-rezervace@placeholder"></textarea></dd>
       <dt class="noprint">Form submission</dt>
       <dd class="noprint"><label><input type="checkbox" id="sendcopy"/> Send a copy of this message to specified email</label></dd>
-      <dd class="noprint"><input type="submit" id="submit" value="Odeslat"/></dd>
+      <dd class="noprint"><input type="submit" id="submit" value="Send"/></dd>
     </dl>
   </form>
 
@@ -228,7 +228,7 @@ $inputvar-service_plain</message>
 
         <dt class="noprint"><label for="sendcopy">Send a copy of this message to specified email</label></dt>
         <dd class="noprint"><input type="checkbox" id="sendcopy"/></dd>
-        <dd class="noprint"><input type="submit" id="submit" value="Odeslat"/></dd>
+        <dd class="noprint"><input type="submit" id="submit" value="Send"/></dd>
       </dl>
     </fieldset>
   </form>
