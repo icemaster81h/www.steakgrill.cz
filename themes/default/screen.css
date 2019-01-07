@@ -219,7 +219,7 @@ h2#hamburgers_and_pasta:after,
 h2#hamburgery_a_testoviny:after {
   background-image: url("/files/jidla/hamburger.jpg");
 }
-h2#salad_platters:after,
+h2#salads:after,
 h2#salatove_talire:after {
   background-image: url("/files/jidla/salat.jpg");
 }
@@ -237,7 +237,7 @@ h2#grilovane_steaky:after {
   background-image: url("/files/jidla/steak.jpg");
   background-position-y: 50%;
 }
-h2#sweets:after,
+h2#desserts:after,
 h2#sladkosti:after {
   background-image: url("/files/jidla/creme_brulee.jpg");
 }
