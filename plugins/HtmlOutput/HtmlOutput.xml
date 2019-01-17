@@ -10,7 +10,6 @@
   <jsFile append="head">themes/fontloader.js</jsFile>
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
   <jsFile append="body" if-xpath="//h1[@id='nabidka' or @id='menu']">themes/printlistek.js</jsFile>
-  <robots domain="new.steakgrill.cz" readonly="readonly" meta="noindex, nofollow">User-agent: *
-Disallow: /</robots>
+  <allow_domain>en.steakgrill.cz</allow_domain>
   <jsFile >themes/terminable.js</jsFile>
 </HtmlOutput>
