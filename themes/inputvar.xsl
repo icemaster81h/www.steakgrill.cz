@@ -8,7 +8,7 @@
   </xsl:template>
   
   <xsl:template match="legend">
-    <h2 class="hideable hideable-hidden">
+    <h2 class="hideable hideable-nohide">
       <xsl:copy-of select="text()"/>
     </h2>
   </xsl:template>
