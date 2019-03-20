@@ -2,11 +2,11 @@
 <HtmlOutput>
   <stylesheet>lib/font-awesome/css/font-awesome.css</stylesheet>
   <stylesheet media="print">themes/print-listek.css</stylesheet>
-  <xslt>themes/inputvar.xsl</xslt>
   <xslt>themes/default/part.xsl</xslt>
   <xslt>themes/default/hdesc.xsl</xslt>
   <xslt>themes/delna.xsl</xslt>
   <xslt>themes/contenttoc.xsl</xslt>
+  <xslt>themes/inputvar.xsl</xslt>
   <jsFile append="head">themes/webfont.js</jsFile>
   <jsFile append="head">themes/fontloader.js</jsFile>
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
