@@ -16,7 +16,7 @@
   <xsl:template match="form[contains(@id, 'inputvarform')]">
     <div class="section">
       <xsl:copy>
-        <xsl:apply-templates />
+        <xsl:apply-templates select="node()|@*" />
       </xsl:copy>
     </div>
   </xsl:template>
