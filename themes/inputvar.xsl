@@ -5,6 +5,12 @@
     <xsl:apply-templates/>
   </xsl:template>
   
+  <xsl:template match="legend">
+    <h2 class="hideable hideable-hidden">
+      <xsl:copy-of select="text()"/>
+    </h2>
+  </xsl:template>
+  
   <xsl:template match="form[contains(@id, 'inputvarform')]">
     <xsl:copy>
       <xsl:apply-templates select="@*"/>
