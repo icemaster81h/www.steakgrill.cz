@@ -7,7 +7,6 @@
   
   <xsl:template match="legend">
     <h2>
-      <xsl:attribute name="id"><xsl:value-of select="generate-id(.)"/></xsl:attribute>
       <xsl:copy-of select="text()"/>
     </h2>
   </xsl:template>
