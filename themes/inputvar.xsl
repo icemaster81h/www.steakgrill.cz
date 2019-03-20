@@ -2,7 +2,9 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
   <xsl:template match="fieldset">
-    <xsl:apply-templates/>
+    <div class="part">
+      <xsl:apply-templates/>
+    </div>
   </xsl:template>
   
   <xsl:template match="legend">
