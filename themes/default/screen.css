@@ -36,3 +36,7 @@ p.sep:after {
   background-size: contain;
 }
 /*********************************/
+.globalmenu li:first-child {
+  display: none !important;
+}
+/*********************************/
