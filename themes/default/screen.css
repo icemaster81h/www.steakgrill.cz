@@ -242,4 +242,26 @@ svg.fa-facebook {
 #references {
   display: none;
 }
+.part.references {
+  padding-bottom: 2em;
+}
+.part.references dl {
+  text-align: center;
+  max-width: 25em;
+}
+.part.references dt img {
+  max-width: 8em;
+}
+.part.references dd {
+  font-style: italic;
+}
+.part.references dt + dd {
+  font-size: 1.2em;
+  max-width: 15em;
+  margin: 1em auto;
+}
+.part.references dt + dd q:before,
+.part.references dt + dd q:after {
+  content: "";
+}
 /*********************************/
