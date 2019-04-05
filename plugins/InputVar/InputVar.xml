@@ -182,7 +182,7 @@
   </fn>
   <set type="text" for="nabidka" pattern="Daily Offer, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d, 20\d\d" placeholder="Daily Offer, April 16, 2018">Daily offer, date</set>
   <var var="cms-server" id="nabidka" required="required">Daily Offer, November 15, 2018</var>
-  <var var="cms-server" id="nabidka-popis">We cook a lunch menu every weekday using fresh local ingredients. The offers are varied and diverse and do not repeat for about 2 months.</var>
+  <var var="cms-server" id="nabidka-popis">We cook a lunch menu every weekday using fresh local ingredients.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-Z]\D+\n\s*[A-Z].*\.(\n.* CZK \d+){2}" placeholder="Potato soup&#10;With forest mushrooms.&#10;small CZK 43&#10;large CZK 49">Soups</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Potato soup&#13;
 With forest mushrooms.&#13;
@@ -196,7 +196,7 @@ CZK 179</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Weekend special(.+)?, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d–\d?\d, 20\d\d" placeholder="Weekend special including Friday evening, November 2–4, 2018">Special, from–to</set>
   <var var="cms-server" id="vikendova-akce" required="required">Weekend special including Friday evening, November 2–4, 2018</var>
-  <var var="cms-server" id="akce-popis">On weekends, we mostly offer dishes made in an oven, grilled and broiled over wood. We make whole large chunks of game, such as 70kg legs of beef and diverse wild game – boar, lamb, fallow deer, mouflon. We roast our dishes at low temperatures for up to 12 hours, making them juicy and beautifully scented with smoke.</var>
+  <var var="cms-server" id="akce-popis">On weekends, we mostly offer dishes made in an oven, grilled and broiled over wood.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Homemade sirloin steak tartare, 50 g&#10;Pre-mixed, garlic toast.&#10;CZK 129">Starters</set>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Homemade sirloin steak tartare, 50 g&#13;
 Pre-mixed, garlic toast.&#13;
