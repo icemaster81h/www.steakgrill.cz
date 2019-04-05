@@ -15,7 +15,7 @@
   <jsFile >themes/terminable.js</jsFile>
   
   <jsFile append="body">themes/fa.js</jsFile>
-  <jsFile append="body">lib/fontawesome5/js/fontawesome-all.js</jsFile>
+  <jsFile append="body">lib/fontawesome5/js/fontawesomeall.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
 </HtmlOutput>
