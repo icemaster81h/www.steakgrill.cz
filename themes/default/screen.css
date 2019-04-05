@@ -177,3 +177,8 @@ svg.fa-facebook {
   background: url("/files/design/sep-white.png");
 }
 /*********************************/
+.menu h3::nth-word(1),
+.menu h3::nth-word(2) {
+  color: red;
+}
+/*********************************/
