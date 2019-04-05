@@ -52,7 +52,7 @@ p.sep:after {
   height: 0.3em;
   background: url("/files/design/sep.png") no-repeat;
   background-size: contain;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
 }
 /*********************************/
 .globalmenu li:first-child {
