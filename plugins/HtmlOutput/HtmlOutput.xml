@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <HtmlOutput>
-<!--   <stylesheet>lib/font-awesome/css/font-awesome.css</stylesheet> -->
   <stylesheet media="print">themes/print-listek.css</stylesheet>
   <xslt>themes/delna.xsl</xslt>
   <xslt>themes/default/part.xsl</xslt>
