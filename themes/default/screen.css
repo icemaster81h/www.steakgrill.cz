@@ -184,6 +184,7 @@ svg.fa-facebook {
   margin: 1em;
   background: white;
   border-radius: 0.25em;
+  padding: 2em 0;
 }
 .daily_offer h3,
 .weekend_events h3 {
@@ -191,5 +192,50 @@ svg.fa-facebook {
 }
 .menu > .contentbalancer-simple {
   display: none;
+}
+.daily_offer h3 + p,
+.weekend_events h3 + p {
+  max-width: 17em;
+}
+/*********************************/
+#content .meal {
+  margin: 0 auto;
+}
+.meal dt {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.meal dd {
+  margin-left: 0;
+}
+.meal dt.price {
+  display: none;
+}
+.meal dd.price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+.meal dd.price > span {
+  display: flex;
+  flex-direction: column;
+}
+.meal dd.price > span:first-child {
+  margin-right: 1em;
+}
+.meal dd.price > span > span:first-child {
+  font-weight: normal;
+}
+@media all and (min-width: 30em) {
+  #content .meal {
+    max-width: 18em;
+    position: relative;
+    left: -4em;
+  }
+  .meal dd.price {
+    position: absolute;
+    bottom: 0.8em;
+    right: -7em;
+  }
 }
 /*********************************/
