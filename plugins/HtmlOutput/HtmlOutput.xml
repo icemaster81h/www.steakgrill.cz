@@ -4,7 +4,7 @@
   <stylesheet media="print">themes/print-listek.css</stylesheet>
   <xslt>themes/delna.xsl</xslt>
   <xslt>themes/default/part.xsl</xslt>
-<!--   <xslt>themes/default/hdesc.xsl</xslt> -->
+  <xslt>themes/default/h1desc.xsl</xslt>
   <xslt>themes/contenttoc.xsl</xslt>
   <xslt>themes/inputvar.xsl</xslt>
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
