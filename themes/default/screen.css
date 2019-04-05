@@ -9,11 +9,16 @@ h1 {
 .wf-active body {
   font-family: 'Cormorant Garamond', serif;
 }
+.wf-active .contentlink-bc,
 .wf-active h1 {
   font-family: Roboto, sans-serif;
 }
 strong {
   font-weight: 600;
+}
+#content a {
+  color: #b6150d;
+  border-bottom: 0 none;
 }
 /*********************************/
 h1 {
@@ -48,11 +53,21 @@ p.sep:after {
   display: none !important;
 }
 /*********************************/
+.photoswipe {
+  list-style: none;
+}
+.photoswipe li {
+  margin: 0;
+}
 #jaroslav_honzajk {
   margin-top: 2.5em;
 }
 #jaroslav_honzajk + p {
   max-width: 14em;
+}
+#jaroslav_honzajk + p + div + p {
+  text-align: center;
+  max-width: 27em;
 }
 /*********************************/
 #header {
