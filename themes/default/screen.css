@@ -275,6 +275,7 @@ svg.fa-facebook {
 }
 .part.references dd {
   font-style: italic;
+  margin: 0;
 }
 .part.references dt + dd {
   font-size: 1.2em;
@@ -284,5 +285,8 @@ svg.fa-facebook {
 .part.references dt + dd q:before,
 .part.references dt + dd q:after {
   content: "";
+}
+.part.references dl:before {
+  
 }
 /*********************************/
