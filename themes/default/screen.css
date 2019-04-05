@@ -70,6 +70,14 @@ p.sep:after {
 #header a {
   color: white;
 }
+#header > div .globalmenu {
+  margin-top: 1.25rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: thin solid black;
+}
+#header > div .globalmenu a {
+  font-weight: 800;
+}
 .hdesc.steakgrill {
   color: white;
   padding: 5em 0 6em 0;
