@@ -10,7 +10,12 @@
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
 <!--   <jsFile append="head">themes/fontloader.js</jsFile> -->
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
+  
   <jsFile append="body" if-xpath="//h1[@id='nabidka' or @id='menu']">themes/printlistek.js</jsFile>
   <jsFile >themes/terminable.js</jsFile>
+  
+  <jsFile append="body">themes/fa.js</jsFile>
+  <jsFile append="body">lib/fontawesome5/js/fontawesome-all.js</jsFile>
+  
   <allow_domain>en.steakgrill.cz</allow_domain>
 </HtmlOutput>
