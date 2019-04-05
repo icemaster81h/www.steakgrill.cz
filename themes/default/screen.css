@@ -18,7 +18,7 @@ strong {
 /*********************************/
 h1 {
   font-size: 4em;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
 }
 h2, h3 {
@@ -48,7 +48,33 @@ p.sep:after {
   display: none !important;
 }
 /*********************************/
+#jaroslav_honzajk {
+  margin-top: 2.5em;
+}
 #jaroslav_honzajk + p {
   max-width: 14em;
+}
+/*********************************/
+#header {
+  position: absolute;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 1.2em;
+  padding: 0.2em 0;
+}
+#header a {
+  color: white;
+}
+.hdesc.steakgrill {
+  color: white;
+  padding: 5em 0 6em 0;
+  background: url("/files/design/header.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% top;
+}
+.logo img {
+  margin-top: -3em;
+  position: relative;
 }
 /*********************************/
