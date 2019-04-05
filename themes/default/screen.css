@@ -118,6 +118,7 @@ svg.fa-facebook {
 @media all and (min-width: 25em) {
   #content .button {
     box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
+    background: white;
   }
   #content .button-list {
     display: flex;
@@ -154,11 +155,18 @@ svg.fa-facebook {
 }
 /*********************************/
 .part {
-  padding: 0.1em 0;
+  padding: 2em 0;
 }
 .part.about_us {
   background: url("/files/full/design/about.jpg") top right no-repeat;
   background-size: cover;
   color: white;
+}
+.part.about_us .sep:after {
+  background: url("/files/design/sep-white.png");
+}
+.part.menu {
+  background: url("/files/full/design/menu.jpg") top right no-repeat;
+  background-size: cover;  
 }
 /*********************************/
