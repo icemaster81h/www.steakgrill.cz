@@ -64,16 +64,19 @@ p.sep:after {
   width: 100%;
   color: white;
   background: rgba(0, 0, 0, 0.6);
-  font-size: 1.2em;
+  font-size: 1em;
   padding: 0.2em 0;
 }
 #header a {
   color: white;
 }
+#header .contentlink-bc li:first-child {
+  text-transform: uppercase;
+}
 #header > div .globalmenu {
-  margin-top: 1.25rem;
+  margin-top: 1.2rem;
   background: rgba(0, 0, 0, 0.6);
-  border-top: thin solid black;
+  border-top: thin solid rgba(255, 255, 255, 0.14);
 }
 #header > div .globalmenu a {
   font-weight: 800;
