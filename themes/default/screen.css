@@ -178,7 +178,7 @@ svg.fa-facebook {
 }
 /*********************************/
 .part {
-  padding: 2em 0 5em;
+  padding: 2em 0 1em;
 }
 .part.about_us {
   background: url("/files/full/design/about.jpg") top right no-repeat;
