@@ -162,11 +162,17 @@ svg.fa-facebook {
   background-size: cover;
   color: white;
 }
+.part.menu {
+  background: url("/files/full/design/menu.jpg") center no-repeat;
+  background-size: cover;  
+}
+.part.contact {
+  background: url("/files/full/design/contact.jpg") center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.part.contact .sep:after,
 .part.about_us .sep:after {
   background: url("/files/design/sep-white.png");
-}
-.part.menu {
-  background: url("/files/full/design/menu.jpg") top right no-repeat;
-  background-size: cover;  
 }
 /*********************************/
