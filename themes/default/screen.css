@@ -23,7 +23,8 @@ h2 {
   font-weight: 600;
   font-size: 2.7em;
 }
-h2 + p {
+h2 + p,
+h3 + p {
   font-style: italic;
   font-size: 1.5em;
 }
