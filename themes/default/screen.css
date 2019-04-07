@@ -149,6 +149,18 @@ p.sep:after {
 svg.fa-facebook {
   color: #3C5A99;
 }
+#content .button-img-inline {
+  align-items: center;
+  justify-content: center;
+  color: #b6150d;
+  border: thin solid #b6150d;  
+}
+#content .button-img-inline svg {
+  flex: 0 1 auto;
+  font-size: 1.5rem;
+  margin: 0;
+  flex: 0 1 25%;
+}
 #content .button:hover,
 #content .button:active,
 #content .button:focus {
