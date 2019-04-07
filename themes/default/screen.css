@@ -314,11 +314,11 @@ svg.fa-facebook {
     -webkit-font-smoothing: antialiased;
   }
 
-  #content .meal[data-type="Soup"] {
+  #content .meal[data-type="Soup"] dt:before {
   }
-  #content .meal[data-type="Main meal"] {
+  #content .meal[data-type="Main meal"] dt:before {
   }
-  #content .meal[data-type="Starter"] {
+  #content .meal[data-type="Starter"] dt:before {
   }
 }
 /*********************************/
