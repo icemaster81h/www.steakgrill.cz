@@ -53,7 +53,7 @@ p.sep:after {
   height: 0.3em;
   background: url("/files/design/sep.png") no-repeat;
   background-size: cover;
-  margin: 1rem auto 2rem;
+  margin: 2rem auto 3rem auto;
 }
 /*********************************/
 .globalmenu li:first-child {
@@ -78,6 +78,13 @@ p.sep:after {
   margin-top: 1.2rem;
   background: rgba(0, 0, 0, 0.6);
   border-top: thin solid rgba(255, 255, 255, 0.14);
+}
+@media all and (min-width: 42em) {
+  #header > div .globalmenu {
+    background: none;
+    border: none;
+    margin: 0;
+  }
 }
 #header > div .globalmenu a {
   font-weight: 800;
@@ -240,6 +247,11 @@ svg.fa-facebook {
   background-image: url("/files/design/sep-white.png");
 }
 /*********************************/
+.menu > .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .daily_offer,
 .weekend_events {
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
@@ -247,6 +259,8 @@ svg.fa-facebook {
   background: white;
   border-radius: 0.25em;
   padding: 2em 0;
+  width: 100%;
+  max-width: 40em;
 }
 .daily_offer h3,
 .weekend_events h3 {
@@ -259,10 +273,20 @@ svg.fa-facebook {
 .weekend_events h3 + p {
   max-width: 17em;
 }
+.daily_offer > div.list > div,
+.weekend_events > div.list > div {
+  display: block;
+}
 /*********************************/
 #content .contact .button-list {
   margin-top: 0;
   margin-bottom: 15em;
+}
+.about_us h2 + p {
+  max-width: 20em;
+}
+.menu h2 + p {
+  max-width: 16em;
 }
 /*********************************/
 #content .meal {
