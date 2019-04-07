@@ -217,6 +217,9 @@ svg.fa-facebook {
 .part {
   padding: 2em 0 1em;
 }
+.part > div {
+  padding: 0.01em 0
+}
 .part.about_us {
   background: url("/files/full/design/about.jpg") top right no-repeat;
   background-size: cover;
@@ -236,7 +239,7 @@ svg.fa-facebook {
   background-image: url("/files/design/sep-white.png");
 }
 /*********************************/
-.menu > .section {
+.menu > div > .section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -255,15 +258,15 @@ svg.fa-facebook {
 .weekend_events h3 {
   margin-top: 0.5em;
 }
-.menu > .contentbalancer-simple {
+.menu > div > .contentbalancer-simple {
   display: none;
 }
 .daily_offer h3 + p,
 .weekend_events h3 + p {
   max-width: 17em;
 }
-.daily_offer > div.list > div,
-.weekend_events > div.list > div {
+.daily_offer > div > div.list > div,
+.weekend_events > div > div.list > div {
   display: block;
 }
 /*********************************/
@@ -306,12 +309,12 @@ svg.fa-facebook {
   max-width: 27em;
 }
 @media all and (min-width: 62em) {
-  .jaroslav_honzajk {
+  .jaroslav_honzajk > div {
     position: relative;
   }
   .jaroslav_honzajk h2 + p + .list {
     position: absolute;
-    top: 4.8em;
+    top: 2.8em;
     right: 0;
   }
   .jaroslav_honzajk h2,
