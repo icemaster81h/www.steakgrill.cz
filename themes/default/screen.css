@@ -84,13 +84,14 @@ p.sep:after {
 }
 .hdesc.steakgrill {
   color: white;
-  padding: 5em 0 6em 0;
+  padding: 6.2em 0 9.6em 0;
   background: url("/files/full/design/header.jpg") no-repeat;
   background-size: cover;
   background-position: 50% top;
 }
 .logo img {
-  margin-top: -3em;
+  margin-top: -6em;
+  width: 16em;
   position: relative;
 }
 /*********************************/
