@@ -132,7 +132,7 @@ p.sep:after {
   transition: 0.25s ease-out;
   color: black;
   background: white;
-  max-width: 18em;
+  max-width: 19em;
   display: inline-flex;
   justify-content: center;
 }
@@ -269,8 +269,9 @@ svg.fa-facebook {
 .meal dt {
   font-weight: 700;
   font-size: 1.2em;
+  position: relative;
 }
-#content .meal dt > span.fas {
+#content .meal dt > svg {
   display: none;
 }
 .meal dd {
@@ -307,8 +308,12 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 35em) {
-  #content .meal dt > span.fas {
+  #content .meal dt > svg {
+    font-size: 0.8em;
     display: inline-block;
+    position: absolute;
+    left: -1.6em;
+    top: 0.35em;
   }
 }
 /*********************************/
