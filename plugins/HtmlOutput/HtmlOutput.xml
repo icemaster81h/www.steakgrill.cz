@@ -7,6 +7,7 @@
   <xslt>themes/contenttoc.xsl</xslt>
   <xslt>themes/inputvar.xsl</xslt>
   <xslt>themes/icons.xsl</xslt>
+  <xslt>themes/menu.xsl</xslt>
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
 <!--   <jsFile append="head">themes/fontloader.js</jsFile> -->
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
