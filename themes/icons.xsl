@@ -4,13 +4,13 @@
   <xsl:template match="dl[contains(@class, 'meal')][@data-type] dt">
     <xsl:copy>
       <xsl:choose>
-        <xsl:when test="..[@data-type='Main meal']">
+        <xsl:when test="../[@data-type='Main meal']">
           <span class="fas fa-hamburger">i</span>
         </xsl:when>
-        <xsl:when test="..[@data-type='Starter']">
+        <xsl:when test="../[@data-type='Starter']">
           <span class="fas fa-bread-slice">i</span>
         </xsl:when>
-        <xsl:when test="..[@data-type='Soup']">
+        <xsl:when test="../[@data-type='Soup']">
           <span class="fas fa-bread-bacon">i</span>
         </xsl:when>
       </xsl:choose>
