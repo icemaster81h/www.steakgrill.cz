@@ -307,7 +307,6 @@ svg.fa-facebook {
   #content .meal dt:before {
     font-family: "Font Awesome 5 Free";
     content: "\f007";
-    display: none;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
