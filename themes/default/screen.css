@@ -103,6 +103,16 @@ p.sep:after {
 #footer a {
   color: white;
 }
+#footer:before {
+  content: "";
+  display: block;
+  width: 20em;
+  height: 15em;
+  background: url("/files/preview/design/logo-black-white.png") no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: -5.2em;
+}
 /*********************************/
 #content .button {
   font-size: 0.75em;
