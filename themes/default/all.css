@@ -5,9 +5,9 @@ div.paragraph, div.list, pre {
   padding-right: 1rem;
 }
 body > .hdesc,
-.section > .jaroslav_honzajk,
-#header > *,
-#footer > * {
+.section > .part > div,
+body #header > *,
+body #footer > * {
   max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
