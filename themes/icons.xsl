@@ -11,7 +11,7 @@
           <span class="fas fa-bread-slice">i</span>
         </xsl:when>
         <xsl:when test="parent::dl[@data-type='Soup']">
-          <span class="fas fa-bread-bacon">i</span>
+          <span class="fas fa-bacon">i</span>
         </xsl:when>
       </xsl:choose>
       <xsl:apply-templates/>
