@@ -270,6 +270,9 @@ svg.fa-facebook {
   font-weight: 700;
   font-size: 1.2em;
 }
+#content .meal dt > span.fas {
+  display: none;
+}
 .meal dd {
   margin-left: 0;
 }
@@ -304,20 +307,8 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 35em) {
-  #content .meal dt:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f007";
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  #content .meal[data-type="Soup"] dt:before {
-  }
-  #content .meal[data-type="Main meal"] dt:before {
-  }
-  #content .meal[data-type="Starter"] dt:before {
+  #content .meal dt > span.fas {
+    display: inline-block;
   }
 }
 /*********************************/
