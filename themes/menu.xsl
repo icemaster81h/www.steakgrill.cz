@@ -3,7 +3,7 @@
 
   <xsl:template match="div[contains(@class, 'menu')]/div">
     <xsl:copy>
-      <div>
+      <div class="part menu-nested">
         <xsl:apply-templates select="*[not(contains(@class, 'section'))]"/>
       </div>
       <xsl:apply-templates select="div[contains(@class, 'section')]"/>
