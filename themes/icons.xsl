@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-  <xsl:template match="//dl/dt">
+  <xsl:template match="//dl[contains(@class, 'meal')]/dt">
     <xsl:copy>
       <xsl:choose>
         <xsl:when test="parent::dl[@data-type='Main meal']">
