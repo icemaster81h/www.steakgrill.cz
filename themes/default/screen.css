@@ -304,12 +304,16 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 35em) {
-  #content .meal[data-type="Soup"]:before,
-  #content .meal[data-type="Main meal"]:before,
-  #content .meal[data-type="Starter"]:before {
+  #content .meal dt:before,
+  #content .meal dt:before,
+  #content .meal dt:before {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900;
     content: "\f007";
+    display: none;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
   }
 
   #content .meal[data-type="Soup"] {
