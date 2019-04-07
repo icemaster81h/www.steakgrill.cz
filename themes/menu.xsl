@@ -6,7 +6,7 @@
       <div>
         <xsl:apply-templates select="*[not(contains(@class, 'section'))]"/>
       </div>
-      <xsl:apply-templates select="div[contains(@class, 'section'))]"/>
+      <xsl:apply-templates select="div[contains(@class, 'section')]"/>
     </xsl:copy>
   </xsl:template>
   
