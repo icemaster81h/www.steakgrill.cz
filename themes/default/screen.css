@@ -304,8 +304,6 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 35em) {
-  #content .meal dt:before,
-  #content .meal dt:before,
   #content .meal dt:before {
     font-family: "Font Awesome 5 Free";
     content: "\f007";
