@@ -320,14 +320,14 @@ svg.fa-facebook {
   .jaroslav_honzajk h2,
   .jaroslav_honzajk h2 + p,
   .jaroslav_honzajk h2 + p + div + p {
-    width: 46%;
+    width: 29rem;
     box-sizing: border-box;
     max-width: none;
     margin-left: 0;
   }
   .jaroslav_honzajk h2 + p {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 /*********************************/
