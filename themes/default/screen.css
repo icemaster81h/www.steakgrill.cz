@@ -214,17 +214,6 @@ svg.fa-facebook {
   display: inline-block;
 }
 /*********************************/
-#jaroslav_honzajk {
-  margin-top: 1.5em;
-}
-#jaroslav_honzajk + p {
-  max-width: 14em;
-}
-#jaroslav_honzajk + p + div + p {
-  text-align: center;
-  max-width: 27em;
-}
-/*********************************/
 .part {
   padding: 2em 0 1em;
 }
@@ -282,11 +271,61 @@ svg.fa-facebook {
   margin-top: 0;
   margin-bottom: 15em;
 }
+.menu h2 + p {
+  max-width: 16em;
+}
+.contact h2 + p {
+  max-width: 25em;
+}
+/*********************************/
 .about_us h2 + p {
   max-width: 20em;
 }
-.menu h2 + p {
-  max-width: 16em;
+@media all and (min-width: 62em) {
+  .about_us h2,
+  .about_us h2 + p,
+  .about_us h2 + p + div {
+    margin-right: 0;
+    max-width: 43rem;
+  }
+  .about_us h2 + p {
+    padding-left: 4em;
+    padding-right: 4em;
+    box-sizing: border-box;
+  }
+}
+/*********************************/
+.jaroslav_honzajk h2 {
+  margin-top: 1.5em;
+}
+.jaroslav_honzajk h2 + p {
+  max-width: 14em;
+}
+.jaroslav_honzajk h2 + p + div + p {
+  text-align: center;
+  max-width: 27em;
+}
+@media all and (min-width: 62em) {
+  .jaroslav_honzajk {
+    position: relative;
+  }
+  .jaroslav_honzajk h2 + p + .list {
+    position: absolute;
+    top: 4.8em;
+    right: 0;
+  }
+  .jaroslav_honzajk h2,
+  .jaroslav_honzajk h2 + p,
+  .jaroslav_honzajk h2 + p + div + p {
+    width: 46%;
+    box-sizing: border-box;
+    max-width: none;
+    margin-left: 0;
+  }
+  .jaroslav_honzajk h2 + p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 /*********************************/
 #content .meal {
