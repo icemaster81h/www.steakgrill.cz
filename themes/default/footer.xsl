@@ -62,10 +62,10 @@
         </xsl:if>
         <xsl:value-of disable-output-escaping="yes" select="$globalmenu"/>
         <ul class="social">
-          <li><a class="fa fa-facebook-official" href="https://www.facebook.com/Steakgrill/">Facebook</a></li>
-          <li><a class="fa fa-google-plus-official" href="https://plus.google.com/+STEAKGRILLRa%C4%8Din%C4%9Bves">Google+</a></li>
-          <li><a class="fa fa-tripadvisor" href="https://www.tripadvisor.cz/Restaurant_Review-g608731-d4209826-Reviews-Steakgrill-Roudnice_nad_Labem_Usti_nad_Labem_Region_Bohemia.html">TripAdvisor</a></li>
-          <li><a class="fa fa-foursquare" href="https://foursquare.com/v/steakgrill/4de65a27c65b98fadaf97995">Foursquare</a></li>
+          <li><a href="https://www.facebook.com/Steakgrill/"><span class="fab fa-facebook">i</span>Facebook</a></li>
+          <li><a href="https://www.instagram.com/steakgrillcz/"><span class="fab fa-instagram">i</span>Instagram</a></li>
+          <li><a href="https://www.tripadvisor.cz/Restaurant_Review-g608731-d4209826-Reviews-Steakgrill-Roudnice_nad_Labem_Usti_nad_Labem_Region_Bohemia.html"><span class="fab fa-tripadvisor">i</span>TripAdvisor</a></li>
+          <li><a href="https://foursquare.com/v/steakgrill/4de65a27c65b98fadaf97995"><span class="fab fa-foursquare">i</span>Foursquare</a></li>
         </ul>
         <ul>
           <xsl:attribute name="lang">
