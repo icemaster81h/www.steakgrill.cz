@@ -4,35 +4,35 @@
   <xsl:template match="//div[contains(@class, 'section')]/h3[1]">
     <xsl:text disable-output-escaping="yes">&lt;div class="part </xsl:text>
     <xsl:value-of select="@id"/>
-    <xsl:text disable-output-escaping="yes">"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy-of select="."/>
   </xsl:template>
 
   <xsl:template match="//div[contains(@class, 'section')]/h3[position() > 1]">
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
     <xsl:text disable-output-escaping="yes">&lt;div class="part </xsl:text>
     <xsl:value-of select="@id"/>
-    <xsl:text disable-output-escaping="yes">"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy-of select="."/>
   </xsl:template>
 
   <xsl:template match="//div[contains(@class, 'section')]/div[contains(@class, 'section')]/*[position() = last()]">
     <xsl:copy-of select="."/>
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
 
   <xsl:template match="//h2[1]">
     <xsl:text disable-output-escaping="yes">&lt;div class="part </xsl:text>
     <xsl:value-of select="@id"/>
-    <xsl:text disable-output-escaping="yes">"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy-of select="."/>
   </xsl:template>
 
   <xsl:template match="//h2[position() > 1]">
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
     <xsl:text disable-output-escaping="yes">&lt;div class="part </xsl:text>
     <xsl:value-of select="@id"/>
-    <xsl:text disable-output-escaping="yes">"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy-of select="."/>
   </xsl:template>
 
@@ -41,7 +41,7 @@
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates/>
     </div>
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
 
 <!--
@@ -51,9 +51,9 @@
 -->
 
   <xsl:template match="//body/div/p[contains(@class,'description')]">
-    <xsl:text disable-output-escaping="yes">&lt;div class="part"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;div class="part"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy-of select="."/>
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
 
   <xsl:template match="node()|@*">
