@@ -8,7 +8,7 @@ body > .hdesc,
 .section > .part > div,
 body #header > *,
 body #footer > * {
-  max-width: 70rem;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
