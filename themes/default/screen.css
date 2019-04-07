@@ -170,11 +170,11 @@ svg.fa-facebook {
   align-items: center;
   justify-content: center;
   color: #b6150d;
-  border: thin solid #b6150d;  
+  flex-wrap: nowrap;
 }
 #content .button-img-inline svg {
   flex: 0 1 auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   flex: 0 1 25%;
 }
@@ -184,8 +184,17 @@ svg.fa-facebook {
   outline: 0 none;
   box-shadow: 0 0.4em 0.5em 0 rgba(0,0,0,0.14), 0 0.1em 1em 0 rgba(0,0,0,0.12), 0 0.2em 0.4em -0.1em rgba(0,0,0,0.3);
 }
-@media all and (min-width: 25em) {
+@media all and (min-width: 35em) {
+  .button-list li {
+    flex: 0 1 auto;
+  }
+  #content .button-img-inline {
 
+  }
+  #content .button-img-inline svg {
+    flex: 0 1 auto;
+    margin-right: 0.5em;
+  }
 }
 /*********************************/
 .photoswipe {
@@ -292,6 +301,22 @@ svg.fa-facebook {
     position: absolute;
     bottom: 0.8em;
     right: -7em;
+  }
+}
+@media all and (min-width: 35em) {
+  #content .meal[data-type="Soup"]:before,
+  #content .meal[data-type="Main meal"]:before,
+  #content .meal[data-type="Starter"]:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+  }
+
+  #content .meal[data-type="Soup"] {
+  }
+  #content .meal[data-type="Main meal"] {
+  }
+  #content .meal[data-type="Starter"] {
   }
 }
 /*********************************/
