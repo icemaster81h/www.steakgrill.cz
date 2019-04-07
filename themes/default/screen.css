@@ -112,13 +112,22 @@ p.sep:after {
   border-radius: 0.25em;
   transition: 0.25s ease-out;
   color: black;
+  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
+  background: white;
+  max-width: 18em;
 }
 #content .button-list {
   list-style: none;
   margin: 5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
 }
 .button-list li {
-  margin: 0;
+  margin: 0.5em;
+  flex: 0 1 100%;
+  text-align: center;
 }
 .button-list li a {
   width: 100%;
@@ -137,34 +146,27 @@ p.sep:after {
 svg.fa-facebook {
   color: #3C5A99;
 }
+#content .button:hover,
+#content .button:active,
+#content .button:focus {
+  outline: 0 none;
+  box-shadow: 0 0.4em 0.5em 0 rgba(0,0,0,0.14), 0 0.1em 1em 0 rgba(0,0,0,0.12), 0 0.2em 0.4em -0.1em rgba(0,0,0,0.3);
+}
 @media all and (min-width: 25em) {
-  #content .button {
-    box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
-    background: white;
-    min-width: 10em;
-  }
-  #content .button-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-  }
-  .button-list li {
-    margin: 0.5em;
-  }
-  #content .button:hover,
-  #content .button:active,
-  #content .button:focus {
-    outline: 0 none;
-    box-shadow: 0 0.4em 0.5em 0 rgba(0,0,0,0.14), 0 0.1em 1em 0 rgba(0,0,0,0.12), 0 0.2em 0.4em -0.1em rgba(0,0,0,0.3);
-  }
+
 }
 /*********************************/
 .photoswipe {
   list-style: none;
+  padding: 0;
 }
 .photoswipe li {
   margin: 0;
+  text-align: center;
+}
+.photoswipe a,
+.photoswipe a img {
+  display: inline-block;
 }
 /*********************************/
 #jaroslav_honzajk {
