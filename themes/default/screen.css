@@ -243,7 +243,7 @@ svg.fa-facebook {
   padding: 4em 0;
 }
 #content .menu > div {
-  max-width: 100em;
+  max-width: 110em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -253,6 +253,7 @@ svg.fa-facebook {
 }
 .menu-nested {
   margin: 1rem;
+  flex-grow: 0;
 }
 #content .menu .button-list {
   margin-top: 0;
