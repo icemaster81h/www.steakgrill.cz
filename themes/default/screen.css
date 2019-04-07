@@ -107,14 +107,17 @@ p.sep:after {
 #content .button {
   font-size: 0.75em;
   font-weight: 500;
+  box-sizing: border-box;
   text-transform: uppercase;
-  padding: 1em 0;
+  padding: 1.2em 1.5em;
   border-radius: 0.25em;
   transition: 0.25s ease-out;
   color: black;
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
   background: white;
   max-width: 18em;
+  display: inline-flex;
+  justify-content: center;
 }
 #content .button-list {
   list-style: none;
