@@ -113,6 +113,15 @@ p.sep:after {
   margin: 0 auto;
   margin-top: -5.2em;
 }
+#content > .section > .part:last-child {
+  padding-bottom: 10em;
+}
+/*********************************/
+#content .card,
+#content .button {
+  border-radius: 0.25em;
+  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
+}
 /*********************************/
 #content .button {
   font-size: 0.75em;
@@ -120,10 +129,8 @@ p.sep:after {
   box-sizing: border-box;
   text-transform: uppercase;
   padding: 1.2em 1.5em;
-  border-radius: 0.25em;
   transition: 0.25s ease-out;
   color: black;
-  box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
   background: white;
   max-width: 18em;
   display: inline-flex;
@@ -316,5 +323,26 @@ svg.fa-facebook {
 }
 .part.references dl:before {
   
+}
+/*********************************/
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+.card dd {
+  margin-left: 0;
+}
+#content .card-emph {
+  text-align: center;
+  padding: 1em 2em 2.5em 2em;
+}
+.card-emph dt {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.card-emph dd {
+  font-size: 1.4em;
+  font-style: italic;
 }
 /*********************************/
