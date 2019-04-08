@@ -46,7 +46,7 @@ h3 + p {
   margin-top: 1rem;
   text-align: center;
 }
-p.sep:after {
+p.description:after {
   content: "";
   display: block;
   width: 1.25em;
@@ -238,8 +238,8 @@ svg.fa-facebook {
   background-size: cover;
   color: white;
 }
-.part.contact .sep:after,
-.part.about_us .sep:after {
+.part.contact .description:after,
+.part.about_us .description:after {
   background-image: url("/files/design/sep-white.png");
 }
 /*********************************/
