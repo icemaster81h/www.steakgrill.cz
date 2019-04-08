@@ -18,8 +18,7 @@
             <xsl:value-of select="."/>
           </xsl:element>
         </xsl:element>
-<!--         <xsl:copy-of select="following-sibling::*[1][name() = 'p'][contains(@class, 'description')]"/> -->
-        <xsl:copy-of select="following-sibling::*[1][name() = 'p']"/>
+        <xsl:copy-of select="following-sibling::*[1][name() = 'p'][contains(@class, 'description')]"/>
       </xsl:element>
     </xsl:element>
     <xsl:element name="div">
