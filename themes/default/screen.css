@@ -279,16 +279,16 @@ svg.fa-facebook {
 .weekend_events h3 {
   margin-top: 0.5em;
 }
-.daily_offer h3 + p,
-.weekend_events h3 + p {
+.daily_offer p.description,
+.weekend_events p.description {
   max-width: 17em;
 }
 .daily_offer > div > div.list > div,
 .weekend_events > div > div.list > div {
   display: block;
 }
-.daily_offer h3 + p.description:after,
-.weekend_events h3 + p.description:after {
+.daily_offer p.description:after,
+.weekend_events p.description:after {
   display: none;
 }
 /*********************************/
