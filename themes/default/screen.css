@@ -275,6 +275,10 @@ svg.fa-facebook {
   width: 100%;
   max-width: 38em;
 }
+.menu .daily_offer,
+.menu .weekend_events {
+  margin: 1em;
+}
 .daily_offer h3,
 .daily_offer h2,
 .weekend_events h3,
