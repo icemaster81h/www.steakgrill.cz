@@ -89,12 +89,16 @@ p.sep:after {
 #header > div .globalmenu a {
   font-weight: 800;
 }
-.hdesc.steakgrill {
+.hdesc {
   color: white;
   padding: 6.2em 0 9.6em 0;
-  background: url("/files/full/design/header.jpg") no-repeat;
+  background: #555;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% top;
+}
+steakgrill {
+  background-image: url("/files/full/design/header.jpg");
 }
 .logo img {
   margin-top: -6em;
