@@ -55,6 +55,9 @@ p.description:after {
   background-size: cover;
   margin: 2rem auto 3rem auto;
 }
+h1 + p.description:after {
+  display: none;
+}
 /*********************************/
 .globalmenu li:first-child {
   display: none !important;
@@ -283,6 +286,10 @@ svg.fa-facebook {
 .daily_offer > div > div.list > div,
 .weekend_events > div > div.list > div {
   display: block;
+}
+.daily_offer h3 + p.description:after,
+.weekend_events h3 + p.description:after {
+  display: none;
 }
 /*********************************/
 #content .contact .button-list {
