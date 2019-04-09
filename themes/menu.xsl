@@ -15,8 +15,8 @@
     <xsl:apply-templates/>
   </xsl:template>
   
-  <!-- soups, salads on regular_menu -->
-  <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads')]/div">
+  <!-- soups, salads, grilled_steaks -->
+  <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads') or contains(@class, 'grilled_steaks')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-img</xsl:attribute>
       <div>
@@ -26,9 +26,9 @@
     </xsl:copy>
   </xsl:template>
   
+  <!-- daily_offer, weekend_events -->
   <!-- frying_pan_wok on regular_menu -->
-  <!-- daily_offer, weekend_events, grilled_steaks -->
-  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'grilled_steaks')]/div">
+  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
       <xsl:apply-templates select="node()|@*"/>
