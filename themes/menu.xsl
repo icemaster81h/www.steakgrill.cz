@@ -49,6 +49,22 @@
     <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
   
+  <!-- desserts -->
+  <xsl:template match="div[contains(@class, 'desserts')]">
+    <xsl:copy>
+      <div class="content-group">
+        <div>
+          <xsl:apply-templates select="node()|@*"/>
+          <div class="content-card">
+            <div>
+               <xsl:apply-templates select=".//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </xsl:copy>
+  </xsl:template>
+  
   <xsl:template match="node()|@*">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
