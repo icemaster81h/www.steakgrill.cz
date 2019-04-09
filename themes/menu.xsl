@@ -27,8 +27,8 @@
   </xsl:template>
   
   <!-- frying_pan_wok on regular_menu -->
-  <!-- daily_offer, weekend_events -->
-  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events')]/div">
+  <!-- daily_offer, weekend_events, grilled_steaks -->
+  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'grilled_steaks')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
       <xsl:apply-templates select="node()|@*"/>
