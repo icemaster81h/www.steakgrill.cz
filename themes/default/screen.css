@@ -134,7 +134,7 @@ h1 + p.description:after {
   margin-top: -5.2em;
 }
 #content > .section > .part:last-child {
-  padding-bottom: 10em;
+  padding-bottom: 12em;
 }
 /*********************************/
 #content .card,
@@ -520,8 +520,19 @@ svg.fa-facebook {
   }
 }
 /*********************************/
-#content .desserts2 {
-  padding-top: 5em;
+#content .desserts2 .content-card {
+  padding: 5em 1em;
+}
+/*********************************/
+.part.information h2 {
+  margin: 3em 0 1.5em 0;
+}
+.part.information ul {
+  list-style: none;
+  text-align: center;
+}
+.part.information ul li {
+  margin: 1em 0;
 }
 /*********************************/
 .content-img h2,
