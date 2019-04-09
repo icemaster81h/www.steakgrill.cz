@@ -31,6 +31,7 @@
   <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
+      <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
   </xsl:template>
   
