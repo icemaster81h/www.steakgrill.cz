@@ -6,7 +6,7 @@
   <!-- keep only elements matching data-visibility="$cms-link" -->
   <xsl:template match="//*[@data-visibility]">
     <xsl:variable name="visibility" select="@data-visibility"/>
-    <xsl:if test="$cms-link=$visibility">
+    <xsl:if test="$cms-link=$visibility or '$cms-link'='$visibility'">
       <xsl:copy>
         <xsl:apply-templates select="node()|@*"/>
       </xsl:copy>
