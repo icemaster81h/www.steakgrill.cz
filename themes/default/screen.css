@@ -676,7 +676,17 @@ p.desc {
   position: relative;
   top: -7em;
 }
-@media all and (min-width: 62em) {
-
+.part.news > div {
+  max-width: 60em;
+}
+#news,
+#news + p.description {
+  text-align: left;
+  max-width: 35rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+#news + p.description:after {
+  content: none;
 }
 /*********************************/
