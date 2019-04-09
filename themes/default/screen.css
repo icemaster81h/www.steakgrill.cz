@@ -214,6 +214,94 @@ svg.fa-facebook {
   }
 }
 /*********************************/
+#content .meal {
+  margin: 0 auto;
+  max-width: 25em;
+}
+.meal dt {
+  font-weight: 700;
+  font-size: 1.2em;
+  position: relative;
+  margin-bottom: 0.25em;
+}
+#content .meal dt > svg {
+  display: none;
+}
+.meal dd {
+  margin-left: 0;
+}
+.meal dt.price {
+  display: none;
+}
+.meal dd.price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 700;
+  margin-top: 0.5em;
+}
+.meal dd.price > span {
+  display: flex;
+  flex-direction: column;
+}
+.meal dd.price > span:not(:last-child) {
+  margin-right: 1em;
+}
+.meal dd.price > span > span:first-child {
+  font-weight: normal;
+}
+/*
+@media all and (min-width: 30em) {
+  body #content .meal {
+    max-width: 18em;
+    position: relative;
+    left: -4em;
+  }
+  .meal dd.price {
+    position: absolute;
+    bottom: 0.8em;
+    right: -7em;
+  }
+}
+*/
+@media (min-width: 50em) {
+  #content .meal {
+    flex: 0 1 50%;
+  }
+}
+@media all and (min-width: 35em) {
+  #content .meal dt > svg {
+    font-size: 0.8em;
+    display: inline-block;
+    position: absolute;
+    left: -1.6em;
+    top: 0.35em;
+  }
+}
+/*********************************/
+#content .card {
+  background: rgba(255, 255, 255, 0.85);
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25em;
+}
+.card dd {
+  margin-left: 0;
+}
+#content .card-emph {
+  text-align: center;
+  padding: 1em 2em 2.5em 2em;
+}
+.card-emph dt {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+.card-emph dd {
+  font-size: 1.4em;
+  font-style: italic;
+}
+/*********************************/
 .photoswipe {
   list-style: none;
   padding: 0;
@@ -230,27 +318,29 @@ svg.fa-facebook {
 .part {
   padding: 2em 0 1em;
   clear: both;
+  background-size: cover !important;
 }
 .part > div {
   padding: 0.01em 0
 }
 .part.about_us {
   background: url("/files/full/design/about.jpg") top right no-repeat;
-  background-size: cover;
   color: white;
 }
 .part.menu {
   background: url("/files/full/design/menu.jpg") center no-repeat;
-  background-size: cover;  
 }
 .part.contact {
   background: url("/files/full/design/contact.jpg") center no-repeat;
-  background-size: cover;
   color: white;
 }
 .part.contact .description:after,
 .part.about_us .description:after {
   background-image: url("/files/design/sep-white.png");
+}
+.part.hamburgers_and_pasta {
+  background: url("/files/full/design/burger.jpg") right 60% no-repeat;
+  color: white;
 }
 /*********************************/
 .menu {
@@ -333,6 +423,25 @@ svg.fa-facebook {
   }
 }
 /*********************************/
+#content .part.hamburgers_and_pasta {
+  padding: 10em 0;
+}
+#content .part.hamburgers_and_pasta .list div {
+  display: block;
+}
+#content .part.hamburgers_and_pasta h2 + p {
+  max-width: 14em;
+}
+@media all and (min-width: 62em) {
+  #content .meal {
+    max-width: 30em
+  }
+  .part.hamburgers_and_pasta > div {
+    max-width: 43rem;
+    margin-right: 5vw;
+  }  
+}
+/*********************************/
 .soups h2,
 .jaroslav_honzajk h2 {
   margin-top: 2em;
@@ -396,70 +505,6 @@ svg.fa-facebook {
   }
 }
 /*********************************/
-#content .meal {
-  margin: 0 auto;
-}
-.meal dt {
-  font-weight: 700;
-  font-size: 1.2em;
-  position: relative;
-  margin-bottom: 0.25em;
-}
-#content .meal dt > svg {
-  display: none;
-}
-.meal dd {
-  margin-left: 0;
-}
-.meal dt.price {
-  display: none;
-}
-.meal dd.price {
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 700;
-  margin-top: 0.5em;
-}
-.meal dd.price > span {
-  display: flex;
-  flex-direction: column;
-}
-.meal dd.price > span:not(:last-child) {
-  margin-right: 1em;
-}
-.meal dd.price > span > span:first-child {
-  font-weight: normal;
-}
-/*
-@media all and (min-width: 30em) {
-  body #content .meal {
-    max-width: 18em;
-    position: relative;
-    left: -4em;
-  }
-  .meal dd.price {
-    position: absolute;
-    bottom: 0.8em;
-    right: -7em;
-  }
-}
-*/
-@media (min-width: 50em) {
-  body #content .meal {
-    flex: 0 1 50%;
-    max-width: 25em;
-  }
-}
-@media all and (min-width: 35em) {
-  #content .meal dt > svg {
-    font-size: 0.8em;
-    display: inline-block;
-    position: absolute;
-    left: -1.6em;
-    top: 0.35em;
-  }
-}
-/*********************************/
 #references {
   display: none;
 }
@@ -485,33 +530,6 @@ svg.fa-facebook {
 .part.references dt + dd q:before,
 .part.references dt + dd q:after {
   content: "";
-}
-.part.references dl:before {
-  
-}
-/*********************************/
-#content .card {
-  background: rgba(255, 255, 255, 0.85);
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 25em;
-}
-.card dd {
-  margin-left: 0;
-}
-#content .card-emph {
-  text-align: center;
-  padding: 1em 2em 2.5em 2em;
-}
-.card-emph dt {
-  font-size: 2em;
-  font-weight: 600;
-  margin: 0.5rem 0;
-}
-.card-emph dd {
-  font-size: 1.4em;
-  font-style: italic;
 }
 /*********************************/
 #content .contenttoc {
