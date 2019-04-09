@@ -11,6 +11,9 @@
         <xsl:apply-templates select="node()|@*"/>
       </xsl:copy>
     </xsl:if>
+    <xsl:copy>
+      <xsl:apply-templates select="node()|@*"/>
+    </xsl:copy>
   </xsl:template>
 
   <xsl:template match="node()|@*">
