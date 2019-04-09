@@ -5,7 +5,7 @@ div.paragraph, div.list, pre {
   padding-right: 1rem;
 }
 body > .hdesc,
-#content > .hdesc + div:not(.section),
+#content > .hdesc + *:not(.section),
 .section > .part > div,
 body #header > *,
 body #footer > * {
