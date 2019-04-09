@@ -9,7 +9,6 @@ h1 {
 .wf-active body {
   font-family: 'Cormorant Garamond', serif;
 }
-.wf-active .contentlink-bc,
 .wf-active h1,
 .wf-active .button {
   font-family: Roboto, sans-serif;
@@ -21,6 +20,9 @@ strong {
 #content a {
   color: #b6150d;
   border-bottom: 0 none;
+}
+.contentlink-bc a {
+  border: none;
 }
 /*********************************/
 h1 {
@@ -100,8 +102,11 @@ h1 + p.description:after {
   background-size: cover;
   background-position: 50% top;
 }
-.steakgrill {
+.hdesc.steakgrill {
   background-image: url("/files/full/design/header.jpg");
+}
+.hdesc.regular_menu {
+  background-image: url("/files/full/design/menu-header.jpg");
 }
 .logo img {
   margin-top: -6em;
