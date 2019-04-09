@@ -96,13 +96,14 @@ h1 + p.description:after {
 }
 .hdesc {
   color: white;
-  padding: 6.2em 0 9.6em 0;
+  padding: 3.2em 0 9.6em 0;
   background: #555;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% top;
 }
 .hdesc.steakgrill {
+  padding-top: 6.2em;
   background-image: url("/files/full/design/header.jpg");
 }
 .hdesc.regular_menu {
@@ -484,11 +485,11 @@ svg.fa-facebook {
 }
 /*********************************/
 .hdesc.regular_menu {
-  padding-bottom: 15em;
+  padding-bottom: 14em;
 }
 #content ol.contenttoc.button-list {
   margin-bottom: 5em;
-  margin-top: -13em;
+  margin-top: -11em;
   max-width: 64em;
 }
 @media all and (min-width: 35em) {
