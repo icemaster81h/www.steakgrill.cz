@@ -460,16 +460,16 @@ svg.fa-facebook {
   max-width: 100%;
 }
 @media all and (min-width: 62em) {
-  .soups > div {
+  .part-img {
     margin-top: 6em;
   }
   .jaroslav_honzajk > div {
     position: relative;
   }
-  .soups > div:first-child > div {
+  .part-img > div {
     float: left;
   }
-  .soups > div:first-child > div + div {
+  .part-img > div + div {
     float: right;
   }
   .jaroslav_honzajk h2 + p + .list {
@@ -477,8 +477,8 @@ svg.fa-facebook {
     top: 2.8em;
     right: 0;
   }
-  .soups h2,
-  .soups h2 + p,
+  .part-img h2,
+  .part-img h2 + p,
   .jaroslav_honzajk h2,
   .jaroslav_honzajk h2 + p,
   .jaroslav_honzajk h2 + p + div + p {
@@ -487,18 +487,18 @@ svg.fa-facebook {
     max-width: none;
     margin-left: 0;
   }
-  .soups h2 + p,
+  .part-img h2 + p,
   .jaroslav_honzajk h2 + p {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .soups .photoswipe img,
+  .part-img .photoswipe img,
   .jaroslav_honzajk .photoswipe img {
     width: 38em;
     max-width: 48vw;
   }
-  .soups div.list.multiple {
-    margin-top: 4em;
+  .part-img div.list.multiple {
+    margin: 4em 0 6em 0;
   }
   #content .jaroslav_honzajk .button-list {
     margin-top: 10em;
