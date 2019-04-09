@@ -27,12 +27,22 @@
   </xsl:template>
   
   <!-- daily_offer, weekend_events -->
-  <!-- frying_pan_wok,  on regular_menu -->
-  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'desserts')]/div">
+  <!-- frying_pan_wok, desserts, side_dishes, condiments_and_sauces on regular_menu -->
+  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'desserts') or contains(@class, 'side_dishes') or contains(@class, 'condiments_and_sauces')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
+  </xsl:template>
+  
+  <!-- kids_dishes, condiments_and_sauces -->
+  <xsl:template match="div[contains(@class, 'side_dishes')]">
+    <xsl:text disable-output-escaping="yes">&lt;div class="content-group"&gt;</xsl:text>
+    <xsl:apply-templates select="node()|@*"/>
+  </xsl:template>
+  <xsl:template match="div[contains(@class, 'condiments_and_sauces')]">
+    <xsl:apply-templates select="node()|@*"/>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
   </xsl:template>
   
   <xsl:template match="node()|@*">
