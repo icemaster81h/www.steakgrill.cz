@@ -412,6 +412,20 @@ svg.fa-facebook {
   display: none;
 }
 /*********************************/
+@media all and (min-width: 62em) {
+  .content-group {
+    display: flex;
+    justify-content: space-around;
+    max-width: 90em;
+    margin: 0 auto;
+  }
+  .content-group > * {
+    flex: 0 1 48%;
+    margin: 0 3em;
+    max-width: 50%;
+  }
+}
+/*********************************/
 #content .contact .button-list {
   margin-top: 0;
   margin-bottom: 15em;
