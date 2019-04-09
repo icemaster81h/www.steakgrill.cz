@@ -251,6 +251,26 @@ svg.fa-facebook {
 .meal dd.price > span > span:first-child {
   font-weight: normal;
 }
+#content .meal-oneline dt {
+  width: 80%;
+  float: left;
+  clear: left;
+  margin-bottom: 0;
+  line-height: 1;
+}
+#content .meal-oneline dd.price {
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+#content .meal-oneline dd:not(.price) {
+  display: none;
+}
+#content .meal-oneline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /*
 @media all and (min-width: 30em) {
   body #content .meal {
@@ -362,6 +382,7 @@ svg.fa-facebook {
 }
 .part.side_and_sauces {
   background: url("/files/full/design/side.jpg") center 60% no-repeat;
+  padding: 4em 0;
 }
 /*********************************/
 .menu {
@@ -416,7 +437,7 @@ svg.fa-facebook {
 }
 /*********************************/
 @media all and (min-width: 62em) {
-  .content-group > div {
+  #content .content-group > div {
     display: flex;
     justify-content: space-around;
     max-width: 90em;
@@ -424,7 +445,7 @@ svg.fa-facebook {
   }
   .content-group > div > * {
     flex: 0 1 48%;
-    margin: 0 3em;
+    margin: 0 2em;
     max-width: 50%;
   }
 }
