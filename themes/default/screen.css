@@ -483,3 +483,17 @@ svg.fa-facebook {
   font-style: italic;
 }
 /*********************************/
+.hdesc.regular_menu {
+  padding-bottom: 15em;
+}
+#content ol.contenttoc.button-list {
+  margin-bottom: 5em;
+  margin-top: -13em;
+  max-width: 64em;
+}
+@media all and (min-width: 35em) {
+  #content .contenttoc .button {
+    max-width: none;
+  }
+}
+/*********************************/
