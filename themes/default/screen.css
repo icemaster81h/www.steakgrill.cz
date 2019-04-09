@@ -449,6 +449,7 @@ svg.fa-facebook {
     flex: 0 1 48%;
     margin: 0 2em;
     max-width: 50%;
+    display:  flex;
   }
 }
 /*********************************/
