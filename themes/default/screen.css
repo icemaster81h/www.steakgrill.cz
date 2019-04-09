@@ -422,7 +422,7 @@ svg.fa-facebook {
 }
 #content .content-card {
   /* margin: 1em; */
-  padding: 2em 1em 1em;
+  padding: 3em 1em 3em 1em;
 }
 .content-card h3,
 .content-card h2 {
@@ -518,6 +518,10 @@ svg.fa-facebook {
   #content .frying_pan_wok .content-card {
     margin-right: 5vw;
   }
+}
+/*********************************/
+#content .desserts2 {
+  padding-top: 5em;
 }
 /*********************************/
 .content-img h2,
