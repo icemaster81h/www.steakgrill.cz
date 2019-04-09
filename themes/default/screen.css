@@ -345,6 +345,7 @@ svg.fa-facebook {
 .part > div {
   padding: 0.01em 0
 }
+.part.hamburgers_and_pasta .description:after,
 .part.kids_dishes .description:after,
 .part.grill_griddle .description:after,
 .part.contact .description:after,
