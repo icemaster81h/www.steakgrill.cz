@@ -325,6 +325,11 @@ svg.fa-facebook {
 .part > div {
   padding: 0.01em 0
 }
+.part.grill_griddle .description:after,
+.part.contact .description:after,
+.part.about_us .description:after {
+  background-image: url("/files/design/sep-white.png");
+}
 .part.about_us {
   background: url("/files/full/design/about.jpg") top right no-repeat;
   color: white;
@@ -336,16 +341,16 @@ svg.fa-facebook {
   background: url("/files/full/design/contact.jpg") center no-repeat;
   color: white;
 }
-.part.contact .description:after,
-.part.about_us .description:after {
-  background-image: url("/files/design/sep-white.png");
-}
 .part.hamburgers_and_pasta {
   background: url("/files/full/design/burger.jpg") right 60% no-repeat;
   color: white;
 }
 .part.frying_pan_wok {
   background: url("/files/full/design/frying.jpg") center 60% no-repeat;
+}
+.part.grill_griddle {
+  background: url("/files/full/design/grill.jpg") center 60% no-repeat;
+  color: white;
 }
 /*********************************/
 .menu {
@@ -427,11 +432,16 @@ svg.fa-facebook {
   }
 }
 /*********************************/
+#content .part.grill_griddle,
 #content .part.hamburgers_and_pasta {
   padding: 10em 0;
 }
+#content .part.grill_griddle .list div,
 #content .part.hamburgers_and_pasta .list div {
   display: block;
+}
+#content .part.grill_griddle h2 + p {
+  max-width: 16em;
 }
 #content .part.hamburgers_and_pasta h2 + p {
   max-width: 14em;
@@ -443,7 +453,17 @@ svg.fa-facebook {
   .part.hamburgers_and_pasta > div {
     max-width: 43rem;
     margin-right: 5vw;
-  }  
+  }
+  #content .part.grill_griddle >  div {
+    max-width: 43rem;
+    margin-left: 5vw;
+  }
+}
+/*********************************/
+@media all and (min-width: 62em) {
+  #content .frying_pan_wok .content-card {
+    margin-right: 5vw;
+  }
 }
 /*********************************/
 .soups h2,
