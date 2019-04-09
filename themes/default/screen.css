@@ -357,7 +357,7 @@ svg.fa-facebook {
   color: white;
 }
 .part.menu {
-  background: #555 url("/files/full/design/menu.jpg") center no-repeat;
+  background: url("/files/full/design/menu.jpg") center no-repeat;
 }
 .part.contact {
   background: #555 url("/files/full/design/contact.jpg") center no-repeat;
