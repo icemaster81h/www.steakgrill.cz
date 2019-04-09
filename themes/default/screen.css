@@ -422,14 +422,14 @@ svg.fa-facebook {
   display: flex;
   flex-direction: column;
 }
-.meal dd.price > span:first-child {
+.meal dd.price > span:not(:last-child) {
   margin-right: 1em;
 }
 .meal dd.price > span > span:first-child {
   font-weight: normal;
 }
 @media all and (min-width: 30em) {
-  #content .meal {
+  body #content .meal {
     max-width: 18em;
     position: relative;
     left: -4em;
