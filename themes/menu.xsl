@@ -15,9 +15,12 @@
     <xsl:apply-templates/>
   </xsl:template>
   
-  <!-- soups on regular_menu -->
-  <xsl:template match="div[contains(@class, 'soups')]/div">
+  <!-- soups, salads on regular_menu -->
+  <xsl:template match="div[contains(@class, 'soups') || contains(@class, 'salads')]/div">
     <xsl:copy>
+      <xsl:attribute name="class">
+        <xsl:value-of select="concat(@class,' part-img')"/>
+      </xsl:attribute>
       <div>
         <xsl:apply-templates select="*[not(contains(@class, 'list'))]"/>
       </div>
