@@ -41,7 +41,8 @@ h2, h3 {
   margin-bottom: 0.75em;
   text-align: center;
 }
-p.description {
+p.description,
+#content > .hdesc.contact + div > p.desc {
   font-style: italic;
   font-size: 1.5em;
   margin-top: 1rem;
@@ -108,6 +109,10 @@ h1 + p.description:after {
 }
 .hdesc.regular_menu {
   background-image: url("/files/full/design/menu-header.jpg");
+}
+.hdesc.contact {
+  background-image: url("/files/full/design/contact-header.jpg");
+  background-position: 50%;
 }
 .logo img {
   margin-top: -6em;
@@ -653,5 +658,25 @@ svg.fa-facebook {
     margin-top: -10em;
     max-width: 64em;
   }
+}
+/*********************************/
+.hdesc.contact h1 {
+  padding: 1.1em 0 0.2em 0;
+}
+p.desc {
+  margin: 2em auto 3em auto;
+}
+#content > .hdesc.contact + div > .list {
+  background: url("/files/full/design/map.jpg") center 80% no-repeat;
+  background-size: cover;
+  padding-bottom: 20vw;
+  margin-top: 11em;
+}
+#content > .hdesc.contact + div > .list > div {
+  position: relative;
+  top: -7em;
+}
+@media all and (min-width: 62em) {
+
 }
 /*********************************/
