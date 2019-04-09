@@ -379,9 +379,9 @@ svg.fa-facebook {
   border-radius: 0.25em;
   padding: 2em 0;
   width: 100%;
-  max-width: 38em !important;
+  max-width: 38em;
 }
-.menu .content-card {
+#content .content-card {
   /* margin: 1em; */
   padding: 2em 1em 1em;
 }
