@@ -19,9 +19,9 @@
   <xsl:template match="div[contains(@class, 'soups')]/div">
     <xsl:copy>
       <div>
-        <xsl:apply-templates select="*[not(contains(@class, 'multiple'))]"/>
+        <xsl:apply-templates select="*[not(contains(@class, 'list'))]"/>
       </div>
-      <xsl:apply-templates select="div[contains(@class, 'multiple')]"/>
+      <xsl:apply-templates select="div[contains(@class, 'list')]"/>
     </xsl:copy>
   </xsl:template>
   
