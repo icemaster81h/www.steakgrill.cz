@@ -353,37 +353,37 @@ svg.fa-facebook {
   background-image: url("/files/design/sep-white.png");
 }
 .part.about_us {
-  background: url("/files/full/design/about.jpg") top right no-repeat;
+  background: #555 url("/files/full/design/about.jpg") top right no-repeat;
   color: white;
 }
 .part.menu {
-  background: url("/files/full/design/menu.jpg") center no-repeat;
+  background: #555 url("/files/full/design/menu.jpg") center no-repeat;
 }
 .part.contact {
-  background: url("/files/full/design/contact.jpg") center no-repeat;
+  background: #555 url("/files/full/design/contact.jpg") center no-repeat;
   color: white;
 }
 .part.hamburgers_and_pasta {
-  background: url("/files/full/design/burger.jpg") right 60% no-repeat;
+  background: #555 url("/files/full/design/burger.jpg") right 60% no-repeat;
   color: white;
 }
 .part.frying_pan_wok {
-  background: url("/files/full/design/frying.jpg") center 60% no-repeat;
+  background: #555 url("/files/full/design/frying.jpg") center 60% no-repeat;
 }
 .part.grill_griddle {
-  background: url("/files/full/design/grill.jpg") left 60% no-repeat;
+  background: #555 url("/files/full/design/grill.jpg") left 60% no-repeat;
   color: white;
 }
 .part.desserts-group {
-  background: url("/files/full/design/desserts.jpg") center 60% no-repeat;
+  background: #555 url("/files/full/design/desserts.jpg") center 60% no-repeat;
   padding: 8em 0;
 }
 .part.kids_dishes {
-  background: url("/files/full/design/kids.jpg") right 60% no-repeat;
+  background: #555 url("/files/full/design/kids.jpg") right 60% no-repeat;
   color: white;
 }
 .part.side_and_sauces {
-  background: url("/files/full/design/side.jpg") center 60% no-repeat;
+  background: #555 url("/files/full/design/side.jpg") center 60% no-repeat;
   padding: 8em 0;
 }
 /*********************************/
