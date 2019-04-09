@@ -51,18 +51,18 @@
   
   <!-- desserts -->
   <xsl:template match="div[contains(@class, 'desserts')]">
-    <xsl:copy>
-      <div class="content-group">
-        <div>
+    <div class="part content-group desserts-group">
+      <div>
+        <xsl:copy>
           <xsl:apply-templates select="node()|@*"/>
-          <div class="content-card">
-            <div>
-               <xsl:copy-of select=".//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
-            </div>
+        </xsl:copy>
+        <div class="content-card">
+          <div>
+             <xsl:copy-of select=".//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
           </div>
         </div>
       </div>
-    </xsl:copy>
+    </div>
   </xsl:template>
   <xsl:template match="div[contains(@class, 'desserts')]//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
   
