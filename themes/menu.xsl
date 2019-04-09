@@ -57,7 +57,7 @@
           <xsl:apply-templates select="node()|@*"/>
           <div class="content-card">
             <div>
-               <xsl:apply-templates select=".//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
+               <xsl:copy-of select=".//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
             </div>
           </div>
         </div>
