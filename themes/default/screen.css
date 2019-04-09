@@ -376,6 +376,7 @@ svg.fa-facebook {
 }
 .part.desserts {
   background: url("/files/full/design/desserts.jpg") center 60% no-repeat;
+  padding: 8em 0;
 }
 .part.kids_dishes {
   background: url("/files/full/design/kids.jpg") right 60% no-repeat;
@@ -383,7 +384,7 @@ svg.fa-facebook {
 }
 .part.side_and_sauces {
   background: url("/files/full/design/side.jpg") center 60% no-repeat;
-  padding: 4em 0;
+  padding: 8em 0;
 }
 /*********************************/
 .menu {
