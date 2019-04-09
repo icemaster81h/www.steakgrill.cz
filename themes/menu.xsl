@@ -64,6 +64,7 @@
       </div>
     </xsl:copy>
   </xsl:template>
+  <xsl:template match="div[contains(@class, 'desserts')]//dl[contains(@class, 'meal')][position() = 4 or position() = 5 or position() = 6 or position() = 7]"/>
   
   <xsl:template match="node()|@*">
     <xsl:copy>
