@@ -325,6 +325,7 @@ svg.fa-facebook {
 .part > div {
   padding: 0.01em 0
 }
+.part.kids_dishes .description:after,
 .part.grill_griddle .description:after,
 .part.contact .description:after,
 .part.about_us .description:after {
@@ -349,7 +350,14 @@ svg.fa-facebook {
   background: url("/files/full/design/frying.jpg") center 60% no-repeat;
 }
 .part.grill_griddle {
-  background: url("/files/full/design/grill.jpg") center 60% no-repeat;
+  background: url("/files/full/design/grill.jpg") left 60% no-repeat;
+  color: white;
+}
+.part.desserts {
+  background: url("/files/full/design/desserts.jpg") center 60% no-repeat;
+}
+.part.kids_dishes {
+  background: url("/files/full/design/kids.jpg") right 60% no-repeat;
   color: white;
 }
 /*********************************/
@@ -432,13 +440,18 @@ svg.fa-facebook {
   }
 }
 /*********************************/
+#content .part.kids_dishes,
 #content .part.grill_griddle,
 #content .part.hamburgers_and_pasta {
   padding: 10em 0;
 }
+#content .part.kids_dishes .list div,
 #content .part.grill_griddle .list div,
 #content .part.hamburgers_and_pasta .list div {
   display: block;
+}
+#content .part.kids_dishes h2 + p {
+  max-width: 15em;
 }
 #content .part.grill_griddle h2 + p {
   max-width: 16em;
@@ -450,6 +463,7 @@ svg.fa-facebook {
   #content .meal {
     max-width: 30em
   }
+  #content .part.kids_dishes > div,
   .part.hamburgers_and_pasta > div {
     max-width: 43rem;
     margin-right: 5vw;
