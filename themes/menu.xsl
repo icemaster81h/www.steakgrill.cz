@@ -16,7 +16,7 @@
   </xsl:template>
   
   <!-- soups, salads on regular_menu -->
-  <xsl:template match="div[contains(@class, 'soups') || contains(@class, 'salads')]/div">
+  <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads')]/div">
     <xsl:copy>
       <xsl:attribute name="class">
         <xsl:value-of select="concat(@class,' part-img')"/>
