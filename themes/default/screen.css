@@ -229,6 +229,7 @@ svg.fa-facebook {
 /*********************************/
 .part {
   padding: 2em 0 1em;
+  clear: both;
 }
 .part > div {
   padding: 0.01em 0
@@ -334,7 +335,7 @@ svg.fa-facebook {
 /*********************************/
 .soups h2,
 .jaroslav_honzajk h2 {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .soups h2 + p,
 .jaroslav_honzajk h2 + p {
@@ -350,11 +351,18 @@ svg.fa-facebook {
   max-width: 100%;
 }
 @media all and (min-width: 62em) {
-  .soups > div ,
+  .soups > div {
+    margin-top: 6em;
+  }
   .jaroslav_honzajk > div {
     position: relative;
   }
-  .soups h2 + p + .list,
+  .soups > div:first-child > div {
+    float: left;
+  }
+  .soups > div:first-child > div + div {
+    float: right;
+  }
   .jaroslav_honzajk h2 + p + .list {
     position: absolute;
     top: 2.8em;
@@ -370,13 +378,18 @@ svg.fa-facebook {
     max-width: none;
     margin-left: 0;
   }
+  .soups h2 + p,
   .jaroslav_honzajk h2 + p {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+  .soups .photoswipe img,
   .jaroslav_honzajk .photoswipe img {
     width: 38em;
-    max-width: 50vw;
+    max-width: 48vw;
+  }
+  .soups div.list.multiple {
+    margin-top: 4em;
   }
   #content .jaroslav_honzajk .button-list {
     margin-top: 10em;
@@ -491,17 +504,32 @@ svg.fa-facebook {
   font-style: italic;
 }
 /*********************************/
-.hdesc.regular_menu {
-  padding-bottom: 14em;
+#content .contenttoc {
+  margin-bottom: 0;
 }
-#content ol.contenttoc.button-list {
-  margin-bottom: 5em;
-  margin-top: -11em;
-  max-width: 64em;
+.hdesc.regular_menu {
+  padding-bottom: 5em;
 }
 @media all and (min-width: 35em) {
   #content .contenttoc .button {
     max-width: none;
+  }
+  .hdesc.regular_menu {
+    padding-bottom: 18em;
+  }
+  #content ol.contenttoc.button-list {
+    margin-bottom: 0;
+    margin-top: -16em;
+    max-width: 64em;
+  }
+}
+@media all and (min-width: 60em) {
+  .hdesc.regular_menu {
+    padding-bottom: 14em;
+  }
+  #content ol.contenttoc.button-list {
+    margin-top: -10em;
+    max-width: 64em;
   }
 }
 /*********************************/
