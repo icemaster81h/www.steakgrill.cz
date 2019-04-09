@@ -360,6 +360,9 @@ svg.fa-facebook {
   background: url("/files/full/design/kids.jpg") right 60% no-repeat;
   color: white;
 }
+.part.side_and_sauces {
+  background: url("/files/full/design/side.jpg") center 60% no-repeat;
+}
 /*********************************/
 .menu {
   padding: 4em 0;
@@ -413,13 +416,13 @@ svg.fa-facebook {
 }
 /*********************************/
 @media all and (min-width: 62em) {
-  .content-group {
+  .content-group > div {
     display: flex;
     justify-content: space-around;
     max-width: 90em;
     margin: 0 auto;
   }
-  .content-group > * {
+  .content-group > div > * {
     flex: 0 1 48%;
     margin: 0 3em;
     max-width: 50%;
