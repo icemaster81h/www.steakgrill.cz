@@ -100,7 +100,7 @@ h1 + p.description:after {
   background-size: cover;
   background-position: 50% top;
 }
-steakgrill {
+.steakgrill {
   background-image: url("/files/full/design/header.jpg");
 }
 .logo img {
