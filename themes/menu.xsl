@@ -37,7 +37,7 @@
   
   <!-- kids_dishes, condiments_and_sauces -->
   <xsl:template match="div[contains(@class, 'side_dishes')]">
-    <xsl:text disable-output-escaping="yes">&lt;div class="part content-group side_and_sauces"&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;div class="part content-group side_and_sauces"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
@@ -46,7 +46,7 @@
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
-    <xsl:text disable-output-escaping="yes">&lt;/div&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
   
   <xsl:template match="node()|@*">
