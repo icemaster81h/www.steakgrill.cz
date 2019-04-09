@@ -403,6 +403,7 @@ svg.fa-facebook {
   font-weight: 700;
   font-size: 1.2em;
   position: relative;
+  margin-bottom: 0.25em;
 }
 #content .meal dt > svg {
   display: none;
@@ -417,6 +418,7 @@ svg.fa-facebook {
   display: flex;
   justify-content: flex-end;
   font-weight: 700;
+  margin-top: 0.5em;
 }
 .meal dd.price > span {
   display: flex;
@@ -428,6 +430,7 @@ svg.fa-facebook {
 .meal dd.price > span > span:first-child {
   font-weight: normal;
 }
+/*
 @media all and (min-width: 30em) {
   body #content .meal {
     max-width: 18em;
@@ -438,6 +441,13 @@ svg.fa-facebook {
     position: absolute;
     bottom: 0.8em;
     right: -7em;
+  }
+}
+*/
+@media (min-width: 50em) {
+  body #content .meal {
+    flex: 0 1 50%;
+    max-width: 25em;
   }
 }
 @media all and (min-width: 35em) {
