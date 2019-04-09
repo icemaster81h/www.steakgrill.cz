@@ -466,19 +466,19 @@ svg.fa-facebook {
   }
 }
 /*********************************/
-.soups h2,
+.content-img h2,
 .jaroslav_honzajk h2 {
   margin-top: 2em;
 }
-.soups h2 + p,
+.content-img h2 + p,
 .jaroslav_honzajk h2 + p {
   max-width: 14em;
 }
-.jaroslav_honzajk h2 + p + div + p {
+.content-img h2 + p + div + p {
   text-align: center;
   max-width: 27em;
 }
-.soups .photoswipe img,
+.content-img .photoswipe img,
 .jaroslav_honzajk .photoswipe img {
   width: 35em;
   max-width: 100%;
