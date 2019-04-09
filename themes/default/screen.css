@@ -369,6 +369,10 @@ svg.fa-facebook {
 }
 .daily_offer,
 .weekend_events {
+  padding: 0;
+  box-sizing: border-box;
+}
+.content-card {
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
   margin: 1em auto;
   background: white;
@@ -377,26 +381,21 @@ svg.fa-facebook {
   width: 100%;
   max-width: 38em;
 }
-.menu .daily_offer,
-.menu .weekend_events {
-  margin: 1em;
+.menu .content-card {
+  /* margin: 1em; */
+  padding: 2em 1em 1em;
 }
-.daily_offer h3,
-.daily_offer h2,
-.weekend_events h3,
-.weekend_events h2 {
+.content-card h3,
+.content-card h2 {
   margin-top: 0.5em;
 }
-.daily_offer p.description,
-.weekend_events p.description {
+.content-card p.description {
   max-width: 17em;
 }
-.daily_offer > div > div.list > div,
-.weekend_events > div > div.list > div {
+.content-card > div.list > div {
   display: block;
 }
-.daily_offer p.description:after,
-.weekend_events p.description:after {
+.content-card p.description:after {
   display: none;
 }
 /*********************************/
