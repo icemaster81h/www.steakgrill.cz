@@ -584,6 +584,9 @@ svg.fa-facebook {
 .jaroslav_honzajk h2 + p {
   max-width: 14em;
 }
+.jaroslav_honzajk h2 + p + div + p {
+  text-align: center;
+}
 .content-img h2 + p + div + p {
   text-align: center;
   max-width: 27em;
