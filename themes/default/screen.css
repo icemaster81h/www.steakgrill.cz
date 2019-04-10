@@ -835,6 +835,13 @@ dl.klima dt:first-child + dd {
   list-style: none;
   margin-left: 0;
 }
+.part.video-archives .list.multiple li + li {
+  margin-top: 0.5em;
+}
+.part.video-archives .list.multiple svg {
+  vertical-align: -0.35em;
+  margin-right: 0.25em;
+}
 @media (min-width: 50em) {
   .part.video-archives .list.multiple ul {
     flex: 0 1 50%;
