@@ -357,7 +357,7 @@ svg.fa-facebook {
 }
 .photoswipe li {
   margin: 0;
-  text-align: center;
+  text-align: right;
 }
 .photoswipe a,
 .photoswipe a img {
@@ -605,9 +605,6 @@ svg.fa-facebook {
   }
   .content-img > div:first-child {
     float: left;
-  }
-  .content-img > div:first-child + div {
-    float: right;
   }
   .jaroslav_honzajk h2 + p + .list {
     position: absolute;
