@@ -39,7 +39,7 @@ $inputvar-service_plain
       <dd><input type="email" id="email" required="required" placeholder="josef.novak@seznam.cz"/></dd>
       <dt><label for="telephone">Telephone</label></dt>
       <dd><input type="text" pattern=".*(\d\D*){9,}" id="telephone" placeholder="+420 777123456"/></dd>
-      <dd><label for="telephone">Leave blank or type at least 9 digits.</label></dd>
+      <dd>Leave blank or type at least 9 digits.</dd>
       <dt><label for="msg">Message <em>(mandatory)</em></label></dt>
       <dd><textarea id="msg" required="required" var="inputvar-rezervace@placeholder"></textarea></dd>
       <dt class="noprint">Form submission</dt>
