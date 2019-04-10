@@ -401,7 +401,7 @@ svg.fa-facebook {
 .menu {
   padding: 4em 0;
 }
-#content .menu > div {
+#content .menu:not(.hdesc) > div {
   max-width: 100em;
   display: flex;
   flex-wrap: wrap;
