@@ -365,7 +365,7 @@ svg.fa-facebook {
   background: url("/files/full/design/menu.jpg") center no-repeat;
 }
 .part.contact_form {
-  background: url("/files/full/design/contactform.jpg") center no-repeat;
+  background: url("/files/full/design/contactform.jpg") center top no-repeat;
 }
 .part.contact {
   background: #555 url("/files/full/design/contact.jpg") center no-repeat;
@@ -692,6 +692,9 @@ p.desc {
   margin-right: 0;
 }
 #news + p.description:after {
+  content: none;
+}
+#contact_form + p.description:after {
   content: none;
 }
 /*********************************/
