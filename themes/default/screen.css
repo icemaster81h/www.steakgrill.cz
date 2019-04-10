@@ -110,6 +110,7 @@ ol.contentlink-bc > li+li:before {
   padding-top: 6.2em;
   background-image: url("/files/full/design/header.jpg");
 }
+.hdesc.menu,
 .hdesc.regular_menu {
   background-image: url("/files/full/design/menu-header.jpg");
 }
@@ -164,7 +165,8 @@ ol.contentlink-bc > li+li:before {
   display: inline-flex;
   justify-content: center;
 }
-#content .button-list {
+#content .button-list,
+#content .contentbalancer-simple ul {
   list-style: none;
   margin: 5em 0;
   display: flex;
@@ -172,11 +174,13 @@ ol.contentlink-bc > li+li:before {
   justify-content: center;
   padding: 0;
 }
+.contentbalancer-simple li,
 .button-list li {
   margin: 0.5em;
   flex: 0 1 100%;
   text-align: center;
 }
+.contentbalancer-simple li a,
 .button-list li a {
   width: 100%;
 }
@@ -213,12 +217,21 @@ svg.fa-facebook {
   box-shadow: 0 0.4em 0.5em 0 rgba(0,0,0,0.14), 0 0.1em 1em 0 rgba(0,0,0,0.12), 0 0.2em 0.4em -0.1em rgba(0,0,0,0.3);
 }
 @media all and (min-width: 35em) {
+  #content .contentbalancer-simple {
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contentbalancer-simple li,
   .button-list li {
     flex: 0 1 auto;
   }
   #content .button-img-inline svg {
     flex: 0 1 auto;
     margin-right: 0.5em;
+  }
+  #content .contentbalancer-simple .button {
+    max-width: none;
   }
 }
 /*********************************/
