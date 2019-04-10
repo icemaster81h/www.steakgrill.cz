@@ -57,9 +57,6 @@
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates/>
       <div id="footer">
-        <xsl:if test="$inputvar-rezervace">
-          <p class="noprint"><xsl:value-of disable-output-escaping="yes" select="$inputvar-rezervace"/></p>
-        </xsl:if>
         <xsl:value-of disable-output-escaping="yes" select="$globalmenu"/>
         <ul class="social">
           <li><a href="https://www.facebook.com/Steakgrill/"><span class="fab fa-facebook">i</span>Facebook</a></li>
