@@ -117,6 +117,7 @@ ol.contentlink-bc > li+li:before {
   padding-top: 6.2em;
   background-image: url("/files/full/design/header.jpg");
 }
+.hdesc.wine_list,
 .hdesc.driks_list,
 .hdesc.menu,
 .hdesc.regular_menu {
@@ -916,14 +917,17 @@ dl.klima dt:first-child + dd {
   color: white;
 }
 /*********************************/
+body[data-link="/wine_list"] #content > .section,
 body[data-link="/driks_list"] #content > .section {
   margin-top: 8em;
 }
 @media (min-width: 50em) {
+  body[data-link="/wine_list"] #content > .section,
   body[data-link="/driks_list"] #content > .section {
     display: flex;
     flex-wrap: wrap;
   }
+  body[data-link="/wine_list"] #content > .section > div,
   body[data-link="/driks_list"] #content > .section > div {
     flex: 0 1 50%;
     max-width: 50%;
