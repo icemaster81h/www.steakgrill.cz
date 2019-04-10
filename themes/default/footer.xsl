@@ -57,31 +57,33 @@
       <xsl:copy-of select="@*"/>
       <xsl:apply-templates/>
       <div id="footer">
-        <ul class="social">
-          <li><a href="https://www.facebook.com/Steakgrill/"><span class="fab fa-facebook">i</span>Facebook</a></li>
-          <li><a href="https://www.instagram.com/steakgrillcz/"><span class="fab fa-instagram">i</span>Instagram</a></li>
-          <li><a href="https://www.tripadvisor.cz/Restaurant_Review-g608731-d4209826-Reviews-Steakgrill-Roudnice_nad_Labem_Usti_nad_Labem_Region_Bohemia.html"><span class="fab fa-tripadvisor">i</span>TripAdvisor</a></li>
-          <li><a href="https://foursquare.com/v/steakgrill/4de65a27c65b98fadaf97995"><span class="fab fa-foursquare">i</span>Foursquare</a></li>
-        </ul>
-        <xsl:value-of disable-output-escaping="yes" select="$globalmenu"/>
-        <ul>
-          <xsl:attribute name="lang">
-            <xsl:value-of disable-output-escaping="yes" select="$cms-lang"/>
-          </xsl:attribute>
-          <li><xsl:value-of disable-output-escaping="yes" select="$copy"/>&#160;<xsl:value-of disable-output-escaping="yes" select="$cms-author"/></li>
-          <xsl:if test="$inputvar-service">
-            <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-service"/></li>
-          </xsl:if>
-          <xsl:if test="$cms-resp">
-            <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-resp"/></li>
-          </xsl:if>
-          <xsl:if test="$cms-mtime">
-            <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-mtime"/></li>
-          </xsl:if>
-<!--           <li class="print">Vytištěno z <xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/> dne <xsl:value-of select="$inputvar-today"/></li> -->
-          <li class="print"><xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/><br /><xsl:value-of select="$inputvar-today"/></li>
-<!--           <li class="print"><xsl:value-of select="$inputvar-today"/></li> -->
-        </ul>
+        <div>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/Steakgrill/"><span class="fab fa-facebook">i</span>Facebook</a></li>
+            <li><a href="https://www.instagram.com/steakgrillcz/"><span class="fab fa-instagram">i</span>Instagram</a></li>
+            <li><a href="https://www.tripadvisor.cz/Restaurant_Review-g608731-d4209826-Reviews-Steakgrill-Roudnice_nad_Labem_Usti_nad_Labem_Region_Bohemia.html"><span class="fab fa-tripadvisor">i</span>TripAdvisor</a></li>
+            <li><a href="https://foursquare.com/v/steakgrill/4de65a27c65b98fadaf97995"><span class="fab fa-foursquare">i</span>Foursquare</a></li>
+          </ul>
+          <xsl:value-of disable-output-escaping="yes" select="$globalmenu"/>
+          <ul>
+            <xsl:attribute name="lang">
+              <xsl:value-of disable-output-escaping="yes" select="$cms-lang"/>
+            </xsl:attribute>
+            <li><xsl:value-of disable-output-escaping="yes" select="$copy"/>&#160;<xsl:value-of disable-output-escaping="yes" select="$cms-author"/></li>
+            <xsl:if test="$inputvar-service">
+              <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-service"/></li>
+            </xsl:if>
+            <xsl:if test="$cms-resp">
+              <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-resp"/></li>
+            </xsl:if>
+            <xsl:if test="$cms-mtime">
+              <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-mtime"/></li>
+            </xsl:if>
+  <!--           <li class="print">Vytištěno z <xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/> dne <xsl:value-of select="$inputvar-today"/></li> -->
+            <li class="print"><xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/><br /><xsl:value-of select="$inputvar-today"/></li>
+  <!--           <li class="print"><xsl:value-of select="$inputvar-today"/></li> -->
+          </ul>
+        </div>
       </div>
     </body>
   </xsl:template>
