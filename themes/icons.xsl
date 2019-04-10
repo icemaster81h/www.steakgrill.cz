@@ -5,13 +5,13 @@
     <xsl:copy>
       <xsl:choose>
         <xsl:when test="parent::dl[@data-type='Main meal']">
-          <span class="fas fa-hamburger">i</span>
+          <span class="fas fa-steak">i</span>
         </xsl:when>
         <xsl:when test="parent::dl[@data-type='Starter']">
-          <span class="fas fa-bread-slice">i</span>
+          <span class="fas fa-croissant">i</span>
         </xsl:when>
         <xsl:when test="parent::dl[@data-type='Soup']">
-          <span class="fas fa-bacon">i</span>
+          <span class="fas fa-soup">i</span>
         </xsl:when>
       </xsl:choose>
       <xsl:apply-templates/>
