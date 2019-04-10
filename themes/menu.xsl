@@ -42,13 +42,13 @@
   
   <!-- GROUP -->
   <!-- daily_offer, weekend_events -->
-  <xsl:template match="div[contains(@class, 'daily_offer')]">
+  <xsl:template match="div[contains(@class, 'daily_offer')][ancestor::body[@data-link='/menu']]">
     <xsl:text disable-output-escaping="yes">&lt;div class="part content-group daily_any_weekend"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
   </xsl:template>
-  <xsl:template match="div[contains(@class, 'weekend_events')]">
+  <xsl:template match="div[contains(@class, 'weekend_events')][ancestor::body[@data-link='/menu']]">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
     </xsl:copy>
