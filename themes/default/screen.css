@@ -232,7 +232,7 @@ svg.fa-facebook {
   outline: 0 none;
   box-shadow: 0 0.4em 0.5em 0 rgba(0,0,0,0.14), 0 0.1em 1em 0 rgba(0,0,0,0.12), 0 0.2em 0.4em -0.1em rgba(0,0,0,0.3);
 }
-@media all and (min-width: 35em) {
+@media all and (min-width: 27em) {
   #content .contentbalancer-simple {
     max-width: 50em;
     margin-left: auto;
