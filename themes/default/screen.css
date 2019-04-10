@@ -886,6 +886,13 @@ dl.klima dt:first-child + dd {
 #footer ul.social,
 #footer ul.globalmenu {
   display: inline-block;
+  height: 7em;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+#footer ul li {
+  text-align: left;
+  font-weight: normal;
 }
 #footer ul.social li a {
   display: inline-flex;
@@ -893,5 +900,6 @@ dl.klima dt:first-child + dd {
 }
 #footer ul.social li a svg {
   margin-right: 0.25em;
+  color: white;
 }
 /*********************************/
