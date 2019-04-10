@@ -138,7 +138,7 @@ ol.contentlink-bc > li+li:before {
 #footer:before {
   content: "";
   display: block;
-  width: 20em;
+  width: 15em;
   height: 15em;
   background: url("/files/preview/design/logo-black-white.png") no-repeat;
   background-size: contain;
