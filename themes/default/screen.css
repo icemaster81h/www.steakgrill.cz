@@ -795,14 +795,19 @@ dl.klima dt:first-child + dd {
 .part.steaks > div {
   max-width: 52em !important;
 }
-.part.steaks .multiple > div {
-  display: flex;
-  justify-content: space-evenly;
-}
-.part.steaks .multiple > div > * {
-  flex: 0 1 23%;
-  max-width: 23%;
-  text-align: center;
+@media (min-width: 35em) {
+  .part.steaks .multiple {
+    padding: 0;
+  }
+  .part.steaks .multiple > div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .part.steaks .multiple > div > * {
+    flex: 0 1 23%;
+    max-width: 23%;
+    text-align: center;
+  }
 }
 .part.steaks .multiple dd {
   margin-left: 0;
