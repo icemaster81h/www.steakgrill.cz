@@ -789,6 +789,9 @@ dl.klima dt:first-child + dd {
   padding: 8em 0;
   text-align: center;
 }
+.part.steaks p {
+  max-width: 39em
+}
 .part.steaks > div {
   max-width: 52em !important;
 }
