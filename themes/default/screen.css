@@ -911,6 +911,7 @@ dl.klima dt:first-child + dd {
 #footer ul.social li a {
   display: inline-flex;
   align-items: center;
+  text-transform: none;
 }
 #footer ul.social li a svg {
   margin-right: 0.25em;
