@@ -18,7 +18,7 @@
   </xsl:template>
   
   <!-- soups, salads, grilled_steaks -->
-  <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads') or contains(@class, 'grilled_steaks')]/div">
+  <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads') or contains(@class, 'grilled_steaks') or contains(@class, 'concept')]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-img</xsl:attribute>
       <div>
