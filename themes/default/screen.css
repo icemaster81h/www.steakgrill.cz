@@ -815,4 +815,27 @@ dl.klima dt:first-child + dd {
 .part.steaks .content-card p.description {
   max-width: 27em;
 }
+.part.video-archives > div {
+  max-width: 60em;
+  margin: 0 auto;
+}
+#video-archives, #video-archives + p.description {
+  text-align: left;
+  max-width: 36rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+#video-archives {
+  margin-top: 2em;
+}
+.part.video-archives .list.multiple li {
+  list-style: none;
+  margin-left: 0;
+}
+@media (min-width: 50em) {
+  .part.video-archives .list.multiple ul {
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+}
 /*********************************/
