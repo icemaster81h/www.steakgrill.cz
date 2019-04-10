@@ -718,7 +718,7 @@ p.desc {
 #contact_form, #contact_form + p.description, 
 #news, #news + p.description {
   text-align: left;
-  max-width: 36rem;
+  max-width: 40rem;
   margin-left: 0;
   margin-right: 0;
 }
