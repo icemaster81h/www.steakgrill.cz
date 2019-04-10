@@ -31,7 +31,7 @@
   <!-- daily_offer, weekend_events -->
   <!-- frying_pan_wok, desserts, side_dishes, condiments_and_sauces on regular_menu -->
   <!-- steaks on about_us -->
-  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'desserts') or contains(@class, 'side_dishes') or contains(@class, 'condiments_and_sauces') or contains(@class, 'steaks')]/div">
+  <xsl:template match="div[contains(@class, 'frying_pan_wok') or contains(@class, 'daily_offer') or contains(@class, 'weekend_events') or contains(@class, 'desserts') or contains(@class, 'side_dishes') or contains(@class, 'condiments_and_sauces') or contains(@class, 'steaks')][not(contains(@class, 'grilled_steaks'))]/div">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
       <xsl:apply-templates select="node()|@*"/>
