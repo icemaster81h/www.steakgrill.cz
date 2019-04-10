@@ -69,6 +69,10 @@ ol.contentlink-bc > li+li:before {
   vertical-align: 0;
 }
 /*********************************/
+.term-hidden {
+  display: none !important;
+}
+/*********************************/
 #header {
   position: absolute;
   width: 100%;
