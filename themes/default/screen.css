@@ -86,6 +86,7 @@ ol.contentlink-bc > li+li:before {
 }
 #header a {
   color: white;
+  font-weight: 600;
 }
 #header .contentlink-bc li:first-child {
   text-transform: uppercase;
