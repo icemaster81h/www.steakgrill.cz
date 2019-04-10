@@ -911,6 +911,7 @@ dl.klima dt:first-child + dd {
 }
 #footer ul.social li a svg {
   margin-right: 0.25em;
+  width: 1.2em;
   color: white;
 }
 /*********************************/
