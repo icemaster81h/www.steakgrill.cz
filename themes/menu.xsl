@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
   <!-- menu-nested on HP -->
-  <xsl:template match="div[contains(@class, 'menu')][contains(@class, 'part')]/div">
+  <xsl:template match="div[@class='part menu']/div">
     <xsl:copy>
       <div class="part menu-nested">
         <div>
