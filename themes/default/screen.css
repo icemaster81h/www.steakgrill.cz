@@ -816,7 +816,7 @@ dl.klima dt:first-child + dd {
   max-width: 27em;
 }
 .part.video-archives > div {
-  max-width: 60em;
+  max-width: 65em;
   margin: 0 auto;
 }
 #video-archives, #video-archives + p.description {
