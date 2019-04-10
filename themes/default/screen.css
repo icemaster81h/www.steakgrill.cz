@@ -651,6 +651,7 @@ svg.fa-facebook {
 }
 .part.references {
   padding-bottom: 2em;
+  margin: 0 auto;
 }
 .part.references dl {
   text-align: center;
