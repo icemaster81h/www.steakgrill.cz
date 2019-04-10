@@ -418,14 +418,10 @@ svg.fa-facebook {
   max-width: 100em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .menu .contentbalancer-simple {
   display: none;
-}
-.menu-nested {
-  margin: 1rem;
-  flex-grow: 0;
 }
 #content .menu .button-list {
   margin-top: 0;
@@ -435,6 +431,16 @@ svg.fa-facebook {
   padding: 0;
   box-sizing: border-box;
   display: flex;
+}
+@media (min-width: 75em) {
+  .daily_offer,
+  .weekend_events,
+  .menu-nested,
+  .references {
+    box-sizing: border-box;
+    width: 50%;
+    flex: 0 1 50%;
+  }
 }
 .content-card {
   box-shadow: 0 0.1em 0.1em 0 rgba(0,0,0,.14), 0 0.15em 0.05em -0.1em rgba(0,0,0,.12), 0 0.05em 0.25em 0 rgba(0,0,0,.2);
