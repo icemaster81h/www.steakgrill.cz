@@ -10,6 +10,9 @@ form dt {
   font-weight: 400;
   padding-left: 1em;
 }
+form dt + dd + dd {
+  padding-left: 1em;
+}
 form dt:not(:first-child) {
   margin-top: 3em;
 }
