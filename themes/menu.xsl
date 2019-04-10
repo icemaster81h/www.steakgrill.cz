@@ -40,7 +40,7 @@
     </xsl:copy>
   </xsl:template>
   <!-- all parts on driks_list -->
-  <xsl:template match="div[contains(@class, 'part')][ancestor::body[@data-link='/driks_list']]/div">
+  <xsl:template match="dl[contains(@class, 'meal')][ancestor::body[@data-link='/driks_list']]/..">
     <xsl:copy>
       <xsl:attribute name="class">content-card</xsl:attribute>
       <xsl:apply-templates select="node()|@*"/>
