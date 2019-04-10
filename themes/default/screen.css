@@ -167,6 +167,7 @@ ol.contentlink-bc > li+li:before {
   max-width: 19em;
   display: inline-flex;
   justify-content: center;
+  border: none;
 }
 #content .button-list,
 #content .contentbalancer-simple ul {
@@ -741,6 +742,21 @@ p.desc {
   margin-left: 0;
   font-style: italic;
   max-width: 36em;
+}
+.news form dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.news form dt {
+  display: none;
+}
+.news form dt + dd {
+  margin: 0
+}
+.news form dt + dd + dd {
+  margin: 1em 0 0 0.5em;
+  padding-left: 0;
 }
 /*********************************/
 .hdesc.about_us h1 {
