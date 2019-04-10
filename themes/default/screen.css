@@ -135,6 +135,7 @@ ol.contentlink-bc > li+li:before {
 #footer a {
   color: white;
 }
+/*
 #footer:before {
   content: "";
   display: block;
@@ -145,8 +146,9 @@ ol.contentlink-bc > li+li:before {
   margin: 0 auto;
   margin-top: -5.2em;
 }
+*/
 #content > .section > .part:last-child {
-  padding-bottom: 12em;
+  padding-bottom: 4em;
 }
 /*********************************/
 #content .card,
@@ -879,5 +881,17 @@ dl.klima dt:first-child + dd {
     flex: 0 1 50%;
     max-width: 50%;
   }
+}
+/*********************************/
+#footer ul.social,
+#footer ul.globalmenu {
+  display: inline-block;
+}
+#footer ul.social li a {
+  display: inline-flex;
+  align-items: center;
+}
+#footer ul.social li a svg {
+  margin-right: 0.25em;
 }
 /*********************************/
