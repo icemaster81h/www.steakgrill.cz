@@ -364,6 +364,9 @@ svg.fa-facebook {
 .part.menu {
   background: url("/files/full/design/menu.jpg") center no-repeat;
 }
+.part.contact_form {
+  background: url("/files/full/design/contactform.jpg") center no-repeat;
+}
 .part.contact {
   background: #555 url("/files/full/design/contact.jpg") center no-repeat;
   color: white;
@@ -676,11 +679,13 @@ p.desc {
   position: relative;
   top: -7em;
 }
+.part.contact_form > div,
 .part.news > div {
   max-width: 60em;
+  margin: 0 auto;
 }
-#news,
-#news + p.description {
+#contact_form, #contact_form + p.description, 
+#news, #news + p.description {
   text-align: left;
   max-width: 35rem;
   margin-left: 0;
