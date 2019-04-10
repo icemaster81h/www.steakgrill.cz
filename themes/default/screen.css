@@ -825,6 +825,9 @@ dl.klima dt:first-child + dd {
   margin-left: 0;
   margin-right: 0;
 }
+#video-archives + p.description:after {
+  content: none;
+}
 #video-archives {
   margin-top: 2em;
 }
