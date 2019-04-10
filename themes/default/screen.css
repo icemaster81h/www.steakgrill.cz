@@ -72,6 +72,9 @@ ol.contentlink-bc > li+li:before {
 .term-hidden {
   display: none !important;
 }
+.list.multiple {
+  clear: both;
+}
 /*********************************/
 #header {
   position: absolute;
