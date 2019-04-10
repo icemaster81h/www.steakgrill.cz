@@ -915,3 +915,17 @@ dl.klima dt:first-child + dd {
   color: white;
 }
 /*********************************/
+body[data-link="/driks_list"] #content > .section {
+  margin-top: 8em;
+}
+@media (min-width: 50em) {
+  body[data-link="/driks_list"] #content > .section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body[data-link="/driks_list"] #content > .section > div {
+    flex: 0 1 50%;
+    max-width: 50%;
+  }
+}
+/*********************************/
