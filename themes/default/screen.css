@@ -676,6 +676,10 @@ svg.fa-facebook {
 .part.references dt + dd q:after {
   content: "";
 }
+.part.references dl svg {
+  color: #b6150d;
+  margin-top: 0.5em;
+}
 /*********************************/
 #content .contenttoc {
   margin-bottom: 0;
