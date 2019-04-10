@@ -10,11 +10,11 @@ form dt {
   font-weight: 400;
   padding-left: 1em;
 }
-form dt + dd + dd {
+form dt + dd + dd:not(:last-child) {
   padding-left: 1em;
 }
 form dt:not(:first-child) {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 form input[type="text"],
 form input[type="email"],
