@@ -36,6 +36,9 @@ form input[type="email"] {
   border-left: none;
   box-sizing: border-box;
 }
+input.hide {
+  display: none;
+}
 form dd > textarea {
   font: inherit;
   box-sizing: border-box;
