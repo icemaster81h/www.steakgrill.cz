@@ -682,22 +682,38 @@ p.desc {
   position: relative;
   top: -7em;
 }
+.part.questions > div,
 .part.contact_form > div,
 .part.news > div {
   max-width: 60em;
   margin: 0 auto;
 }
+#questions, #questions + p.description,
 #contact_form, #contact_form + p.description, 
 #news, #news + p.description {
   text-align: left;
-  max-width: 35rem;
+  max-width: 36rem;
   margin-left: 0;
   margin-right: 0;
 }
+#questions, #questions + p.description:after,
+#contact_form + p.description:after,
 #news + p.description:after {
   content: none;
 }
-#contact_form + p.description:after {
-  content: none;
+.faq {
+  padding: 2em 0;
+}
+.faq dt {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.faq dt:not(:first-child) {
+  margin-top: 1em;
+}
+.faq dd {
+  margin-left: 0;
+  font-style: italic;
+  max-width: 36em;
 }
 /*********************************/
