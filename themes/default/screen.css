@@ -117,6 +117,7 @@ ol.contentlink-bc > li+li:before {
   padding-top: 6.2em;
   background-image: url("/files/full/design/header.jpg");
 }
+.hdesc.driks_list,
 .hdesc.menu,
 .hdesc.regular_menu {
   background-image: url("/files/full/design/menu-header.jpg");
