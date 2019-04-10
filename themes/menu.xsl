@@ -17,6 +17,7 @@
     <xsl:apply-templates/>
   </xsl:template>
   
+  <!-- IMG -->
   <!-- soups, salads, grilled_steaks -->
   <xsl:template match="div[contains(@class, 'soups') or contains(@class, 'salads') or contains(@class, 'grilled_steaks') or contains(@class, 'concept')]/div">
     <xsl:copy>
@@ -28,6 +29,7 @@
     </xsl:copy>
   </xsl:template>
   
+  <!-- CARD -->
   <!-- daily_offer, weekend_events -->
   <!-- frying_pan_wok, desserts, side_dishes, condiments_and_sauces on regular_menu -->
   <!-- steaks on about_us -->
@@ -38,7 +40,21 @@
     </xsl:copy>
   </xsl:template>
   
-  <!-- kids_dishes, condiments_and_sauces -->
+  <!-- GROUP -->
+  <!-- daily_offer, weekend_events -->
+  <xsl:template match="div[contains(@class, 'daily_offer')]">
+    <xsl:text disable-output-escaping="yes">&lt;div class="part content-group daily_any_weekend"&gt;&lt;div&gt;</xsl:text>
+    <xsl:copy>
+      <xsl:apply-templates select="node()|@*"/>
+    </xsl:copy>
+  </xsl:template>
+  <xsl:template match="div[contains(@class, 'weekend_events')]">
+    <xsl:copy>
+      <xsl:apply-templates select="node()|@*"/>
+    </xsl:copy>
+    <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
+  </xsl:template>
+  <!-- group kids_dishes, condiments_and_sauces -->
   <xsl:template match="div[contains(@class, 'side_dishes')]">
     <xsl:text disable-output-escaping="yes">&lt;div class="part content-group side_and_sauces"&gt;&lt;div&gt;</xsl:text>
     <xsl:copy>
@@ -52,6 +68,7 @@
     <xsl:text disable-output-escaping="yes">&lt;/div&gt;&lt;/div&gt;</xsl:text>
   </xsl:template>
   
+  <!-- SPLIT -->
   <!-- desserts -->
   <xsl:template match="div[contains(@class, 'desserts')]">
     <div class="part content-group desserts-group">
