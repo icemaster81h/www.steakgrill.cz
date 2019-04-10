@@ -65,6 +65,9 @@ h1 + p.description:after {
 .globalmenu li:first-child {
   display: none !important;
 }
+ol.contentlink-bc > li+li:before {
+  vertical-align: 0;
+}
 /*********************************/
 #header {
   position: absolute;
