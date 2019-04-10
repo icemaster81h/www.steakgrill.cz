@@ -594,7 +594,7 @@ svg.fa-facebook {
   .jaroslav_honzajk > div {
     position: relative;
   }
-  .content-img > div {
+  .content-img > div:first-child {
     float: left;
   }
   .content-img > div:first-child + div {
@@ -743,12 +743,6 @@ p.desc {
 .hdesc.about_us h1 {
   margin-top: 2.25em;
 }
-.concept .content-img:after,
-.concept:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .concept .content-img {
   margin-top: 0;
 }
@@ -761,5 +755,30 @@ p.desc {
 .content-img h2 + p {
   padding-left: 1em;
   padding-right: 1em;
+}
+#content dl.klima {
+  text-align: center;
+  margin-top: 6em;
+}
+dl.klima {
+  display: block;
+  background: none;
+  max-width: 48em;
+  padding: 4em 0;
+  clear:both;
+}
+dl.klima dt:first-child + dd {
+  font-size: 1.2em;  
+  margin-top: 1em;
+}
+@media (min-width: 42em) {
+  #content dl.klima {
+    text-align:left;
+  }
+  dl.klima dt:first-child  {
+    float: left;
+    width: auto;
+    margin-right: 3em;
+  }
 }
 /*********************************/
