@@ -597,7 +597,7 @@ svg.fa-facebook {
   .content-img > div {
     float: left;
   }
-  .content-img > div + div {
+  .content-img > div:first-child + div {
     float: right;
   }
   .jaroslav_honzajk h2 + p + .list {
@@ -742,5 +742,20 @@ p.desc {
 /*********************************/
 .hdesc.about_us h1 {
   margin-top: 2.25em;
+}
+.concept .content-img:after,
+.concept:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.concept .content-img {
+  margin-top: 0;
+}
+.about_us.hdesc + div > .list {
+  margin-top: -12em;
+}
+.about_us.hdesc + div > .list li + li {
+  display: none;
 }
 /*********************************/
