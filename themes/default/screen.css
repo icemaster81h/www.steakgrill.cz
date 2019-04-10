@@ -766,12 +766,16 @@ p.desc {
 dl.klima {
   display: block;
   background: none;
-  max-width: 48em;
+  max-width: 55em;
   padding: 4em 0;
   clear:both;
+  font-style: italic;
+}
+dl.klima dd {
+  margin-top: 0.5em;
 }
 dl.klima dt:first-child + dd {
-  font-size: 1.2em;  
+  font-size: 1.5em;
   margin-top: 1em;
 }
 @media (min-width: 42em) {
@@ -781,7 +785,7 @@ dl.klima dt:first-child + dd {
   dl.klima dt:first-child  {
     float: left;
     width: auto;
-    margin-right: 3em;
+    margin-right: 4em;
   }
 }
 .part.steaks {
@@ -790,7 +794,8 @@ dl.klima dt:first-child + dd {
   text-align: center;
 }
 .part.steaks p {
-  max-width: 39em
+  max-width: 39em;
+  /* font-style: italic; */
 }
 .part.steaks > div {
   max-width: 52em !important;
