@@ -26,7 +26,7 @@ $inputvar-service_plain
         <input type="email" value="" name="EMAIL" class="required email" id="EMAIL" placeholder="josef.novak@seznam.cz"/>
         <input class="hide" type="text" name="b_8625178b2a66c8710f182b4d0_f93996121e" tabindex="-1" value="" placeholder="josef.novak@seznam.cz"/>
       </dd>
-      <dd><input type="submit" id="submit" class="button" value="Register"/></dd>
+      <dd><input type="submit" id="submit" class="button" value="Newsletter Subscribe"/></dd>
     </dl>
   </form>
 
