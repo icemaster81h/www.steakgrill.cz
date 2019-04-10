@@ -890,6 +890,9 @@ dl.klima dt:first-child + dd {
   vertical-align: bottom;
   text-transform: uppercase;
 }
+#footer ul.globalmenu + ul {
+  justify-content: left;
+}
 #footer ul li {
   text-align: left;
   font-weight: normal;
