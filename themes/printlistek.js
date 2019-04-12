@@ -173,10 +173,10 @@
   var button = document.createElement('button');
   var span = document.createElement('span');
   button.appendChild(span);
+  button.style = "width: 1em; margin-left: 0.5em; white-space: nowrap; overflow: hidden; border: 0; background: none; cursor: pointer;";
+  button.title = button.innerHTML;
   span.innerHTML = 'Vytisknout denní nabídku';
-  span.title = button.innerHTML;
-  span.className = 'noprint fab fa-print';
-  span.style = "width: 1em; margin-left: 0.5em; white-space: nowrap; overflow: hidden; border: 0; background: none; cursor: pointer;";
+  span.className = 'noprint fas fa-print';
   var nadpis = document.getElementById('denni_nabidka');
   if (!nadpis) {
     nadpis = document.getElementById('daily_offer');
