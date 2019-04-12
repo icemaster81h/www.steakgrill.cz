@@ -87,3 +87,7 @@ dl.meal dd.price {
   margin: 0 !important;
   text-align: left !important;
 }
+.part.desserts2 .list,
+.part.desserts .list {
+  margin: 0;
+}
