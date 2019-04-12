@@ -41,23 +41,36 @@ h2 + p.description {
 a[href] {
   border: none;
 }
-dl.card {
+dl.meal {
   padding: 0 !important;
 }
-#content dl.card dd {
-  margin: 0;
+.contenttoc.button-list {
+  display: none;
 }
-#content dl.card dd:last-child {
+.photoswipe {
+  display: none;
+}
+#content dl.meal dd {
+  margin: 0;
+  font-style: normal;
+}
+#content dl.meal dd:last-child {
   border-bottom: none !important;
   padding-bottom: 0.25em;
 }
-dl.card dt {
+dl.meal dt {
   font-size: 15pt;
   font-weight: 500;
 }
-dl.card dd.price > span > span + span,
-dl.card dd.price {
+dl.meal dt.price {
+  display: none;
+}
+dl.meal dd.price > span > span + span,
+dl.meal dd.price {
   font-size: 15pt;
+}
+dl.meal dd.price {
+  font-weight: 500;
 }
 #footer ul {
   padding: 0 !important;
