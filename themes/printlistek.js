@@ -134,8 +134,8 @@
 
       printWin.document.write('<html><head><link href="//fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin-ext" rel="stylesheet"></head><body>');
 
-      var polevka = document.querySelectorAll("dl.card[data-type='Polévka'], dl.card[data-type='Soup']")[0].cloneNode(true);
-      var jidlo = document.querySelectorAll("dl.card[data-type='Jídlo'], dl.card[data-type='Main meal']")[0].cloneNode(true);
+      var polevka = document.querySelectorAll("dl.meal[data-type='Polévka'], dl.meal[data-type='Soup']")[0].cloneNode(true);
+      var jidlo = document.querySelectorAll("dl.meal[data-type='Jídlo'], dl.meal[data-type='Main meal']")[0].cloneNode(true);
       var wrap = document.createElement('div');
       var div1 = document.createElement('div');
       var div2 = document.createElement('div');
