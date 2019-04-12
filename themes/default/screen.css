@@ -116,20 +116,39 @@ ol.contentlink-bc > li+li:before {
 }
 .hdesc.steakgrill {
   padding-top: 6.2em;
-  background-image: url("/files/full/design/header.jpg");
+  background-image: url("/files/design/header.jpg");
 }
 .hdesc.wine_list,
 .hdesc.driks_list,
 .hdesc.menu,
 .hdesc.regular_menu {
-  background-image: url("/files/full/design/menu-header.jpg");
+  background-image: url("/files/design/menu-header.jpg");
 }
 .hdesc.contact {
-  background-image: url("/files/full/design/contact-header.jpg");
+  background-image: url("/files/design/contact-header.jpg");
   background-position: 50%;
 }
 .hdesc.about_us {
-  background-image: url("/files/full/design/about-header.jpg");
+  background-image: url("/files/design/about-header.jpg");
+}
+media all and (min-width: 62em) {
+  .hdesc.steakgrill {
+    padding-top: 6.2em;
+    background-image: url("/files/full/design/header.jpg");
+  }
+  .hdesc.wine_list,
+  .hdesc.driks_list,
+  .hdesc.menu,
+  .hdesc.regular_menu {
+    background-image: url("/files/full/design/menu-header.jpg");
+  }
+  .hdesc.contact {
+    background-image: url("/files/full/design/contact-header.jpg");
+    background-position: 50%;
+  }
+  .hdesc.about_us {
+    background-image: url("/files/full/design/about-header.jpg");
+  }  
 }
 .logo img {
   margin-top: -6em;
@@ -323,44 +342,79 @@ svg.fa-facebook {
   background-image: url("/files/design/sep-white.png");
 }
 .part.about_us {
-  background: #555 url("/files/full/design/about.jpg") top right no-repeat;
+  background: #555 url("/files/design/about.jpg") top right no-repeat;
   color: white;
 }
 .part.menu {
-  background: url("/files/full/design/menu.jpg") center no-repeat;
+  background: url("/files/design/menu.jpg") center no-repeat;
 }
 .part.contact_form {
-  background: url("/files/full/design/contactform.jpg") center top no-repeat;
+  background: url("/files/design/contactform.jpg") center top no-repeat;
 }
 .part.contact {
-  background: #555 url("/files/full/design/contact.jpg") center no-repeat;
+  background: #555 url("/files/design/contact.jpg") center no-repeat;
   color: white;
 }
 .part.hamburgers_and_pasta {
-  background: #555 url("/files/full/design/burger.jpg") right 60% no-repeat;
+  background: #555 url("/files/design/burger.jpg") right 60% no-repeat;
   color: white;
 }
 .part.frying_pan_wok {
-  background: #555 url("/files/full/design/frying.jpg") center 60% no-repeat;
+  background: #555 url("/files/design/frying.jpg") center 60% no-repeat;
 }
 .part.grill_griddle {
-  background: #555 url("/files/full/design/grill.jpg") left 60% no-repeat;
+  background: #555 url("/files/design/grill.jpg") left 60% no-repeat;
   color: white;
 }
 .part.desserts-group {
-  background: #555 url("/files/full/design/desserts.jpg") center 60% no-repeat;
+  background: #555 url("/files/design/desserts.jpg") center 60% no-repeat;
   padding: 8em 0;
 }
 .part.kids_dishes {
-  background: #555 url("/files/full/design/kids.jpg") right 60% no-repeat;
+  background: #555 url("/files/design/kids.jpg") right 60% no-repeat;
   color: white;
 }
 .part.side_and_sauces {
-  background: #555 url("/files/full/design/side.jpg") center 60% no-repeat;
+  background: #555 url("/files/design/side.jpg") center 60% no-repeat;
   padding: 8em 0;
 }
 .part.steaks {
-  background: #ddd url("/files/full/design/steaks-raw.jpg") center no-repeat;
+  background: #ddd url("/files/design/steaks-raw.jpg") center no-repeat;
+}
+@media all and (min-width: 62em) {
+  .part.about_us {
+    background-image: url("/files/full/design/about.jpg");
+  }
+  .part.menu {
+    background-image: url("/files/full/design/menu.jpg");
+  }
+  .part.contact_form {
+    background-image: url("/files/full/design/contactform.jpg");
+  }
+  .part.contact {
+    background-image: url("/files/full/design/contact.jpg");
+  }
+  .part.hamburgers_and_pasta {
+    background-image: url("/files/full/design/burger.jpg");
+  }
+  .part.frying_pan_wok {
+    background-image: url("/files/full/design/frying.jpg");
+  }
+  .part.grill_griddle {
+    background-image: url("/files/full/design/grill.jpg");
+  }
+  .part.desserts-group {
+    background-image: url("/files/full/design/desserts.jpg");
+  }
+  .part.kids_dishes {
+    background-image: url("/files/full/design/kids.jpg");
+  }
+  .part.side_and_sauces {
+    background-image: url("/files/full/design/side.jpg");
+  }
+  .part.steaks {
+    background-image: url("/files/full/design/steaks-raw.jpg");
+  }
 }
 /*********************************/
 .menu {
@@ -654,10 +708,13 @@ p.desc {
   margin: 2em auto 3em auto;
 }
 #content > .hdesc.contact + div > .list {
-  background: url("/files/full/design/map.jpg") center 80% no-repeat;
+  background: url("/files/design/map.jpg") center 80% no-repeat;
   background-size: cover;
   padding-bottom: 20vw;
   margin-top: 11em;
+}
+@media all and (min-width: 62em) {
+  background-image: url("/files/full/design/map.jpg");
 }
 #content > .hdesc.contact + div > .list > div {
   position: relative;
