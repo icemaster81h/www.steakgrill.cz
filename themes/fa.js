@@ -1,5 +1,5 @@
 FontAwesomeConfig = {
-  observeMutations: true
+  observeMutations: false
 };
 
 (function() {
