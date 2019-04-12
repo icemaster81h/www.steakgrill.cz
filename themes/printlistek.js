@@ -93,12 +93,12 @@
   dl dd { \
     margin: 0; \
   } \
-  dl.card dt { \
+  dl.meal dt { \
     font-size: 12pt; \
     font-weight: 500; \
     margin-bottom: 0.3em; \
   } \
-  dl.card dd.price { \
+  dl.meal dd.price { \
     display: flex; \
     /* margin-left: auto; */ \
     justify-content: flex-end; \
@@ -106,21 +106,23 @@
     margin-top: 0.2em; \
     font-size: 12pt; \
   } \
-  dl.card dd.price > span { \
+  dl.meal dd.price > span { \
     margin: 0 0.75em; \
   } \
-  dl.card dd.price > span:last-child { \
+  dl.meal dd.price > span:last-child { \
     margin-right: 0; \
   } \
-  dl.card dd.price > span > span:first-child { \
+  dl.meal dd.price > span > span:first-child { \
     display: block; \
     text-align: right; \
     font-weight: normal; \
     font-size: 10pt; \
   } \
-  dl.card dd.price > span > span + span { \
+  dl.meal dd.price > span > span + span { \
     font-weight: 500; \
   } \
+  svg { \
+    display: none \
   ";
   var w = window,
       d = document,
