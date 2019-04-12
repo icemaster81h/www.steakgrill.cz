@@ -175,7 +175,7 @@
   button.appendChild(span);
   span.innerHTML = 'Vytisknout denní nabídku';
   span.title = button.innerHTML;
-  span.className = 'noprint fa fa-print';
+  span.className = 'noprint fab fa-print';
   span.style = "width: 1em; margin-left: 0.5em; white-space: nowrap; overflow: hidden; border: 0; background: none; cursor: pointer;";
   var nadpis = document.getElementById('denni_nabidka');
   if (!nadpis) {
