@@ -86,7 +86,9 @@
         <div class="part desserts2">
           <div class="content-card">
             <div>
+              <div class="list multiple"><div>
                <xsl:copy-of select=".//dl[contains(@class, 'meal')][position() > 2]"/>
+              </div></div>
             </div>
           </div>
         </div>
