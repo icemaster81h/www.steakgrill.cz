@@ -344,7 +344,7 @@ svg.fa-facebook {
   padding: 0.01em 0
 }
 .part.hamburgers_and_pasta .description:after,
-.part.kids_dishes .description:after,
+.part.kids_menu .description:after,
 .part.grill_griddle .description:after,
 .part.contact .description:after,
 .part.about_us .description:after {
@@ -379,7 +379,7 @@ svg.fa-facebook {
   background: #555 url("/files/design/desserts.jpg") center 60% no-repeat;
   padding: 8em 0;
 }
-.part.kids_dishes {
+.part.kids_menu {
   background: #555 url("/files/design/kids.jpg") right 60% no-repeat;
   color: white;
 }
@@ -415,7 +415,7 @@ svg.fa-facebook {
   .part.desserts-group {
     background-image: url("/files/full/design/desserts.jpg");
   }
-  .part.kids_dishes {
+  .part.kids_menu {
     background-image: url("/files/full/design/kids.jpg");
   }
   .part.side_and_sauces {
@@ -529,17 +529,17 @@ svg.fa-facebook {
   }
 }
 /*********************************/
-#content .part.kids_dishes,
+#content .part.kids_menu,
 #content .part.grill_griddle,
 #content .part.hamburgers_and_pasta {
   padding: 10em 0;
 }
-#content .part.kids_dishes .list div,
+#content .part.kids_menu .list div,
 #content .part.grill_griddle .list div,
 #content .part.hamburgers_and_pasta .list div {
   display: block;
 }
-#content .part.kids_dishes h2 + p {
+#content .part.kids_menu h2 + p {
   max-width: 15em;
 }
 #content .part.grill_griddle h2 + p {
@@ -552,7 +552,7 @@ svg.fa-facebook {
   #content .meal {
     max-width: 30em
   }
-  #content .part.kids_dishes > div,
+  #content .part.kids_menu > div,
   .part.hamburgers_and_pasta > div {
     max-width: 43rem;
     margin-right: 5vw;
