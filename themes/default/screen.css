@@ -938,16 +938,20 @@ body[data-link="/wine_list"] #content > .section,
 body[data-link="/driks_list"] #content > .section {
   margin-top: 8em;
 }
-@media (min-width: 50em) {
+@media (min-width: 60em) {
   body[data-link="/wine_list"] #content > .section,
   body[data-link="/driks_list"] #content > .section {
     display: flex;
     flex-wrap: wrap;
+    max-width: 87em;
+    margin-left: auto;
+    margin-right: auto;
   }
   body[data-link="/wine_list"] #content > .section > div,
   body[data-link="/driks_list"] #content > .section > div {
-    flex: 0 1 50%;
-    max-width: 50%;
+    flex: 0 1 48%;
+    max-width: 48%;
+    margin: 0 1%;
   }
 }
 /*********************************/
