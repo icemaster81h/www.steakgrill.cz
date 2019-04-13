@@ -131,7 +131,7 @@ ol.contentlink-bc > li+li:before {
 .hdesc.about_us {
   background-image: url("/files/design/about-header.jpg");
 }
-media all and (min-width: 62em) {
+@media all and (min-width: 62em) {
   .hdesc.steakgrill {
     padding-top: 6.2em;
     background-image: url("/files/full/design/header.jpg");
