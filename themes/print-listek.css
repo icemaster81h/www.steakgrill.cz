@@ -91,3 +91,6 @@ dl.meal dd.price {
 .part.desserts .list {
   margin: 0;
 }
+.button-list {
+  display: none !important;
+}
