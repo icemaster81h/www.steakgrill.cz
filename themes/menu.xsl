@@ -101,9 +101,9 @@
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
       <ul class="button-list">
-        <li><a class="button button-img" href="/regular_menu"><span class="fas fa-3x fa-clipboard-list">i</span>Regular Menu</a></li>
-        <li><a class="button button-img" href="/driks_list"><span class="fas fa-3x fa-mug-hot">i</span>Drinks List</a></li>
-        <li><a class="button button-img" href="/wine_list"><span class="fas fa-3x fa-wine-glass-alt">i</span>Wine List</a></li>
+        <li><a class="nowarning button button-img" href="/regular_menu"><span class="fas fa-3x fa-clipboard-list">i</span>Regular Menu</a></li>
+        <li><a class="nowarning button button-img" href="/driks_list"><span class="fas fa-3x fa-mug-hot">i</span>Drinks List</a></li>
+        <li><a class="nowarning button button-img" href="/wine_list"><span class="fas fa-3x fa-wine-glass-alt">i</span>Wine List</a></li>
       </ul>
     </xsl:copy>
   </xsl:template>
