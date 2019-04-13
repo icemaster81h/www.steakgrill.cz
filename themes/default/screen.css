@@ -209,6 +209,9 @@ media all and (min-width: 62em) {
   justify-content: center;
   padding: 0;
 }
+.section > .button-list {
+  
+}
 .contentbalancer-simple li,
 .button-list li {
   margin: 0.5em;
@@ -682,8 +685,6 @@ svg.fa-facebook {
   #content .contenttoc .button {
     max-width: none;
   }
-  .hdesc.driks_list,
-  .hdesc.wine_list,
   .hdesc.regular_menu {
     padding-bottom: 18em;
   }
@@ -694,8 +695,6 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 60em) {
-  .hdesc.wine_list,
-  .hdesc.driks_list,  
   .hdesc.regular_menu {
     padding-bottom: 14em;
   }
