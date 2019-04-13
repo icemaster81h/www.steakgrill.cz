@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <UrlHandler>
+  <redir link="drinks_list">/baverages</redir>
   <redir link="listek">/nabidka</redir>
   <redir link="o-nas">/o_nas</redir>
   <redir link="jidelni-listek">/nabidka</redir>
