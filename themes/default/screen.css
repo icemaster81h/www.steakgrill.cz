@@ -119,7 +119,7 @@ ol.contentlink-bc > li+li:before {
   background-image: url("/files/design/header.jpg");
 }
 .hdesc.wine_list,
-.hdesc.baverages,
+.hdesc.beverages,
 .hdesc.menu,
 .hdesc.regular_menu {
   background-image: url("/files/design/menu-header.jpg");
@@ -137,7 +137,7 @@ media all and (min-width: 62em) {
     background-image: url("/files/full/design/header.jpg");
   }
   .hdesc.wine_list,
-  .hdesc.baverages,
+  .hdesc.beverages,
   .hdesc.menu,
   .hdesc.regular_menu {
     background-image: url("/files/full/design/menu-header.jpg");
@@ -690,7 +690,7 @@ svg.fa-facebook {
 .hdesc.regular_menu {
   padding-bottom: 5em;
 }
-#content .hdesc.baverages + ol.contenttoc.button-list,
+#content .hdesc.beverages + ol.contenttoc.button-list,
 #content .hdesc.wine_list + ol.contenttoc.button-list {
   max-width: 50em
 }
@@ -698,7 +698,7 @@ svg.fa-facebook {
   #content .contenttoc .button {
     max-width: none;
   }
-  .hdesc.baverages,
+  .hdesc.beverages,
   .hdesc.wine_list,
   .hdesc.regular_menu {
     padding-bottom: 18em;
@@ -710,7 +710,7 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 60em) {
-  .hdesc.baverages,
+  .hdesc.beverages,
   .hdesc.wine_list,
   .hdesc.regular_menu {
     padding-bottom: 14em;
@@ -938,12 +938,12 @@ dl.klima dt:first-child + dd {
 }
 /*********************************/
 body[data-link="/wine_list"] #content > .section,
-body[data-link="/baverages"] #content > .section {
+body[data-link="/beverages"] #content > .section {
   margin-top: 8em;
 }
 @media (min-width: 60em) {
   body[data-link="/wine_list"] #content > .section,
-  body[data-link="/baverages"] #content > .section {
+  body[data-link="/beverages"] #content > .section {
     display: flex;
     flex-wrap: wrap;
     max-width: 87em;
@@ -951,7 +951,7 @@ body[data-link="/baverages"] #content > .section {
     margin-right: auto;
   }
   body[data-link="/wine_list"] #content > .section > div,
-  body[data-link="/baverages"] #content > .section > div {
+  body[data-link="/beverages"] #content > .section > div {
     flex: 0 1 48%;
     max-width: 48%;
     margin: 0 1%;
