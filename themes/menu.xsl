@@ -95,6 +95,19 @@
   </xsl:template>
   <xsl:template match="div[contains(@class, 'desserts')]//dl[contains(@class, 'meal')][position() > 2]"/>
   
+  <!-- NAVIGATION -->
+  <!-- driks_list, wine_list, regular_menu -->
+  <xsl:template match="div[@class='contenttoc section'][ancestor::body[@data-link='/regular_menu'] or ancestor::body[@data-link='/wine_list'] or ancestor::body[@data-link='/driks_list']]">
+    <xsl:copy>
+      <xsl:apply-templates select="node()|@*"/>
+      <ul class="button-list">
+        <li><a class="button button-img" href="/regular_menu"><span class="fas fa-3x fa-clipboard-list">i</span>Regular Menu</a></li>
+        <li><a class="button button-img" href="/driks_list"><span class="fas fa-3x fa-mug-hot">i</span>Drinks List</a></li>
+        <li><a class="button button-img" href="/wine_list"><span class="fas fa-3x fa-wine-glass-alt">i</span>Wine List</a></li>
+      </ul>
+    </xsl:copy>
+  </xsl:template>
+  
   <xsl:template match="node()|@*">
     <xsl:copy>
       <xsl:apply-templates select="node()|@*"/>
