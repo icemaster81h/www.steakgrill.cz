@@ -200,6 +200,12 @@ media all and (min-width: 62em) {
   justify-content: center;
   border: none;
 }
+#content .button:not([href]) {
+  box-shadow: none;  
+}
+#content .button:not([href]):hover {
+  box-shadow: none;
+}
 #content .button-list,
 #content .contentbalancer-simple ul {
   list-style: none;
