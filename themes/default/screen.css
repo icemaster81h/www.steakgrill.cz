@@ -321,6 +321,9 @@ svg.fa-facebook {
   font-size: 1.4em;
   font-style: italic;
 }
+.card-emph.booking dd {
+  margin-bottom: 0.7em;
+}
 /*********************************/
 .photoswipe {
   list-style: none;
