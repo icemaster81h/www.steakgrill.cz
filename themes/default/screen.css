@@ -86,7 +86,7 @@ ol.contentlink-bc > li+li:before {
 }
 #header a {
   color: white;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 #header .contentlink-bc li:first-child {
   text-transform: uppercase;
@@ -104,7 +104,7 @@ ol.contentlink-bc > li+li:before {
   }
 }
 #header > div .globalmenu a {
-  font-weight: 800;
+  /* font-weight: 800; */
 }
 .hdesc {
   color: white;
