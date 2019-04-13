@@ -687,10 +687,16 @@ svg.fa-facebook {
 .hdesc.regular_menu {
   padding-bottom: 5em;
 }
+#content .hdesc.driks_list + ol.contenttoc.button-list,
+#content .hdesc.wine_list + ol.contenttoc.button-list {
+  max-width: 50em
+}
 @media all and (min-width: 35em) {
   #content .contenttoc .button {
     max-width: none;
   }
+  .hdesc.driks_list,
+  .hdesc.wine_list,
   .hdesc.regular_menu {
     padding-bottom: 18em;
   }
@@ -701,6 +707,8 @@ svg.fa-facebook {
   }
 }
 @media all and (min-width: 60em) {
+  .hdesc.driks_list,
+  .hdesc.wine_list,
   .hdesc.regular_menu {
     padding-bottom: 14em;
   }
