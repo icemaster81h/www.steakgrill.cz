@@ -8,6 +8,7 @@ body > .hdesc,
 #content > .hdesc:not(.contact) + *:not(.section),
 #content > .hdesc.contact + div > *:not(.list),
 #content > .hdesc.contact + div > .list > *,
+#content .section > ul.button-list,
 .section > .part > div,
 body #header > *,
 body #footer > * {
