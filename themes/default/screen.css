@@ -655,6 +655,7 @@ svg.fa-facebook {
   }
 }
 /*********************************/
+#reference,
 #references {
   display: none;
 }
@@ -749,6 +750,9 @@ p.desc {
   max-width: 60em;
   margin: 0 auto;
 }
+#dotazy, #dotazy + p.description,
+#contact_form, #contact_form + p.description, 
+#novinky, #novinky + p.description,
 #questions, #questions + p.description,
 #contact_form, #contact_form + p.description, 
 #news, #news + p.description {
@@ -757,6 +761,9 @@ p.desc {
   margin-left: 0;
   margin-right: 0;
 }
+#dotazy, #dotazy + p.description:after,
+#contact_form + p.description:after,
+#novinky + p.description:after,
 #questions, #questions + p.description:after,
 #contact_form + p.description:after,
 #news + p.description:after {
@@ -940,11 +947,15 @@ dl.klima dt:first-child + dd {
   color: white;
 }
 /*********************************/
+body[data-link="/vinny_listek"] #content > .section,
+body[data-link="/napojovy_listek"] #content > .section,
 body[data-link="/wine_list"] #content > .section,
 body[data-link="/beverages"] #content > .section {
   margin-top: 8em;
 }
 @media (min-width: 60em) {
+  body[data-link="/vinny_listek"] #content > .section,
+  body[data-link="/napojovy_listek"] #content > .section,
   body[data-link="/wine_list"] #content > .section,
   body[data-link="/beverages"] #content > .section {
     display: flex;
@@ -953,6 +964,8 @@ body[data-link="/beverages"] #content > .section {
     margin-left: auto;
     margin-right: auto;
   }
+  body[data-link="/vinny_listek"] #content > .section > div,
+  body[data-link="/napojovy_listek"] #content > .section > div,
   body[data-link="/wine_list"] #content > .section > div,
   body[data-link="/beverages"] #content > .section > div {
     flex: 0 1 48%;
