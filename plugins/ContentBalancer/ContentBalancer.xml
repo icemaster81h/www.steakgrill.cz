@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentBalancer>
-  <var id="limit" modifyonly="modifyonly">3</var>
+<!--   <var id="limit" modifyonly="modifyonly">3</var> -->
   <item id="simple" wrapper="ul" modifyonly="modifyonly">
     <li><a var="link@href headingplus" class="button">n/a</a></li>
   </item>
