@@ -51,7 +51,7 @@
       <xsl:when test="@id='o_nas'">about_us</xsl:when>
       <xsl:when test="@id='koncept'">concept</xsl:when>
       <xsl:when test="@id='steaky'">steaks</xsl:when>
-      <xsl:when test="@id='video-archives'">video-archives</xsl:when>
+      <xsl:when test="@id='videoarchiv'">video-archives</xsl:when>
       <xsl:when test="@id='nabidka'">menu</xsl:when>
       <xsl:when test="@id='denni_nabidka'">daily_offer</xsl:when>
       <xsl:when test="@id='akce'">weekend_events</xsl:when>
