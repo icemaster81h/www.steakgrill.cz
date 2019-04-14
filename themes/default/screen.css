@@ -113,6 +113,11 @@ ol.contentlink-bc > li+li:before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% top;
+  background-image: url("/files/design/menu-header.jpg");
+}
+.hdesc a {
+  color: white !important;
+  border-bottom: thin solid !important;
 }
 .hdesc.steakgrill {
   padding-top: 6.2em;
