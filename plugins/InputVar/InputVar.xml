@@ -205,7 +205,7 @@ Vietnamská polévka s grilovaným vyzrálým uruguayským nízkým roštěncem,
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Smažené nudle s grilovaným hovězím masem&#13;
-Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou..&#13;
+Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou.&#13;
 229 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Karamelizovaný ananas&#13;
 Smetanová omáčka s vůní badyánu, skořice, fenyklu a hřebíčku, drobenka z ořechů, karamelizovaný sníh.&#13;
