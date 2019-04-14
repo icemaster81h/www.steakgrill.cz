@@ -305,6 +305,9 @@ svg.fa-facebook {
   margin-right: auto;
   max-width: 25em;
 }
+#content .contact + div .card {
+  background: white;
+}
 .card dd {
   margin-left: 0;
 }
