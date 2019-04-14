@@ -55,14 +55,13 @@ body #footer > * {
   width: 79%;
   /* float: left; */
   /* clear: left; */
-  margin-bottom: 0;
   line-height: 1;
-  margin-bottom: 0.5em;
+  margin-bottom: 0;
+  margin-top: 0.5em;
 }
 #content .meal-oneline dd.price {
   width: 19%;
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   text-align: right;
 }
 #content .meal-oneline dt,
@@ -71,7 +70,7 @@ body #footer > * {
   display: inline-block;
 }
 #content .meal-oneline dd:not(.price) {
-  display: none;
+  /* display: none; */
 }
 #content .meal-oneline:after {
   content: "";
