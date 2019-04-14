@@ -36,59 +36,57 @@
   -->
 
   <fn id="months" fn="replace">
-    <data name="[01]">January</data>
-    <data name="[02]">February</data>
-    <data name="[03]">March</data>
-    <data name="[04]">April</data>
-    <data name="[05]">May</data>
-    <data name="[06]">June</data>
-    <data name="[07]">July</data>
-    <data name="[08]">August</data>
-    <data name="[09]">September</data>
-    <data name="[10]">October</data>
-    <data name="[11]">November</data>
-    <data name="[12]">December</data>
+    <data name="[01]">ledna</data>
+    <data name="[02]">února</data>
+    <data name="[03]">března</data>
+    <data name="[04]">dubna</data>
+    <data name="[05]">května</data>
+    <data name="[06]">června</data>
+    <data name="[07]">července</data>
+    <data name="[08]">srpna</data>
+    <data name="[09]">září</data>
+    <data name="[10]">října</data>
+    <data name="[11]">listopadu</data>
+    <data name="[12]">prosince</data>
   </fn>
   <fn id="yearformat" fn="strftime" format="%Y"/>
-  <fn id="tmpdateformat" fn="strftime" format="[%m] %e, %Y"/>
+  <fn id="tmpdateformat" fn="strftime" format="%e. [%m] %Y"/>
   <fn id="dateformat" fn="sequence">
     <call>tmpdateformat</call>
     <call>months</call>
   </fn>
 
-  <var id="nodebug">Operating mode</var>
-  <var id="debug">Debugging mode</var>
-  <var id="servercache">Delete server cache</var>
-  <var id="filecache">Update file cache</var>
-  <var id="reportbug"><a href="https://bitbucket.org/igwr/cms/issues?status=new&amp;status=open">Send feedback</a></var>
+  <var id="nodebug">Provozní režim</var>
+  <var id="debug">Ladící režim</var>
+  <var id="servercache">Smazat mezipaměť serveru</var>
+  <var id="reportbug"><a href="https://bitbucket.org/igwr/cms/issues?status=new&amp;status=open">Odeslat zpětnou vazbu</a></var>
   <!-- <var id="igcms"><a href="https://dokumenty.internetguru.cz/igcms">Specifikace IGCMS</a></var> -->
-  <var id="codemirror"><a href="https://dokumenty.internetguru.cz/zkratky">CodeMirror keyboard shortcuts</a></var>
-  <var id="version_link"><a href="/%s.php" var="cms-default_release@href" title="Pro nezávislé ladění zdrojových souborů (CSS/JS)">Separate branch</a></var>
+  <var id="codemirror"><a href="https://dokumenty.internetguru.cz/zkratky">Klávesové zkratky CodeMirror</a></var>
   <!--<var id="service_plain">E-Základna, www.e-zakladna.cz</var>-->
   <!--<var id="service">Na službě: <a href="https://www.e-zakladna.cz/">E-Základna</a></var>-->
   <var id="service_plain">Rostoucí weby, www.rostouciweby.cz</var>
-  <var id="service">Powered by: <a href="http://www.rostouciweby.cz">Rostoucí weby</a></var>
+  <var id="service">Na službě: <a href="http://www.rostouciweby.cz">Rostoucí weby</a></var>
   <var id="resp">Webmaster: <span var="cms-resp">n/a</span></var>
-  <var id="mtime">Latest changes: <span var="cms-mtime" fn="inputvar-dateformat">n/a</span></var>
+  <var id="mtime">Poslední změny: <span var="cms-mtime" fn="inputvar-dateformat">n/a</span></var>
   <var id="admin">Admin: <span var="cms-admin_id">n/a</span></var>
   <var id="cyear" fn="yearformat" var="cms-ctime"/>
   <var id="year" fn="yearformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
   <var id="today" fn="dateformat" var="cms-server">now</var><!-- cms-server to disable value for webdiff -->
   <var id="adminmenu">
     <ul class="adminmenu noprint">
-      <li><a href="?admin">Administration</a></li>
-      <li><a href="?log">Logs</a></li>
-      <li><a href="?changelog">Version history</a></li>
+      <li><a href="?admin">Administrace</a></li>
+      <li><a href="?log">Logy</a></li>
+      <li><a href="?changelog">Historie verzí</a></li>
       <li><a href="?import">Import</a></li>
     </ul>
   </var>
   <var id="ielt7">
     <div class="ielte7" style="background: yellow; margin: 0; border: 0.3em solid red;">
       <dl>
-        <dt>You are using an outdated browser version!</dt>
-        <dd><a href="https://support.microsoft.com/cs-cz/help/17621/internet-explorer-downloads">Upgrade</a> to a higher version,</dd>
-        <dd>install <a href="https://www.google.com/chrome/">an alternative browser</a> or</dd>
-        <dd>contact your computer administrator.</dd>
+        <dt>Používáte zastaralou verzi prohlížeče!</dt>
+        <dd><a href="https://support.microsoft.com/cs-cz/help/17621/internet-explorer-downloads">Aktualizujte</a> na vyšší verzi,</dd>
+        <dd>nainstalujte <a href="https://www.google.com/chrome/">alternativní prohlížeč</a> nebo</dd>
+        <dd>kontaktujte správce svého počítače.</dd>
       </dl>
     </div>
   </var>
@@ -162,8 +160,10 @@
     </message>
 
    -->
-  <var id="atel"><a href="tel:+420777330050">+420 777 330 050</a></var>
-  <var id="rezervace">Bookings are accepted only by telephone at <em var="inputvar-atel">n/a</em>.</var>
+  <var id="filecache">Aktualizovat souborovou mezipaměť</var>
+  <var id="version_link"><a href="/%s.php" var="cms-default_release@href" title="Pro nezávislé ladění zdrojových souborů (CSS/JS)">Samostatná větev</a></var>
+  <var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
+  <var id="rezervace">Rezervace jsou možné pouze telefonicky na čísle <em var="inputvar-atel">n/a</em>.</var>
   <login id="tomas" password="$1$3HNtZKsL$v7wJYFaXYkMXpbsn7cjFu."/>
   <login id="vita" password="$1$MBdYxW71$Bd0LFhJHOLDei05rHS0Ym0"/>
   <login id="jarda" password="$1$X8GFDlgb$9m27o5.badtL.GDXcL6It."/>
@@ -171,66 +171,70 @@
   <login id="lukas" password="$1$r.Ni58yp$rlzff.yiRUgcDT6sj/UCk/"/>
   <login id="denisa" password="$1$LOsT4TAm$Xta2qLcq.0Ni2HnNaxoni0"/>
   <login id="madmann" password="$1$kz8bMcyh$VWB77rxdcjmIEYPp9JN.j/"/>
-  <login id="internetguru" password="$1$AsNyxu6J$QLskDMgRJcJ79a5jfG/iP1"/>
-  <fn id="formatjidlo1" fn="pregreplace" pattern="\s*(.+)\s*\n\s*(.+)([\s\S]*)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Price:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
-  <fn id="formatjidlo2" fn="pregreplace" pattern="(.+) (CZK [\d]+)" replacement="&lt;span&gt;&lt;span&gt;$1&lt;/span&gt;&lt;span&gt;$2&lt;/span&gt;&lt;/span&gt;"/>
-  <fn id="formatjidlo3" fn="pregreplace" pattern="(se)(rv)(er)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Price:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
+  <login id="internetguru" password="$1$fs2OfhF6$sNbEhiE/55qwQSwKkf.Xy/"/>
+  <fn id="formatjidlo1" fn="pregreplace" pattern="\s*(.+)\s*\n\s*(.+)([\s\S]*)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Cena:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
+  <fn id="formatjidlo2" fn="pregreplace" pattern="(.+) ([\d]+ Kč)" replacement="&lt;span&gt;&lt;span&gt;$1&lt;/span&gt;&lt;span&gt;$2&lt;/span&gt;&lt;/span&gt;"/>
+  <fn id="formatjidlo3" fn="pregreplace" pattern="(se)(rv)(er)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Cena:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
   <fn id="formatjidlo" fn="sequence">
     <call>formatjidlo1</call>
     <call>formatjidlo2</call>
     <call>formatjidlo3</call>
   </fn>
-  <set type="text" for="nabidka" pattern="Daily Offer, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d, 20\d\d" placeholder="Daily Offer, April 16, 2018">Daily offer, date</set>
-  <var var="cms-server" id="nabidka" required="required">Daily Offer, November 15, 2018</var>
-  <var var="cms-server" id="nabidka-popis">We cook a lunch menu every weekday using fresh local ingredients.</var>
-  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-Z]\D+\n\s*[A-Z].*\.(\n.* CZK \d+){2}" placeholder="Potato soup&#10;With forest mushrooms.&#10;small CZK 43&#10;large CZK 49">Soups</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Potato soup&#13;
-With forest mushrooms.&#13;
-small CZK 49&#13;
-large CZK 55</var>
+  <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
+  <var var="cms-server" id="nabidka" required="required">Denní nabídka, 13. dubna 2019</var>
+  <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
+  <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Gulášová polévka&#13;
+Taková, jaká má být, s kousky hovězího masa.&#13;
+malá 49 Kč&#13;
+velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
-  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.(\nCZK \d+)?" placeholder="Mushroom veal stew&#10;Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings.&#10;CZK 179">Main courses</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Mushroom veal stew&#13;
-Stewed veal in delicate cream sauce with forest mushrooms and homemade bread dumplings.&#13;
-CZK 179</var>
+  <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n\d+ Kč)?" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Beef Stroganoff&#13;
+Dušený uruguayský roštěnec krájený na nudličky v delikátní smetanové omáčce se žampiony a kyselou okurkou, hranolky.&#13;
+229 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
-  <set type="text" for="vikendova-akce" pattern="Weekend special(.+)?, (January|February|March|April|May|June|July|August|September|October|November|December) \d?\d–\d?\d, 20\d\d" placeholder="Weekend special including Friday evening, November 2–4, 2018">Special, from–to</set>
-  <var var="cms-server" id="vikendova-akce" required="required">Weekend special including Friday evening, November 2–4, 2018</var>
-  <var var="cms-server" id="akce-popis">On weekends, we mostly offer dishes made in an oven, grilled and broiled over wood.</var>
-  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Homemade sirloin steak tartare, 50 g&#10;Pre-mixed, garlic toast.&#10;CZK 129">Starters</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Homemade sirloin steak tartare, 50 g&#13;
-Pre-mixed, garlic toast.&#13;
-CZK 129</var>
+  <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
+  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce, 12. až 14. dubna 2019</var>
+  <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla připravovaná především v peci, grilovaná a rožněná na dřevě. Připravujeme celé velké kusy zvěře, jako např. 70kg hovězí kýta a rozličná divoká zvěřina – prasata, jehněčí, daňci, mufloni. Pokrmy pečeme při nízké teplotě až 12 hodin, takže jsou šťavnaté a zároveň krásně voní kouřem.</var>
+  <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Pho Bo Tai Lan&#13;
+Vietnamská polévka s grilovaným vyzrálým uruguayským nízkým roštěncem, rýžovými nudlemi a bylinkami.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
-  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-Z]\D+(, \d+ g)?\n\s*[A-Z].*\.\nCZK \d+" placeholder="Beef sirloin in cream sauce known as “svíčková”&#10;Matured Uruguayan rump, homemade Carlsbad dumplings, lemon, lingonberries.&#10;CZK 289">Main courses</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Beef sirloin in cream sauce known as “svíčková”&#13;
-Matured Uruguayan rump, homemade Carlsbad dumplings, lemon, lingonberries.&#13;
-CZK 209</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Homemade sirloin steak tartare, 150 g&#13;
-Pre-mixed, garlic toast.&#13;
-CZK 289</var>
+  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Smažené nudle s grilovaným hovězím masem&#13;
+Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou.&#13;
+229 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Karamelizovaný ananas&#13;
+Smetanová omáčka s vůní badyánu, skořice, fenyklu a hřebíčku, drobenka z ořechů, karamelizovaný sníh.&#13;
+79 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
-  <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Hello,
-a user dish change has been made at $cms-url/listek.
+  <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
+  <var id="upozorneni"/>
+  <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
+na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
 
-– User: $user
-– Time of change: $date
-– User administration: $cms-url/?InputVar
+– Uživatel: $user
+– Čas změny: $date
+– Uživatelská administrace: $cms-url/?InputVar
 
-Listing of differences in current content:
+Výspis rozdílů aktuální úpravy:
+
 $diff
 
--- Use the Reload feature (F5 key) of your browser to show current content.
+-- 
+Pro zobrazení aktuálního obsahu použijte funkci Obnovit (klávesa F5) prohlížeče.
 $inputvar-service_plain</message>
-  <var id="term-sous-vide" class="term" title="in vacuum" href="https://cs.wikipedia.org/wiki/Sous-vide" data-term-href-title="The term sous-vide in Wikipedia" data-term-desc="Sous-vide (from French, translated as “in vacuum”) is a cooking method of food preparation in airtight plastic wrap in water bath with controlled temperature.">n/a</var>
-  <var id="term-docg" class="term" title="Denominazione di Origine Controllata e Garantita" data-term-desc="Označení DOCG (Denominazione di Origine Controllata e Garantita) identification has applied since 1980 for the top quality level in Italy. All processes are under strict control, including the origin of the vine, yield per hectare and altitude of the vineyard.">n/a</var>
-  <var id="term-doc" class="term" title="Denominazione di Origine Controllata" data-term-desc="The DOC (Denominazione di Origine Controllata)  identification is the second highest level of evaluation of Italian wines. Wines identified with this abbreviation must comply with the locality registered for growing of the particular variety and the conditions of maximum yield, the length of the vine ripening, must be met.">n/a</var>
-  <var id="term-nbsp" class="term" title="Non-breaking space" href="https://cs.wikipedia.org/wiki/Nezlomiteln%C3%A1_mezera" data-term-href-title="Non-breaking space in Wikipedia" data-term-desc="Non-breaking (or indivisible) space is a special typographic character, one of the “white” characters. The character works as a standard space except that in the case of automatic line break the programmes for text processing will not break the line after this space. Therefore the character is used where division of two words (numbers, symbols) between two lines is undesirable.">n/a</var>
-  <var id="term-line break" class="term" title="Inappropriate terms at line end" href="http://prirucka.ujc.cas.cz/?id=880" data-term-href-title="Line break and inappropriate terms at line end " data-term-desc="Text processing should avoid line break at certain places for the text to run smoothly and continually and its clear structure and comfortable reading to be assured.">n/a</var>
-  <var id="term-igp" class="term" title="Indication Géographique Protégée" href="http://www.terroir-francie.cz/klasifikace.html" data-term-desc="Quality wines representing a wine region and connected with characteristics of one or more vine varieties.">n/a</var>
-  <var id="term-booking1" class="term" title="Bookings for 15 to 30 persons" data-term-desc='Tomáš Lisec at &lt;a href="tel:+420607515901"&gt;+420 607 515 901&lt;/a&gt; or &lt;a href="mailto:lisec@steakgrill.cz"&gt;lisec@steakgrill.cz&lt;/a&gt;'>n/a</var>
-  <var id="term-booking2" class="term" title="Bookings above 30 persons" data-term-desc='Jaroslav Honzajk at &lt;a href="tel:+420777727362"&gt;+420 777 727 362&lt;/a&gt; or &lt;a href="mailto:honzajk@steakgrill.cz"&gt;honzajk@steakgrill.cz&lt;/a&gt;'>n/a</var>
+  <var id="term-sous-vide" class="term" title="ve vakuu" href="https://cs.wikipedia.org/wiki/Sous-vide" data-term-href-title="Termín sous-vide na Wikipedii" data-term-desc="Sous-vide (z francouzštiny, v překladu znamená „ve vakuu“) je kuchařská metoda, při níž se potraviny připravují ve vzduchotěsném umělohmotném obalu ve vodní lázni s řízenou teplotou.">n/a</var>
+  <var id="term-docg" class="term" title="Denominazione di Origine Controllata e Garantita" data-term-desc="Označení DOCG (Denominazione di Origine Controllata e Garantita) platí od roku 1980 pro nejvyšší stupeň kvality v Itálii. Veškeré procesy jsou velmi přísně kontrolovány, včetně původu révy, hektarového výnosu a nadmořské výšky vinic.">n/a</var>
+  <var id="term-doc" class="term" title="Denominazione di Origine Controllata" data-term-desc="Označení DOC (Denominazione di Origine Controllata) je druhý nejvyšší stupeň hodnocení italských vín. Vína s tímto označením musí splňovat danou lokalitu, která je uznána pro pěstování dané odrůdy, rovněž musí být dodrženy podmínky maximálního výnosu, délka zrání vína.">n/a</var>
+  <var id="term-nbsp" class="term" title="Nezlomitelná mezera" href="https://cs.wikipedia.org/wiki/Nezlomiteln%C3%A1_mezera" data-term-href-title="Nezlomitelná mezera na Wikipedii" data-term-desc="Nezlomitelná (či nedělitelná) mezera je speciální typografický znak. Jde o jeden z tzv. bílých znaků. Funguje jako běžná mezera s výjimkou toho, že při automatickém zalomení textu do řádků programy pro zpracování textu v této mezeře řádek nezalomí. Používá se proto tam, kde je rozdělení dvou slov (čísel, symbolů) na různé řádky nežádoucí.">n/a</var>
+  <var id="term-zalomeni-radku" class="term" title="Nevhodné výrazy na konci řádku" href="http://prirucka.ujc.cas.cz/?id=880" data-term-href-title="Zalomení řádků a nevhodné výrazy na jejich konci" data-term-desc="Při úpravě textů by na některých místech nemělo dojít k zalomení řádku, aby text plynule navazoval, jeho členění bylo přehledné a čtení pohodlné.">n/a</var>
+  <var id="term-igp" class="term" title="Indication Géographique Protégée" href="http://www.terroir-francie.cz/klasifikace.html" data-term-desc="Kvalitní vína, která zastupují určitou oblast a jsou spojena s charakteristikami jedné nebo více odrůd révy.">n/a</var>
+  <var id="term-booking1" class="term" title="Rezervace od 15 do 30 lidí" data-term-desc='Tomáš Lisec na &lt;a href="tel:+420607515901"&gt;+420 607 515 901&lt;/a&gt; nebo &lt;a href="mailto:lisec@steakgrill.cz"&gt;lisec@steakgrill.cz&lt;/a&gt;'>n/a</var>
+  <var id="term-booking2" class="term" title="Rezervace nad 30 lidí" data-term-desc='Jaroslav Honzajk na &lt;a href="tel:+420777727362"&gt;+420 777 727 362&lt;/a&gt; nebo &lt;a href="mailto:honzajk@steakgrill.cz"&gt;honzajk@steakgrill.cz&lt;/a&gt;'>n/a</var>
 </InputVar>
