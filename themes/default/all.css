@@ -17,6 +17,9 @@ body #footer > * {
   margin-right: auto;
   box-sizing: border-box;
 }
+h2.break {
+  page-break-before: always
+}
 /*****************************/
 .meal dt {
   font-weight: 700;
