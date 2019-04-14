@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContactForm>
-  <!--   <var id="adminaddr" modifyonly="modifyonly">pavelka.iix@gmail.com</var> -->
+<!--   <var id="adminaddr" modifyonly="modifyonly">pavelka.iix@gmail.com</var> -->
   <var id="adminaddr" modifyonly="modifyonly">restaurace@steakgrill.cz</var>
   <message for="news">
 Nová registrace k odběru novinek:
@@ -23,86 +23,98 @@ $inputvar-service_plain
     <dl>
       <dt><label for="EMAIL">E-mailová adresa</label></dt>
       <dd>
-        <input type="email" value="" name="EMAIL" class="required email" id="EMAIL" placeholder="josef.novak@seznam.cz"/>
-        <input class="hide" type="text" name="b_8625178b2a66c8710f182b4d0_f93996121e" tabindex="-1" value="" placeholder="josef.novak@seznam.cz"/>
+        <input type="email" value="" name="EMAIL" class="required email" id="EMAIL"/>
+        <input class="hide" type="text" name="b_8625178b2a66c8710f182b4d0_f93996121e" tabindex="-1" value=""/>
       </dd>
-      <dd><input type="submit" id="submit" class="button" value="Newsletter Subscribe"/></dd>
+      <dd><input type="submit" id="submit" value="Registrovat se k odběru"/></dd>
     </dl>
   </form>
+  
+  <message for="basic">
+Jméno: $name
+Email: $email
+Telefonní kontakt: $telephone
 
-  <message for="basic">Name: $name Email: $email Telephone number: $telephone Message: $msg -- Sent from IP address $cms-ip Form $form_id $inputvar-service_plain</message>
+Zpráva:
+$msg
+
+--
+Odesláno z IP adresy $cms-ip
+Formulář $form_id
+$inputvar-service_plain
+  </message>  
   <form id="basic">
     <dl>
-      <dt><label for="name">Full name <em>(mandatory)</em></label></dt>
+      <dt><label for="name">Celé jméno <em>(povinné)</em></label></dt>
       <dd><input type="text" pattern=".*\S+.*" id="name" required="required" placeholder="Josef Novák"/></dd>
-      <dt><label for="email">Email address <em>(mandatory)</em></label></dt>
+      <dt><label for="email">E-mailová adresa <em>(povinné)</em></label></dt>
       <dd><input type="email" id="email" required="required" placeholder="josef.novak@seznam.cz"/></dd>
-      <dt><label for="telephone">Telephone</label></dt>
+      <dt><label for="telephone">Telefon</label></dt>
       <dd><input type="text" pattern=".*(\d\D*){9,}" id="telephone" placeholder="+420 777123456"/></dd>
-      <dd>Leave blank or type at least 9 digits.</dd>
-      <dt><label for="msg">Message <em>(mandatory)</em></label></dt>
+      <dd><label for="telephone">Nechte prázdné nebo napište aspoň 9 číslic.</label></dd>
+      <dt><label for="msg">Zpráva <em>(povinné)</em></label></dt>
       <dd><textarea id="msg" required="required" var="inputvar-rezervace@placeholder"></textarea></dd>
-      <dt class="noprint">Form submission</dt>
-      <dd class="noprint"><label><input type="checkbox" id="sendcopy"/> Send a copy of this message to specified email</label></dd>
-      <dd class="noprint"><input type="submit" id="submit" class="button" value="Send"/></dd>
+      <dt class="noprint">Odeslání formuláře</dt>
+      <dd class="noprint"><label><input type="checkbox" id="sendcopy"/> Poslat kopii této zprávy na uvedený e-mail</label></dd>
+      <dd class="noprint"><input type="submit" id="submit" value="Odeslat"/></dd>
     </dl>
   </form>
-
+  
   <form id="catering">
-
+    
     <fieldset>
-      <legend>General</legend>
+      <legend>Obecné</legend>
       <dl>
-        <dt><label for="date">Event date</label></dt>
+        <dt><label for="date">Datum konání</label></dt>
         <dd><input type="text" id="date" required="required" placeholder="1. 2. 2018" pattern="\s*([1-9]|1[0-9]|2[0-9]|3[01]).\s*([1-9]|1[012]).\s*([0-9]{4})?\s*"/></dd>
 
-        <dt><label for="start">Start</label></dt>
+        <dt><label for="start">Začátek</label></dt>
         <dd><input type="text" id="start" required="required" placeholder="12:30" pattern="\s*([0-9]|0[0-9]|1[0-9]|2[0-3])\s*(:\s*[0-5][0-9])?\s*"/></dd>
 
-        <dt><label for="end">End</label></dt>
+        <dt><label for="end">Konec</label></dt>
         <dd><input type="text" id="end" required="required" placeholder="18:30" pattern="\s*([0-9]|0[0-9]|1[0-9]|2[0-3])\s*(:\s*[0-5][0-9])?\s*"/></dd>
 
-        <dt><label for="place">Event venue</label></dt>
+        <dt><label for="place">Místo konání</label></dt>
         <dd>
           <select id="place" required="required">
-            <option selected="selected">any</option>
-            <option>extension</option>
-            <option>garden</option>
-            <option>restaurant</option>
+            <option selected="selected">jakékoli</option>
+            <option>přístavba</option>
+            <option>zahrádka</option>
+            <option>restaurace</option>
           </select>
         </dd>
 
-        <dt><label for="type">Catering role</label></dt>
+        <dt><label for="type">Funkce cateringu</label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="type" required="required" placeholder="oslava narozenin"/></dd>
       </dl>
     </fieldset>
 
     <fieldset>
-      <legend>Contact information</legend>
+      <legend>Kontaktní informace</legend>
       <dl>
-        <dt><label for="name">Full name</label></dt>
+        <dt><label for="name">Celé jméno</label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="name" required="required" placeholder="Josef Novák"/></dd>
 
-        <dt><label for="address">Address</label></dt>
+        <dt><label for="address">Adresa</label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="address" placeholder="Koněvova 1, 130 00 Praha 3 – Žižkov"/></dd>
 
-        <dt><label for="email">Email address</label></dt>
+        <dt><label for="email">E-mailová adresa</label></dt>
         <dd><input type="email" id="email" required="required" placeholder="josef.novak@seznam.cz"/></dd>
 
-        <dt><label for="telephone">Telephone</label></dt>
+        <dt><label for="telephone">Telefon</label></dt>
         <dd><input type="text" required="required" pattern=".*(\d\D*){9,}" id="telephone" placeholder="+420 777123456"/></dd>
 
-        <dt><label for="ic">Company ID</label></dt>
+        <dt><label for="ic">IČ</label></dt>
         <dd><input type="text" id="ic" placeholder="11122233" pattern="\d{8}"/></dd>
 
-        <dt><label for="dic">VAT ID</label></dt>
+        <dt><label for="dic">DIČ</label></dt>
         <dd><input type="text" id="dic" placeholder="CZ11122233" pattern=".*\d{7}\d+.*"/></dd>
 
-        <dt><label for="contact">Preferred contact</label></dt>
+        <dt><label for="contact">Preferovaný kontakt</label></dt>
         <dd>
           <select id="contact" required="required">
-            <option selected="selected">any</option>
-            <option>telephone</option>
+            <option selected="selected">jakýkoli</option>
+            <option>telefon</option>
             <option>email</option>
           </select>
         </dd>
@@ -110,122 +122,123 @@ $inputvar-service_plain
     </fieldset>
 
     <fieldset>
-      <legend>No. of persons</legend>
+      <legend>Počet lidí</legend>
       <dl>
-        <dt><label for="adults">Adults</label></dt>
+        <dt><label for="adults">Dospělí</label></dt>
         <dd><input type="number" min="0" value="10" id="adults" required="required"/></dd>
 
-        <dt><label for="children">Children up to 12</label></dt>
+        <dt><label for="children">Děti do 12 let</label></dt>
         <dd><input type="number" min="0" value="0" id="children" required="required"/></dd>
 
-        <dt><label for="price">Price per person (CZK)</label></dt>
+        <dt><label for="price">Cena za osobu (Kč)</label></dt>
         <dd><input type="number" min="50" value="500" id="price" required="required"/></dd>
       </dl>
     </fieldset>
     <fieldset class="vyber-jidla">
-      <legend>Choice of meal</legend>
+      <legend>Výběr jídla</legend>
       <dl>
-        <dt><label for="main1">Main course</label></dt>
-        <dd>No more than 3 types</dd>
+        <dt><label for="main1">Hlavní jídlo</label></dt>
+        <dd>Maximálně 3 druhy</dd>
         <dd>
           <select id="main1" required="required">
-            <option>Sous-vide duck breast fillet</option>
-            <option>Chicken cordon bleu</option>
-            <option>Cheeseburger</option>
-            <option>Crispy salmon</option>
-            <option>Cobb salad</option>
+            <option>Filírované kachní prso sous-vide</option>
+            <option>Chicken Cordon bleu</option>
+            <option>Cheese burger</option>
+            <option>Crispy salamon</option>
+            <option>Cobb salát</option>
             <option>Chicken burger</option>
             <option>Buffalo wings</option>
             <option>BBQ baby black ribs</option>
-            <option>Grilled filet mignon</option>
+            <option>Grilled fillet mingon</option>
             <option>Grilled pork chop</option>
-            <option>Ribeye steak</option>
-            <option>New York strip steak au poivre</option>
-            <option>Caesar salad with grilled chicken steak</option>
+            <option>Rib eye steak</option>
+            <option>New York strips steak au Poivre</option>
+            <option>Caesar salát s grilovaným kuřecím steakem</option>
             <option></option>
           </select>
         </dd>
         <dd>
           <select id="main2" required="required">
             <option selected="selected">–</option>
-            <option>Sous-vide duck breast fillet</option>
-            <option>Chicken cordon bleu</option>
+            <option>Filírované kachní prso sous-vide</option>
+            <option>Chicken Cordon bleu</option>
             <option>Cheese burger</option>
-            <option>Crispy salmon</option>
-            <option>Cobb salad</option>
+            <option>Crispy salamon</option>
+            <option>Cobb salát</option>
             <option>Chicken burger</option>
             <option>Buffalo wings</option>
             <option>BBQ baby black ribs</option>
-            <option>Grilled filet mignon</option>
+            <option>Grilled fillet mingon</option>
             <option>Grilled pork chop</option>
             <option>Rib eye steak</option>
-            <option>New York strip steak au poivre</option>
-            <option>Caesar salad with grilled chicken steak</option>
+            <option>New York strips steak au Poivre</option>
+            <option>Caesar salát s grilovaným kuřecím steakem</option>
             <option></option>
           </select>
         </dd>
         <dd>
           <select id="main3" required="required">
             <option selected="selected">–</option>
-            <option>Sous-vide duck breast fillet</option>
-            <option>Chicken cordon bleu</option>
+            <option>Filírované kachní prso sous-vide</option>
+            <option>Chicken Cordon bleu</option>
             <option>Cheese burger</option>
-            <option>Crispy salmon</option>
-            <option>Cobb salad</option>
+            <option>Crispy salamon</option>
+            <option>Cobb salát</option>
             <option>Chicken burger</option>
             <option>Buffalo wings</option>
             <option>BBQ baby black ribs</option>
-            <option>Grilled filet mignon</option>
+            <option>Grilled fillet mingon</option>
             <option>Grilled pork chop</option>
             <option>Rib eye steak</option>
-            <option>New York strip steak au poivre</option>
-            <option>Caesar salad with grilled chicken steak</option>
+            <option>New York strips steak au Poivre</option>
+            <option>Caesar salát s grilovaným kuřecím steakem</option>
             <option></option>
           </select>
         </dd>
-
-        <dt><label for="starter">Starters</label></dt>
-        <dd>One type per group only</dd>
-        <dd>Starters must be ordered at least 2–5 days in advance</dd>
+     
+        <dt><label for="starter">Předkrm</label></dt>
+        <dd>Pouze jeden druh na skupinu</dd>
+        <dd>Předkrm je nutno obědnat minimálně 2 až 5 dní předem</dd>
         <dd>
           <select id="starter" required="required">
             <option selected="selected">–</option>
-            <option>Caesar salad</option>
-            <option value="Roastbeef">Roast beef – 70 g to 100 g per serving; minimum 2 kg</option>
-            <option value="Tatarský steak">Steak tartare – 50 g per serving; minimum 300 g</option>
-            <option value="Tatarský steak z lososa">Salmon tartare – 50 g per serving; minimum 300 g</option>
-            <option value="Drůbeží paštika s portským vínem">Poultry pâté with port wine – 40 g per serving; minimum 400 g</option>
-            <option value="Rajčata plněná krabím salátem">Tomatoes stuffed with crab salad – minimum 10 servings</option>
-            <option value="Ruská vejce s vlašským salátem">Deviled eggs with Olivier salad – minimum 10 servings</option>
-            <option value="Gravlax">Gravlax – 70 g per serving; minimum 700 g</option>
-            <option value="Kanapky">Canapés (tapas) – 2 pieces per serving; minimum 10 servings</option>
+            <option>Caesar salát</option>
+            <option value="Roastbeef">Roastbeef – 70 g až 100 g na porci, minimálně 2 kg</option>
+            <option value="Tatarský steak">Tatarský steak – 50 g na porci, minimálně 300 g</option>
+            <option value="Tatarský steak z lososa">Tatarský steak z lososa – 50 g na porci, minimálně 300 g</option>
+            <option value="Drůbeží paštika s portským vínem">Drůbeží paštika s portským vínem – 40 g na porci, minimálně 400 g</option>
+            <option value="Rajčata plněná krabím salátem">Rajčata plněná krabím salátem – minimálně 10 porcí</option>
+            <option value="Ruská vejce s vlašským salátem">Ruská vejce s vlašským salátem – minimálně 10 porcí</option>
+            <option value="Gravlax">Gravlax – 70 g na porci, minimálně 700 g</option>
+            <option value="Kanapky">Kanapky (chuťovky) – 2 ks na porci, minimálně 10 porcí</option>
           </select>
         </dd>
-
-        <dt><label for="drink">Toast</label></dt>
+        
+        <dt><label for="drink">Přípitek</label></dt>
         <dd>
           <select id="drink" required="required">
             <option selected="selected">–</option>
-            <option value="Kir Royal">Kir Royal – French sparkling wine with Crème de cassis</option>
+            <option value="Kir Royal">Kir Royal – francouzský sekt s likérem Crème de cassis</option>
             <option>Aperol Spritz</option>
-            <option value="Louis Perdier">Louis Perdier – French sparkling wine (demi sec/brut)</option>
+            <option value="Louis Perdier">Louis Perdier – francouzský sekt (demi sec/brut)</option>
             <option>Cinzano bianco</option>
           </select>
         </dd>
       </dl>
     </fieldset>
-
+    
     <fieldset>
-      <legend>Form submission</legend>
+      <legend>Odeslání formuláře</legend>
       <dl>
-        <dt><label for="notes">Special instructions / notes</label></dt>
+        <dt><label for="notes">Zvláštní instrukce / poznámky</label></dt>
         <dd><textarea id="notes" placeholder="Květinová výzdoba, raut"></textarea></dd>
 
-        <dt class="noprint"><label for="sendcopy">Send a copy of this message to specified email</label></dt>
+        <dt class="noprint"><label for="sendcopy">Poslat kopii této zprávy na uvedený e-mail</label></dt>
         <dd class="noprint"><input type="checkbox" id="sendcopy"/></dd>
-        <dd class="noprint"><input type="submit" id="submit" value="Send"/></dd>
+        <dd class="noprint"><input type="submit" id="submit" value="Odeslat"/></dd>
       </dl>
     </fieldset>
   </form>
-
+  
+  
 </ContactForm>
