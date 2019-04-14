@@ -892,15 +892,18 @@ dl.klima dt:first-child + dd {
   max-width: 65em;
   margin: 0 auto;
 }
+#videoarchiv, #videoarchiv + p.description,
 #video-archives, #video-archives + p.description {
   text-align: left;
   max-width: 36rem;
   margin-left: 0;
   margin-right: 0;
 }
+#videoarchiv + p.description:after,
 #video-archives + p.description:after {
   content: none;
 }
+#videoarchiv,
 #video-archives {
   margin-top: 2em;
 }
