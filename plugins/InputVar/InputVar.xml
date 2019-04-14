@@ -205,7 +205,7 @@ Vietnamská polévka s grilovaným vyzrálým uruguayským nízkým roštěncem,
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Smažené nudle s grilovaným hovězím masem&#13;
-Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou.&#13;
+Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou..&#13;
 229 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Karamelizovaný ananas&#13;
 Smetanová omáčka s vůní badyánu, skořice, fenyklu a hřebíčku, drobenka z ořechů, karamelizovaný sníh.&#13;
@@ -235,6 +235,6 @@ $inputvar-service_plain</message>
   <var id="term-nbsp" class="term" title="Nezlomitelná mezera" href="https://cs.wikipedia.org/wiki/Nezlomiteln%C3%A1_mezera" data-term-href-title="Nezlomitelná mezera na Wikipedii" data-term-desc="Nezlomitelná (či nedělitelná) mezera je speciální typografický znak. Jde o jeden z tzv. bílých znaků. Funguje jako běžná mezera s výjimkou toho, že při automatickém zalomení textu do řádků programy pro zpracování textu v této mezeře řádek nezalomí. Používá se proto tam, kde je rozdělení dvou slov (čísel, symbolů) na různé řádky nežádoucí.">n/a</var>
   <var id="term-zalomeni-radku" class="term" title="Nevhodné výrazy na konci řádku" href="http://prirucka.ujc.cas.cz/?id=880" data-term-href-title="Zalomení řádků a nevhodné výrazy na jejich konci" data-term-desc="Při úpravě textů by na některých místech nemělo dojít k zalomení řádku, aby text plynule navazoval, jeho členění bylo přehledné a čtení pohodlné.">n/a</var>
   <var id="term-igp" class="term" title="Indication Géographique Protégée" href="http://www.terroir-francie.cz/klasifikace.html" data-term-desc="Kvalitní vína, která zastupují určitou oblast a jsou spojena s charakteristikami jedné nebo více odrůd révy.">n/a</var>
-  <var id="term-booking1" class="term" title="Rezervace od 15 do 30 lidí" data-term-desc='Tomáš Lisec na &lt;a href="tel:+420607515901"&gt;+420 607 515 901&lt;/a&gt; nebo &lt;a href="mailto:lisec@steakgrill.cz"&gt;lisec@steakgrill.cz&lt;/a&gt;'>n/a</var>
-  <var id="term-booking2" class="term" title="Rezervace nad 30 lidí" data-term-desc='Jaroslav Honzajk na &lt;a href="tel:+420777727362"&gt;+420 777 727 362&lt;/a&gt; nebo &lt;a href="mailto:honzajk@steakgrill.cz"&gt;honzajk@steakgrill.cz&lt;/a&gt;'>n/a</var>
+  <var id="term-booking1" class="term" title="Rezervace od 15 do 30 lidí" data-term-desc="Tomáš Lisec na &lt;a href=&quot;tel:+420607515901&quot;&gt;+420 607 515 901&lt;/a&gt; nebo &lt;a href=&quot;mailto:lisec@steakgrill.cz&quot;&gt;lisec@steakgrill.cz&lt;/a&gt;">n/a</var>
+  <var id="term-booking2" class="term" title="Rezervace nad 30 lidí" data-term-desc="Jaroslav Honzajk na &lt;a href=&quot;tel:+420777727362&quot;&gt;+420 777 727 362&lt;/a&gt; nebo &lt;a href=&quot;mailto:honzajk@steakgrill.cz&quot;&gt;honzajk@steakgrill.cz&lt;/a&gt;">n/a</var>
 </InputVar>
