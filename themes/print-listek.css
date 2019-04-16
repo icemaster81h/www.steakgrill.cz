@@ -1,6 +1,12 @@
 /*@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:400,500|Alegreya:400,500|Rasa:400,500');*/
 @import url('https://fonts.googleapis.com/css?family=Rasa:400,500');
 
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,
+div.paragraph, div.list, pre {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #header {
   display: none;
 }
@@ -43,6 +49,7 @@ a[href] {
 }
 dl.meal {
   padding: 0 !important;
+  margin: 0 !important;
 }
 .contenttoc.button-list {
   display: none;
@@ -70,7 +77,7 @@ dl.meal dd.price {
   font-size: 15pt;
 }
 dl.meal dd.price {
-  font-weight: 500;
+  font-weight: normal;
 }
 #footer ul {
   padding: 0 !important;
@@ -93,4 +100,11 @@ dl.meal dd.price {
 }
 .button-list {
   display: none !important;
+}
+.soups .description {
+  display: none;
+}
+dl.meal dd.price > span > span:first-child {
+  font-size: 1rem !important;
+  text-align: right;
 }
