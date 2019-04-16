@@ -713,7 +713,7 @@ svg.fa-facebook {
     padding-bottom: 18em;
   }
   #content ol.contenttoc.button-list {
-    margin-bottom: 0;
+    margin-bottom: 6em;
     margin-top: -16em;
     max-width: 64em;
   }
@@ -725,8 +725,9 @@ svg.fa-facebook {
     padding-bottom: 14em;
   }
   #content ol.contenttoc.button-list {
-    margin-top: -10em;
+    margin-top: -12em;
     max-width: 64em;
+    margin-bottom: 0;
   }
 }
 /*********************************/
