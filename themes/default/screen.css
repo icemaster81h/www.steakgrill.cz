@@ -123,6 +123,9 @@ ol.contentlink-bc > li+li:before {
   padding-top: 6.2em;
   background-image: url("/files/design/header.jpg");
 }
+.hdesc.steakgrill .description {
+  display: none;
+}
 .hdesc.wine_list,
 .hdesc.beverages,
 .hdesc.menu,
