@@ -205,14 +205,13 @@ Námi míchaný, topinky s česnekem.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Rožněné jehně&#13;
-Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát (100 g, čistá váha po upečení).&#13;
-219 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Rožněné jehně&#13;
-Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát (150 g, čistá váha po upečení).&#13;
-269 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Tatarský steak ze svíčkové, 150 g&#13;
+Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát. Váha je po upečení.&#13;
+100 g 219 Kč&#13;
+150 g 269 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Tatarský steak ze svíčkové, 150 g&#13;
 Námi míchaný, topinky s česnekem.&#13;
 289 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
