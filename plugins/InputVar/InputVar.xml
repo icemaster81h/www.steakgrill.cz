@@ -203,7 +203,7 @@ Námi míchaný, topinky s česnekem.&#13;
 129 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
-  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
+  <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Rožněné jehně&#13;
 Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát (100 g, čistá váha po upečení).&#13;
 219 Kč</var>
