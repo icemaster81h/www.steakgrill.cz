@@ -195,21 +195,21 @@ Steak z lososa s křupavou kůží, vařená čočka s medvědím česnekem, bab
 229 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce, 12. až 14. dubna 2019</var>
+  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce, 20. až 22. dubna 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Pho Bo Tai Lan&#13;
-Vietnamská polévka s grilovaným vyzrálým uruguayským nízkým roštěncem, rýžovými nudlemi a bylinkami.&#13;
-189 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">TATARSKÝ STEAK ZE SVÍČKOVÉ, 50 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+129 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.\n\d+ Kč" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Smažené nudle s grilovaným hovězím masem&#13;
-Smažené nudle se zeleninou, cibulkou, sypané sezamem, grilovaný vyzrálý uruguayský nízký roštěnec, vejce se zeleninou.&#13;
-229 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Karamelizovaný ananas&#13;
-Smetanová omáčka s vůní badyánu, skořice, fenyklu a hřebíčku, drobenka z ořechů, karamelizovaný sníh.&#13;
-79 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">ROŽNĚNÉ JEHNĚ&#13;
+Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát.&#13;
+219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">TATARSKÝ STEAK ZE SVÍČKOVÉ, 150 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+289 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
