@@ -101,6 +101,7 @@ dl.meal dd.price {
 .button-list {
   display: none !important;
 }
+.wine_list .description,
 .soups .description {
   display: none;
 }
