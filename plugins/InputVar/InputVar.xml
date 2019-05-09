@@ -197,21 +197,21 @@ Dušená vyzrálá australská hovězí kýta s lesními houbami, rýže s hrá�
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce, 4. až 5. května 2019</var>
+  <var var="cms-server" id="vikendova-akce" required="required">Víkendová akce, 11. až 12. května 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Pomalu pečená hovězí kýta&#13;
-Vyzrálá australská hovězí kýta, pošírovaný zelený chřest se sýrovou omáčkou, lahůdkové brambory orestované na másle s pažitkou.&#13;
-269 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové, 50 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+129 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">BBQ trhané hovězí v sezamové bulce&#13;
-Pomalu pečená hovězí kýta, česnekový dip, ledový salát, batátové hranolky, coleslaw.&#13;
-239 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Jarní salát&#13;
-Míchaný listový zeleninový salát se zeleným a bílým chřestem a grilovaných sýrem Halloumi.&#13;
-189 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Jelen se šípkovou omáčkou&#13;
+Jelení dušená kýta v omáčce z kořenové zeleniny, divokého koření, slaniny a šípkového džemu, naše karlovarské knedlíky, citron, brusinky.&#13;
+249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Tatarský steak ze svíčkové, 150 g&#13;
+Námi míchaný, topinky s česnekem.&#13;
+289 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
