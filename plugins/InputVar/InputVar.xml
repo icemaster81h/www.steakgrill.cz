@@ -190,9 +190,9 @@ malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Hovězí na česneku&#13;
-Vyzrálá australská kýta dušená na cibuli a česneku, naše kulaté bramborové knedlíky, krémový špenát, smažená cibulka.&#13;
-179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Jelen se šípkovou omáčkou&#13;
+Jelení dušená kýta v omáčce z kořenové zeleniny, divokého koření, slaniny a šípkového džemu, naše karlovarské knedlíky, citron, brusinky.&#13;
+199 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Carrot cake&#13;
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
