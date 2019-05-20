@@ -190,9 +190,9 @@ malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Smažené nugety z lososa&#13;
-Mléčná bramborová kaše, míchaný zeleninový salát.&#13;
-189 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Konfitovaná krkovice&#13;
+V sádle pomalu pečená krkovice, mléčná bramborová kaše, míchaný zeleninový salát.&#13;
+179 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Carrot cake&#13;
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
