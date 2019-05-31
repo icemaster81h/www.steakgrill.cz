@@ -181,18 +181,18 @@
     <call>formatjidlo3</call>
   </fn>
   <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
-  <var var="cms-server" id="nabidka" required="required">Denní nabídka, 29. května 2019</var>
+  <var var="cms-server" id="nabidka" required="required">Denní nabídka, 31. května 2019</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Kulajda&#13;
-Tradiční krémová polévka s lesními houbami, brambory, koprem a zastřeným vejcem.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Lososový krém&#13;
+Krémová polévka s kousky lososa a hráškem.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Domácí uzená krkovice&#13;
-Naše bramborové knedlíky, smažená cibulka, kyselé zelí.&#13;
-179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Vařené hovězí maso s koprovou omáčkou&#13;
+Vyzrálá australská hovězí kýta ve smetanové omáčce s koprem, zdobená vařeným vejcem, naše houskové knedlíky.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Carrot cake&#13;
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
