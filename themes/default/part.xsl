@@ -87,6 +87,7 @@
       <xsl:when test="@id='rozlevana_vina'">house_wine</xsl:when>
       <xsl:when test="@id='bila_vina'">white_wines</xsl:when>
       <xsl:when test="@id='cervena_vina'">red_wines</xsl:when>
+      <xsl:when test="@id='pivo'">beer</xsl:when>
     </xsl:choose>
   </xsl:template>
 

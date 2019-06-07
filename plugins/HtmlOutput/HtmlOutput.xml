@@ -9,6 +9,7 @@
   <xslt>themes/icons.xsl</xslt>
   <xslt>themes/menu.xsl</xslt>
   <xslt>themes/visibility.xsl</xslt>
+  <xslt>themes/special.xsl</xslt>
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
 <!--   <jsFile append="head">themes/fontloader.js</jsFile> -->
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
@@ -19,6 +20,8 @@
   
   <jsFile append="body">themes/fa.js</jsFile>
   <jsFile append="body">lib/fontawesome5/js/all.js</jsFile>
+  
+  <jsFile append="body">themes/slideable.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
 </HtmlOutput>
