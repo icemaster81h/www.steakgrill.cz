@@ -192,7 +192,7 @@ velká 55 Kč</var>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\D+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Hovězí na májovkách&#13;
 Vyzrálá australská kýta dušená v delikátní smetanové omáčce s májovkami, naše karlovarské knedlíky.&#13;
-179 Kč</var>
+199 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Carrot cake&#13;
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
