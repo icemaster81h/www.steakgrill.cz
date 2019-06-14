@@ -26,15 +26,15 @@
   <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 13. června 2019</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Gulášová polévka&#13;
-Taková jaká má být, s kousky hovězího masa.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Zelňačka&#13;
+S klobásou.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Naše halušky (strapačky)&#13;
-S naším uzeným masem a kyselým zelím.&#13;
-169 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Hovězí na smetaně zvané „svíčková“&#13;
+Vyzrálá australská kýta v delikátní smetanové omáčce z kořenové zeleniny, naše houskové knedlíky, citron, brusinky.&#13;
+219 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Carrot cake&#13;
 Oblíbený americký dezert z mrkve, vlašských ořechů, kokosu a ananasu, čerstvý sýr, naše šlehačka.&#13;
 79 Kč</var>
