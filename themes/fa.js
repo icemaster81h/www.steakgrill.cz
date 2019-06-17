@@ -4,6 +4,11 @@ FontAwesomeConfig = {
 
 (function() {
   require("IGCMS", function() {
+    var script2 = document.createElement("script")
+    script2.type = "text/javascript"
+    script2.src = "/themes/printlistek.js"
+    document.head.appendChild(script2)
+    
     var icons = document.querySelectorAll('*[class*="fa-"]')
     for (var i = 0; i < icons.length; i++) {
       icons[i].innerHTML = ""
@@ -14,9 +19,5 @@ FontAwesomeConfig = {
     script.src = "https://kit.fontawesome.com/b0c4047774.js"
     document.head.appendChild(script)
     
-    var script2 = document.createElement("script")
-    script2.type = "text/javascript"
-    script2.src = "/themes/printlistek.js"
-    document.head.appendChild(script2)
   })
 })()
