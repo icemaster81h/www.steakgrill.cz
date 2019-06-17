@@ -19,7 +19,7 @@
   <jsFile append="body">themes/alert.js</jsFile>
   
   <jsFile append="body">themes/fa.js</jsFile>
-  <jsFile append="body">lib/fontawesome5/js/all.js</jsFile>
+<!--   <jsFile append="body">lib/fontawesome5/js/all.js</jsFile> -->
   
   <jsFile append="body">themes/slideable.js</jsFile>
   
