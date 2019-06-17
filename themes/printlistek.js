@@ -215,7 +215,8 @@
     printable.init({
       styles: styles,
       parentSelector: '#denni_nabidka, #daily_offer',
-      printButtonText: 'Vytisknout denní nabídku',
+//       printButtonText: 'Vytisknout denní nabídku',
+      printButtonText: '',
       childrenSelector: [".daily_offer dl.meal[data-type='Soup']", ".daily_offer dl.meal[data-type='Main meal']"]
     })
     
@@ -223,7 +224,8 @@
     printable2.init({
       styles: styles + " body > div { width: 50%; height: 100%; }",
       parentSelector: '#akce, #weekend_events',
-      printButtonText: 'Vytisknout víkendovou nabídku',
+//       printButtonText: 'Vytisknout víkendovou nabídku',
+      printButtonText: '',
       childrenSelector: [".weekend_events dl.meal[data-type='Starter']", ".weekend_events dl.meal[data-type='Main meal']"],
       allChildren: true
     })
@@ -232,7 +234,8 @@
     printable3.init({
       styles: styles + " img { max-width: 8em; }",
       parentSelector: '#pivo, #beer',
-      printButtonText: 'Vytisknout speciální nabídku piva',
+//       printButtonText: 'Vytisknout speciální nabídku piva',
+      printButtonText: '',
       childrenSelector: [".beer p", ".beer dl.meal[data-type='Beer']"]
     })
 
