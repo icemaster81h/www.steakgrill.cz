@@ -40,18 +40,16 @@ Králík pečený s cibulí, slaninou, rajčaty a kapary, naše špecle, mrkev s
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 29. až 30. června 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové, 50 g&#13;
-Námi míchaný, topinky s česnekem a kapary.&#13;
-129 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Míchaný salát s grilovaným steakem z tuňáka žlutoploutvého&#13;
+Směs listových salátů, rajčata, okurka, ředkvičky a sladká kukuřice, fajita dresink.&#13;
+249 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Rožněné divoké prase&#13;
 Pomalu pečené na bukovém dřevě s kouřovým aroma, lahůdkové brambory, pikantní salát z kysaného zelí, hořčice.&#13;
 150g / 239 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Tatarský steak ze svíčkové, 150 g&#13;
-Námi míchaný, topinky s česnekem a kapary.&#13;
-289 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
