@@ -37,26 +37,29 @@ Pražená rýže s kuřecím masem, zeleninou, žampiony, sázené vejce, kysel�
 179 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 29. až 30. června 2019</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 6. až 7. června 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Míchaný salát s grilovaným steakem z tuňáka žlutoploutvého&#13;
-Směs listových salátů, rajčata, okurka, ředkvičky a sladká kukuřice, fajita dresink.&#13;
-249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Thajský salát se smaženými krevetami&#13;
+Ledový salát, cherry rajčata, bambusové výhonky, arašídy, drcené chilli, polovina opečené bagety.&#13;
+219 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Rožněné divoké prase&#13;
-Pomalu pečené na bukovém dřevě s kouřovým aroma, lahůdkové brambory, pikantní salát z kysaného zelí, hořčice.&#13;
-150g / 239 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Hovězí po burgundsku&#13;
+Dušená hovězí líčka na červeném víně s mrkví, cibulkami a žampiony, mléčná bramborová kaše s baby špenátem.&#13;
+239 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n.*\d+ Kč)*" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo"/>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">PADRE FUCHO ALE 10° (víkendová nabídka)&#13;
+Osvěžující, krásně lehké a skvěle pitelné. Tento letní ejl se vyznačuje lehkou citrusovou vůní i chutí spolu s příjemnými chmelovými tóny. Povedená desítka, kterou zaženete žízeň. &#13;
+0,3 L / 32 Kč&#13;
+0,5 L / 49 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">http://www.slunceveskle.cz/wp-content/uploads/2013/08/Zichovec.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
