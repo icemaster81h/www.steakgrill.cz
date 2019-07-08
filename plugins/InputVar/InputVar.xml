@@ -54,7 +54,7 @@ Dušená hovězí líčka na červeném víně s mrkví, cibulkami a žampiony, 
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n.*\d+ Kč)*" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Padre Fucho Ale 10° (víkendová nabídka)&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Padre Fucho Ale 10°&#13;
 Osvěžující, krásně lehké a skvěle pitelné. Tento letní „ejl“ se vyznačuje lehkou citrusovou vůní i chutí spolu s příjemnými chmelovými tóny. Povedená desítka, kterou zaženete žízeň. &#13;
 0,3 L / 32 Kč&#13;
 0,5 L / 49 Kč</var>
