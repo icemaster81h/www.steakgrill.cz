@@ -56,8 +56,7 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">&#13;
-</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo"/>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
