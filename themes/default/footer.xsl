@@ -78,7 +78,7 @@
             </xsl:if>
             <li>
               <xsl:choose>
-               <xsl:when test="$cms-lang = cs">
+               <xsl:when test="$cms-lang = 'cs'">
                  <a href="https://en.steakgrill.cz/">English version</a>
                </xsl:when>
                <xsl:otherwise>
