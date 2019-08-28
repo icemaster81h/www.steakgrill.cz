@@ -79,10 +79,10 @@
             <li>
               <xsl:choose>
                <xsl:when test="$cms-lang = cs">
-                 <a href="https://en.steakgrill.cz" class="nowarning">English version</a>
+                 <a href="https://en.steakgrill.cz">English version</a>
                </xsl:when>
                <xsl:otherwise>
-                 <a href="https://www.steakgrill.cz" class="nowarning">Česká verze webu</a>
+                 <a href="https://www.steakgrill.cz">Česká verze webu</a>
                </xsl:otherwise>
               </xsl:choose>
             </li>
