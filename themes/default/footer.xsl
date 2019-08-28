@@ -76,21 +76,21 @@
             <xsl:if test="$cms-resp">
               <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-resp"/></li>
             </xsl:if>
+            <li>
+              <xsl:choose>
+               <xsl:when test="$cms-lang = cs">
+                 <a href="https://en.steakgrill.cz" class="nowarning">English version</a>
+               </xsl:when>
+               <xsl:otherwise>
+                 <a href="https://www.steakgrill.cz" class="nowarning">Česká verze webu</a>
+               </xsl:otherwise>
+              </xsl:choose>
+            </li>
             <xsl:if test="$cms-mtime">
               <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-mtime"/></li>
             </xsl:if>
   <!--           <li class="print">Vytištěno z <xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/> dne <xsl:value-of select="$inputvar-today"/></li> -->
             <li class="print"><xsl:value-of select="$cms-host"/><xsl:value-of select="$cms-link"/><br /><xsl:value-of select="$inputvar-today"/></li>
-            <li>
-              <xsl:choose>
-               <xsl:when test="$cms-lang = cs">
-                 <a href="https://en.steakgrill.cz">English version</a>
-               </xsl:when>
-               <xsl:otherwise>
-                 <a href="https://www.steakgrill.cz">Česká verze webu</a>
-               </xsl:otherwise>
-              </xsl:choose>
-            </li>
   <!--           <li class="print"><xsl:value-of select="$inputvar-today"/></li> -->
           </ul>
         </div>
