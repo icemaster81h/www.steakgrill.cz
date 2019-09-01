@@ -56,7 +56,7 @@ $inputvar-service_plain
       <dd><textarea id="msg" required="required" var="inputvar-rezervace@placeholder"></textarea></dd>
       <dt class="noprint">Odeslání formuláře</dt>
       <dd class="noprint"><label><input type="checkbox" id="sendcopy"/> Poslat kopii této zprávy na uvedený e-mail</label></dd>
-      <dd class="noprint"><input type="submit" class="button" id="submit" value="Odeslat"/></dd>
+      <dd class="noprint"><input type="submit" class="button send" id="submit" value="Odeslat"/></dd>
     </dl>
   </form>
   
