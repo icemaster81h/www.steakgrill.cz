@@ -76,6 +76,16 @@
             <xsl:if test="$cms-resp">
               <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-resp"/></li>
             </xsl:if>
+            <li>
+              <xsl:choose>
+               <xsl:when test="$cms-lang = 'cs'">
+                 <a href="https://en.steakgrill.cz/">English version</a>
+               </xsl:when>
+               <xsl:otherwise>
+                 <a href="https://www.steakgrill.cz/">Česká verze webu</a>
+               </xsl:otherwise>
+              </xsl:choose>
+            </li>
             <xsl:if test="$cms-mtime">
               <li><xsl:value-of disable-output-escaping="yes" select="$inputvar-mtime"/></li>
             </xsl:if>
