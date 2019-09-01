@@ -208,7 +208,7 @@ ol.contentlink-bc > li+li:before {
   justify-content: center;
   border: none;
 }
-#content .button:not([href]) {
+#content a.button:not([href]) {
   box-shadow: none;  
 }
 #content .button:not([href]):hover {
