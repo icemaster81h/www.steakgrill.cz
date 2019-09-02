@@ -24,4 +24,6 @@
   <jsFile append="body">themes/slideable.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
+  
+  <var id="schemaorg">enabled</var>
 </HtmlOutput>
