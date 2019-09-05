@@ -49,21 +49,21 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Tatarský steak ze svíčkové, 150 g&#13;
 Námi míchaný, topinky s česnekem a kapary.&#13;
 289 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečené kuře 1&#13;
-Čtvrtka pečeného kuřete, míchaný zeleninový salát s balkánským sýrem, rozpečený dalamánek, barbecue dip. &#13;
-219 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Pečené kuře 2&#13;
-Čtvrtka pečeného kuřete, mléčná bramborová kaše s baby špenátem, přírodní šťáva.&#13;
-219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">BBQ trhané vepřové v tortile&#13;
+Pečené maso, čedar, míchaný salát, česnekový dip, Jalapeňo.&#13;
+249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Trhané vepřové&#13;
+S přírodní šťávou, mléčná bramborová kaše, malý míchaný salát.&#13;
+249 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Benedict ležák 12° (víkendová nabídka)&#13;
-Klasická světlá dvanáctka vyrobená tradičním způsobem vyznačující se plností a silnou, ale jemnou hořkostí.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Krahulík 12°&#13;
+Spodně kvašený ležák plzeňského typu vařený dvourmutovým způsobem z nejkvalitnějších moravských sladů, chmelený Žateckým poloraným červeňákem.&#13;
 0,3 l 30 Kč&#13;
 0,5 l 45 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka-tabor.cz/user/documents/upload/Loga%20pivovar%C5%AF/B%C5%99evnov.png</var>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">http://www.slunceveskle.cz/wp-content/uploads/2013/08/Zichovec.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
