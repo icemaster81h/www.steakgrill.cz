@@ -44,6 +44,8 @@
   <xsl:param name="inputvar-resp" select="''"/>
   <xsl:param name="inputvar-mtime" select="''"/>
   <xsl:param name="inputvar-rezervace" select="''"/>
+  <xsl:param name="inputvar-feedback-cs" select="''"/>
+  <xsl:param name="inputvar-feedback-en" select="''"/>
 
   <xsl:variable name="copy">
     <xsl:choose>
@@ -84,6 +86,20 @@
                <xsl:otherwise>
                  <a href="https://www.steakgrill.cz/">Česká verze webu</a>
                </xsl:otherwise>
+              </xsl:choose>
+            </li>
+            <li>
+              <xsl:choose>
+                <xsl:when test="$cms-lang = 'cs'">
+                  <xsl:if test="$inputvar-feedback-cs">
+                    <xsl:value-of disable-output-escaping="yes" select="$inputvar-feedback-cs"/>
+                  </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:if test="$inputvar-feedback-en">
+                    <xsl:value-of disable-output-escaping="yes" select="$inputvar-feedback-en"/>
+                  </xsl:if>
+                </xsl:otherwise>
               </xsl:choose>
             </li>
             <xsl:if test="$cms-mtime">
