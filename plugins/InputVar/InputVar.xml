@@ -37,27 +37,29 @@ Krájený srnčí váleček (z kýty) s červeným vínem, žampiony a cibulkami
 219 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 14. září až 15. září 2019</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce (od pátečního večera), 20. září až 22. září 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Marinovaný losos Gravlax&#13;
-Podávaný s gravlax omáčkou, salát z rukoly a listových salátů, bageta.&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tartar z lososa&#13;
+Jemně sekaný marinovaný losos, opečená bageta s bylinkovým máslem, malý míchaný salát.&#13;
 129 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Konfitované kachní stehno&#13;
-Pomalu pečené maso v kachním sádle, naše bramborové knedlíky, červené vinné zelí, smažená cibulka.&#13;
-259 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Pečená krůta z českého chovu&#13;
+Kousky pečené krůty, náš bramborový salát.&#13;
+219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečená krůta z českého chovu&#13;
+Kousky pečené krůty, mléčná bramborová kaše s baby špenátem, přírodní šťáva.&#13;
+229 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Vupitár ALE 11° (víkendová nabídka)&#13;
-Lehký, velice pitelný ejl, který v aroma a chuti nebude pouze ovocný, ale i pryskyřičný a zemitý. Právě proto padla volba na kombinaci chmelů Simcoe a Amarillo.&#13;
-0,3 l 32 Kč&#13;
-0,5 l 50 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Robin ALE 12°(víkendová nabídka)&#13;
+Lehké osvěžující pivo, které se vyznačuje zlatavou, téměř čirou barvou a sladovou vůní s nádechem citrusů. Střední hořkost doplňuje bylinná chuť s pryskyřičnými tóny.  &#13;
+0,3 l 35 Kč&#13;
+0,5 l 55 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">http://www.slunceveskle.cz/wp-content/uploads/2013/08/Zichovec.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
