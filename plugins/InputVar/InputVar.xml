@@ -37,7 +37,7 @@ Karbanátek (slanina, cibule, koření) obalený v trojobalu smažený dozlatova
 219 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce (od pátečního večera), 20. září až 22. září 2019</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce (od pátečního večera), 27. září až 29. září 2019</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové 50 g&#13;
