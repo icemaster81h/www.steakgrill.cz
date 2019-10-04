@@ -2,13 +2,13 @@
 <InputVar>
   <var id="atel"><a href="tel:+420777330050">777 330 050</a></var>
   <var id="rezervace">Rezervace jsou možné pouze telefonicky na čísle <em var="inputvar-atel">n/a</em>.</var>
-  <login id="tomas" password="$1$3HNtZKsL$v7wJYFaXYkMXpbsn7cjFu."/>
-  <login id="vita" password="$1$MBdYxW71$Bd0LFhJHOLDei05rHS0Ym0"/>
-  <login id="jarda" password="$1$X8GFDlgb$9m27o5.badtL.GDXcL6It."/>
-  <login id="pavlina" password="$1$4rZZupX0$EkvUI.uEe6v1.aBEqg/vs/"/>
-  <login id="lukas" password="$1$r.Ni58yp$rlzff.yiRUgcDT6sj/UCk/"/>
-  <login id="denisa" password="$1$LOsT4TAm$Xta2qLcq.0Ni2HnNaxoni0"/>
-  <login id="madmann" password="$1$kz8bMcyh$VWB77rxdcjmIEYPp9JN.j/"/>
+  <login id="lisec.tom@seznam.cz" password="$1$0rQyRpS4$eEKDehiobAwpOqQeq7TD7."/>
+  <login id="vithavlu@gmail.com" password="$1$G5XLYFDc$swkl3PE//v0AkO5AcAnMk0"/>
+  <login id="honzajk@steakgrill.cz" password="$1$HuXemG.Q$Zv/0VyhIVGv2k4QBaaAIy1"/>
+  <login id="pavlina.militka@gmail.com" password="$1$elVCHwKt$7pOmdpe3OPFxlpJx9P1f61"/>
+  <login id="lukasbula41@gmail.com" password="$1$mHoISSmD$e/P9gVukY99OkTqSZNGdE."/>
+  <login id="denisa.volakova96@seznam.cz" password="$1$ItADE0M0$to6NHAks3bi7aC.vYd9kK/"/>
+  <login id="madmann@seznam.cz" password="$1$yu.0IfRA$DFdgd6Jn1P/1NeGsTIQtD1"/>
   <login id="internetguru" password="$1$fs2OfhF6$sNbEhiE/55qwQSwKkf.Xy/"/>
   <fn id="formatjidlo1" fn="pregreplace" pattern="\s*(.+)\s*\n\s*(.+)([\s\S]*)" replacement="&lt;dt&gt;$1&lt;/dt&gt;&lt;dd&gt;$2&lt;/dd&gt;&lt;dt class=&quot;price&quot;&gt;Cena:&lt;/dt&gt;&lt;dd class=&quot;price&quot;&gt;$3&lt;/dd&gt;"/>
   <fn id="formatjidlo2" fn="pregreplace" pattern="(.+) ([\d]+ Kč)" replacement="&lt;span&gt;&lt;span&gt;$1&lt;/span&gt;&lt;span&gt;$2&lt;/span&gt;&lt;/span&gt;"/>
