@@ -52,13 +52,13 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečené telecí &#13;
 Telecí maso, lahůdkové brambory s máslem a petrželí, krémový špenát, přírodní šťáva.&#13;
 259 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Štrúdl&#13;
-S jablky, ořechy, hrozinkami a vanilkovým krémem.&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Jablečný štrúdl&#13;
+S ořechy, hrozinkami a vanilkovým krémem.&#13;
 59 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Podřipská 11° fresh&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Podřipská 11° fresh (víkendová nabídka)&#13;
 Světlý ležák plzeňského typu, do kterého je přidán čerství zelený chmel, který propůjčuje pivu ještě jemnější chuť a vůni s delším dozníváním hořkosti oproti klasickému ležáku.&#13;
 0,3 l 27 Kč&#13;
 0,5 l 42 Kč</var>
