@@ -59,7 +59,7 @@ S ořechy, hrozinkami a vanilkovým krémem.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Podřipská 11° fresh (víkendová nabídka)&#13;
-Světlý ležák plzeňského typu, do kterého je přidán čerství zelený chmel, který propůjčuje pivu ještě jemnější chuť a vůni s delším dozníváním hořkosti oproti klasickému ležáku.&#13;
+Světlý ležák plzeňského typu, do kterého je přidán čerstvý zelený chmel, který propůjčuje pivu ještě jemnější chuť a vůni s delším dozníváním hořkosti oproti klasickému ležáku.&#13;
 0,3 l 27 Kč&#13;
 0,5 l 42 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
