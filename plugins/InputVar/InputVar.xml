@@ -26,8 +26,8 @@
   <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 11. října 2019</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Hrstková polévka&#13;
-Fazole, čočka, hrášek, klobása, česnek, majoránka.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Couračka&#13;
+Tradiční česká polévka z kysaného zelí, smetany a brambor.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
