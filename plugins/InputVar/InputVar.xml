@@ -33,7 +33,7 @@ velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Smažený karbanátek&#13;
-V trojobalu dozlatova smažený karbanátek z mletého hovězího a vepřového masa, česnek, majoránka, mléčná bramborová kaše, míchaný salát.&#13;
+V trojobalu dozlatova smažený karbanátek z mletého hovězího a vepřového masa, česnek, majoránka, mléčná bramborová kaše, kyselá okurka.&#13;
 169 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
