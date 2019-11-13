@@ -2,33 +2,6 @@
 <ContactForm>
 <!--   <var id="adminaddr" modifyonly="modifyonly">pavelka.iix@gmail.com</var> -->
   <var id="adminaddr" modifyonly="modifyonly">restaurace@steakgrill.cz</var>
-  <message for="news">
-Nová registrace k odběru novinek:
-
-$EMAIL
-
---
-Odesláno z IP adresy $cms-ip
-$inputvar-service_plain
-  </message>
-<!--   <form id="news">
-    <dl>
-      <dt><label for="email">E-mailová adresa</label></dt>
-      <dd><input type="email" id="email" required="required" placeholder="josef.novak@seznam.cz"/></dd>
-      <dd><input type="submit" id="submit" value="Registrovat se k odběru"/></dd>
-    </dl>
-  </form> -->
-  
-  <form id="news" action="https://steakgrill.us15.list-manage.com/subscribe/post?u=8625178b2a66c8710f182b4d0&amp;id=f93996121e">
-    <dl>
-      <dt><label for="EMAIL">E-mailová adresa</label></dt>
-      <dd>
-        <input type="email" value="" name="EMAIL" placeholder="josef.novak@seznam.cz" class="required email" id="EMAIL"/>
-        <input class="hide" type="text" name="b_8625178b2a66c8710f182b4d0_f93996121e" tabindex="-1" value=""/>
-      </dd>
-      <dd><input type="submit" id="submit" class="button" value="Registrovat se k odběru"/></dd>
-    </dl>
-  </form>
   
   <message for="basic">
 Jméno: $name
