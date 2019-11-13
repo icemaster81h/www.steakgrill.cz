@@ -210,7 +210,7 @@ ol.contentlink-bc > li+li:before {
 }
 #content .button.send {
   margin-top: 1em;
-  background: #388E3C;
+  background: #2e7d32;
   color: white;
 }
 #content a.button:not([href]) {
