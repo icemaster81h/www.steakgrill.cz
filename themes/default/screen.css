@@ -760,7 +760,9 @@ p.desc {
   margin-top: 11em;
 }
 @media all and (min-width: 62em) {
-  background-image: url("/files/full/design/map.jpg");
+  #content > .hdesc.contact + div > .list {
+    background-image: url("/files/full/design/map.jpg");
+  }
 }
 #content > .hdesc.contact + div > .list > div {
   position: relative;
