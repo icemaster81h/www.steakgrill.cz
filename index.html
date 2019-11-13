@@ -189,8 +189,17 @@
 -->
     <section class="contentbalancer-none">
       <h id="novinky">Odběr novinek</h>
-      <desc>Naše registrované zákazníky informujeme o grilovačkách a dalších pořádaných akcích. Pro registraci stačí uvést e-mailovou adresu. Registraci je možné kdykoli zrušit.</desc>
-      <p var="contactform-news">The newsletter subscription form is currently not available</p>
+      <desc>Naše registrované zákazníky informujeme o grilovačkách a dalších pořádaných akcích. Pro registraci stačí uvést <label for="EMAIL">e-mailovou adresu</label>. Registraci je možné kdykoli zrušit.</desc>
+      <form id="news" action="https://steakgrill.us15.list-manage.com/subscribe/post?u=8625178b2a66c8710f182b4d0&amp;id=f93996121e">
+      <dl>
+        <dt><label for="EMAIL">E-mailová adresa</label></dt>
+        <dd>
+          <input type="email" value="" name="EMAIL" placeholder="josef.novak@seznam.cz" class="required email" id="EMAIL"/>
+          <input class="hide" type="text" name="b_8625178b2a66c8710f182b4d0_f93996121e" tabindex="-1" value=""/>
+        </dd>
+        <dd><input type="submit" id="submit" class="button" value="Registrovat se k odběru"/></dd>
+      </dl>
+    </form>
       <h id="contact_form">Kontaktní formulář</h>
       <desc>Pošlete nám dotaz nebo zpětnou vazbu, jak se vám u nás líbilo nebo v čem bychom se mohli zlepšit. Pokud uvedete kontaktní údaje, můžete očekávat naší odpověď. <span var="inputvar-rezervace">n/a</span></desc>
       <p var="contactform-basic"/>
