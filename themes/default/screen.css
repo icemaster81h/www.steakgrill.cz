@@ -810,8 +810,14 @@ p.desc {
 }
 .news form dl {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
+}
+@media all and (max-width: 42em) {
+  .news form dl {
+    flex-wrap: wrap;
+  } 
+}
+.news form dl {
 }
 .news form dt {
   display: none;
@@ -822,6 +828,7 @@ p.desc {
 .news form dt + dd + dd {
   margin: 1em 0 0 0.5em;
   padding-left: 0;
+  display: inline-block;
 }
 .contact_form form dt.noprint {
   display: none;
