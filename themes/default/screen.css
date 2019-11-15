@@ -340,6 +340,9 @@ svg.fa-facebook {
 .card-emph.booking dd {
   margin-bottom: 0.7em;
 }
+#content .card.color {
+  max-width: 8em;
+}
 /*********************************/
 .photoswipe {
   list-style: none;
