@@ -343,6 +343,16 @@ svg.fa-facebook {
 #content .card.color {
   max-width: 8em;
 }
+#content .card.brief,
+#content .card.color {
+  align-self: flex-start;
+}
+#content .card.brief dt,
+#content .card.color dt {
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
 /*********************************/
 .photoswipe {
   list-style: none;
