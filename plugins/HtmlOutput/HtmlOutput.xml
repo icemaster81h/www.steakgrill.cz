@@ -19,6 +19,7 @@
   <jsFile append="body">themes/slideable.js</jsFile>
   <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.data.js</jsFile>
   <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.js</jsFile>
+  
   <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/completable.js</jsFile>
   <stylesheet if-xpath="//body[@class='inputvar']">themes/completable.css</stylesheet>
   
