@@ -31,6 +31,7 @@
           textareas[j].parentNode.appendChild(completable)
           IGCMS.Completable.init({
             selectSelector: "#" + selectId,
+            placeholder: "Pro doplnění jídla začněte psát..",
             onSend: (function () {
               var textarea = textareas[j]
               return function (navig, file) {
