@@ -13,15 +13,12 @@
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
 <!--   <jsFile append="head">themes/fontloader.js</jsFile> -->
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
-  
   <jsFile append="head" if-xpath="//h1[@id='nabidka' or @id='menu']">themes/printlistek.js</jsFile>
-<!--   <jsFile >themes/terminable.js</jsFile> -->
   <jsFile append="body">themes/alert.js</jsFile>
-  
   <jsFile append="body">themes/fa.js</jsFile>
-<!--   <jsFile append="body">lib/fontawesome5/js/all.js</jsFile> -->
-  
   <jsFile append="body">themes/slideable.js</jsFile>
+  <jsFile append="body">themes/inputvar.data.js</jsFile>
+  <jsFile append="body">themes/inputvar.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
   
