@@ -110,12 +110,10 @@
             }
           },
           fillVal = function (event) {
-            if (Config.onSend) {
-              event.preventDefault();
-              Config.onSend();
-              return false;
+            if (event.originCompletable !== Config.navig.id) {
+              return
             }
-            if (!open && Config.navig.value == "") {
+            if (open === false && Config.navig.value == "") {
               Config.navig.focus();
               openNavig();
               window.setTimeout(function() {
@@ -125,9 +123,16 @@
               return false;
             }
             files = Config.files;
+            currentFile = null
             for (var i = 0; i < files.length; i++) {
               if (files[i].defaultVal.toLowerCase() != Config.navig.value.toLowerCase()) continue;
-              Config.navig.value = files[i].path;
+              currentFile = files[i]
+              Config.navig.value = currentFile.path
+            }
+            if (Config.onSend) {
+              Config.onSend(Config.navig, currentFile);
+              event.preventDefault();
+              return false;
             }
           },
           openNavig = function () {
@@ -335,6 +340,7 @@
               r.defaultVal = f.defaultVal;
               r.path = f.path;
               r.class = f.class;
+              r.origElm = f.origElm;
               return r;
             } catch (e) {
             }
@@ -388,18 +394,20 @@
                 var localValue = fs[i].path;
                 var navig = Config.navig;
                 var localList = list
-                if (fs[i].class == Config.sendFormClass) {
+                if (fs[i].class && fs[i].class == Config.sendFormClass) {
                   localValue = false;
                 }
-                return function () {
+                return function () {                  
                   if (localValue !== false) {
                     navig.value = localValue;
                   } else {
                     clearSelection(navig);
                   }
                   localList.onmouseout = null;
-                  navig.form.submit();
-                  navig.form.dispatchEvent(new Event('submit'));
+                  //navig.form.submit();
+                  submitEvent = new Event('submit')
+                  submitEvent.originCompletable = navig.id
+                  navig.form.dispatchEvent(submitEvent)
                 }
               })();
               list.appendChild(li);
@@ -437,7 +445,8 @@
                 priority: 0,
                 val: val,
                 defaultVal: val,
-                class: classes
+                class: classes,
+                origElm: options[j]
               })
             }
             if (Config.sendFormText) {
@@ -446,7 +455,8 @@
                 priority: 10,
                 val: Config.sendFormText,
                 defaultVal: Config.sendFormText,
-                class: Config.sendFormClass
+                class: Config.sendFormClass,
+                origElm: null
               })
             }
             if (!inited) {
