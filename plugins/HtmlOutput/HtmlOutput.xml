@@ -17,8 +17,8 @@
   <jsFile append="body">themes/alert.js</jsFile>
   <jsFile append="body">themes/fa.js</jsFile>
   <jsFile append="body">themes/slideable.js</jsFile>
-  <jsFile append="body">themes/inputvar.data.js</jsFile>
-  <jsFile append="body">themes/inputvar.js</jsFile>
+  <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.data.js</jsFile>
+  <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
   
