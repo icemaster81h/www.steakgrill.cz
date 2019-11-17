@@ -34,12 +34,12 @@
             onSend: (function () {
               var textarea = textareas[j]
               return function (navig, file) {
-                if (!navig.value) {
+                if (!navig.value || !file) {
                   return
                 }
                 textarea.value = file.origElm.getAttribute("data-name") + "\n"
                   + file.origElm.getAttribute("data-desc") + "\n"
-                  + file.origElm.getAttribute("data-price")
+                  + file.origElm.getAttribute("data-price").replace("~", "\n")
               }
             })()
           })
