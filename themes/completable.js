@@ -182,6 +182,13 @@
           },
           processKey = function (e) {
             switch (e.keyCode) {
+              case 13: //enter
+                submitEvent = new Event('submit')
+                submitEvent.originCompletable = Config.navig.id
+                Config.navig.form.dispatchEvent(submitEvent)
+                e.preventDefault()
+                return false
+                break;
               case 27: //esc
                 if (!open) {
                   Config.navig.blur();
@@ -301,7 +308,7 @@
             }
             for (var i = 0; i < arr.length; i++) {
               // do not filter
-              if (arr[i].class == Config.sendFormClass) {
+              if (arr[i].class != "" && arr[i].class == Config.sendFormClass) {
                 fs.push(arr[i]);
                 continue;
               }
@@ -363,7 +370,7 @@
                 && Config.navig.value.length
                 && key !== 8
                 && fs[i].defaultVal.toLowerCase().indexOf(Config.navig.value.toLowerCase()) == 0
-                && fs[i].class != Config.sendFormClass
+                && (fs[i].class == "" || fs[i].class != Config.sendFormClass)
               ) { // 8 is backspace
                 var start = Config.navig.value.length;
                 var end = fs[i].defaultVal.length;
@@ -379,7 +386,7 @@
               li.onmousemove = (function () {
                 var localValue = fs[i].defaultVal;
                 var navig = Config.navig;
-                if (fs[i].class == Config.sendFormClass) {
+                if (fs[i].class != "" && fs[i].class == Config.sendFormClass) {
                   localValue = false;
                 }
                 return function () {
@@ -394,7 +401,7 @@
                 var localValue = fs[i].path;
                 var navig = Config.navig;
                 var localList = list
-                if (fs[i].class && fs[i].class == Config.sendFormClass) {
+                if (fs[i].class != "" && fs[i].class && fs[i].class == Config.sendFormClass) {
                   localValue = false;
                 }
                 return function () {                  
