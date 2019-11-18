@@ -889,10 +889,18 @@ dl.klima {
 }
 dl.klima dd {
   margin-top: 0.5em;
+  margin-left: 0;
 }
 dl.klima dt:first-child + dd {
   font-size: 1.5em;
   margin-top: 1em;
+}
+dl.klima dt:first-child {
+  width: 11em;
+  margin: 0 auto;
+}
+dl.klima dt:first-child .imgwrap {
+  background: none;
 }
 @media (min-width: 42em) {
   #content dl.klima {
@@ -900,11 +908,8 @@ dl.klima dt:first-child + dd {
   }
   dl.klima dt:first-child  {
     float: left;
-    width: 11em;
+    height: 15em;
     margin-right: 4em;
-  }
-  dl.klima dt:first-child .imgwrap {
-    background: none;
   }
 }
 .part.steaks {
