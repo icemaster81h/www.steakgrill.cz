@@ -647,8 +647,8 @@ svg.fa-facebook {
 }
 .content-img .photoswipe .imgwrap,
 .jaroslav_honzajk .photoswipe .imgwrap {
-  width: 35em;
-  max-width: 100%;
+  width: 100%;
+  max-width: 35em;
 }
 @media all and (min-width: 62em) {
   .content-img {
