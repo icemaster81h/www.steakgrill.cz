@@ -7,7 +7,7 @@
         select.id = id
         for (var i = 0; i < data.length; i++) {
           var option = document.createElement("option")
-          option.innerHTML = data[i].name + " (" + data[i].desc + ")"
+          option.innerHTML = data[i].name + "<br>" + data[i].desc
           option.setAttribute("data-name", data[i].name)
           option.setAttribute("data-date", data[i].date)
           option.setAttribute("data-desc", data[i].desc)
@@ -32,15 +32,18 @@
           IGCMS.Completable.init({
             selectSelector: "#" + selectId,
             placeholder: "Pro doplnění jídla začněte psát..",
+            label: "<span class='fas fa-magic'></span>",
             onSend: (function () {
               var textarea = textareas[j]
-              return function (navig, file) {
+              return function (navig, file, close) {
                 if (!navig.value || !file) {
                   return
                 }
                 textarea.value = file.origElm.getAttribute("data-name") + "\n"
                   + file.origElm.getAttribute("data-desc") + "\n"
                   + file.origElm.getAttribute("data-price").replace("~", "\n")
+                navig.value = ""
+                close()
               }
             })()
           })
