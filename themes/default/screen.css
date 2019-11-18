@@ -946,6 +946,8 @@ dl.klima dt:first-child .imgwrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 12em;
+  margin: 0 auto;
 }
 .part.steaks .multiple .imgwrap {
   background: none;
