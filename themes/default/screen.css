@@ -934,9 +934,13 @@ dl.klima dt:first-child + dd {
   margin-left: 0;
   font-style: italic;
 }
-.part.steaks .multiple img {
-  max-width: 8em;
-  max-height: 11em;
+.part.steaks .multiple dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.part.steaks .multiple .imgwrap {
+  background: none;
 }
 .part.steaks .content-card p.description {
   max-width: 27em;
