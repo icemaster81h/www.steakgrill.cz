@@ -158,10 +158,13 @@ ol.contentlink-bc > li+li:before {
     background-image: url("/files/full/design/about-header.jpg");
   }  
 }
-.logo img {
+#content .logo {
   margin-top: -6em;
   width: 16em;
   position: relative;
+}
+#content .logo .imgwrap {
+  background: none;
 }
 /*********************************/
 #footer {
@@ -701,8 +704,12 @@ svg.fa-facebook {
   max-width: 25em;
   padding-bottom: 5em !important;
 }
-.part.references dt img {
+.part.references .citation dt {
   max-width: 8em;
+  margin: 0 auto;
+}
+.part.references .citation .imgwrap {
+  background: none;
 }
 .part.references dd {
   font-style: italic;
