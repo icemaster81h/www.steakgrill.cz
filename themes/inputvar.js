@@ -42,6 +42,7 @@
                 textarea.value = file.origElm.getAttribute("data-name") + "\n"
                   + file.origElm.getAttribute("data-desc") + "\n"
                   + file.origElm.getAttribute("data-price").replace("~", "\n")
+                textarea.dispatchEvent(new Event('input'))
                 navig.value = ""
                 close()
               }
