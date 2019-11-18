@@ -900,8 +900,11 @@ dl.klima dt:first-child + dd {
   }
   dl.klima dt:first-child  {
     float: left;
-    width: auto;
+    width: 11em;
     margin-right: 4em;
+  }
+  dl.klima dt:first-child .imgwrap {
+    background: none;
   }
 }
 .part.steaks {
