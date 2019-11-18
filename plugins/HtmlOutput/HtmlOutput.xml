@@ -27,4 +27,5 @@
   <allow_domain>en.steakgrill.cz</allow_domain>
   
   <var id="schemaorg">enabled</var>
+  <var id="preserveImgSpace">enabled</var>
 </HtmlOutput>
