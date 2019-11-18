@@ -20,8 +20,8 @@
   <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.data.js</jsFile>
   <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.js</jsFile>
   
-  <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/completable.js</jsFile>
-  <stylesheet if-xpath="//body[@class='inputvar']">themes/completable.css</stylesheet>
+  <jsFile id="js33" append="body" if-xpath="//body[@class='inputvar'] or //select">themes/completable.js</jsFile>
+  <stylesheet id="ss1" if-xpath="//body[@class='inputvar'] or //select[contains(@class, 'completable')]">themes/completable.css</stylesheet>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
   
