@@ -92,7 +92,7 @@ ol.contentlink-bc > li+li:before {
   text-transform: uppercase;
 }
 #header > div .globalmenu {
-  margin-top: 1.2rem;
+  margin-top: 0.2rem;
   background: rgba(0, 0, 0, 0.6);
   border-top: thin solid rgba(255, 255, 255, 0.14);
 }
