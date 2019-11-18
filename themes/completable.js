@@ -12,6 +12,7 @@
         var
           Config = {
             selectSelector: "",
+            label: "",
             placeholder: "",
             defaultChangeText: "",
             filterSelector: "",
@@ -45,7 +46,7 @@
           },
           initStructure = function () {
             list = document.createElement("ul");
-            list.className = "navigList";
+            list.className = Config.navig.className + " navigList";
             var textNavig = document.createElement("input");
             textNavig.autocomplete = "off";
             if (Config.navig.tabIndex) {
@@ -56,7 +57,11 @@
             textNavig.type = "text";
             textNavig.className = GlobalConfig.inputClass;
             textNavig.id = Config.navig.id || ""
-            Config.navig.parentNode.replaceChild(textNavig, Config.navig);
+            var label = document.createElement("label");
+            label.innerHTML = Config.label
+            label.className = GlobalConfig.inputClass + "-wrapper"
+            label.appendChild(textNavig)
+            Config.navig.parentNode.replaceChild(label, Config.navig);
             Config.navig = textNavig;
             Config.navig.parentNode.appendChild(list);
             updateSize();
@@ -122,6 +127,7 @@
               event.preventDefault();
               return false;
             }
+            Config.navig.value = Config.navig.value.replace(/ - /g, "<br>")
             files = Config.files;
             currentFile = null
             for (var i = 0; i < files.length; i++) {
@@ -130,7 +136,7 @@
               Config.navig.value = currentFile.path
             }
             if (Config.onSend) {
-              Config.onSend(Config.navig, currentFile);
+              Config.onSend(Config.navig, currentFile, closeNavig);
               event.preventDefault();
               return false;
             }
@@ -175,7 +181,7 @@
             list.childNodes[active].classList.add("active");
             scrollParentToChild(list, list.childNodes[active]);
             if (!list.childNodes[active].classList.contains(Config.sendFormClass)) {
-              Config.navig.value = list.childNodes[active].dataset.val;
+              Config.navig.value = list.childNodes[active].dataset.val.replace(/<br>/g, " - ");
             } else {
               Config.navig.value = textNavigValue;
             }
@@ -183,6 +189,9 @@
           processKey = function (e) {
             switch (e.keyCode) {
               case 13: //enter
+                if (list.childNodes[active]) {
+                  Config.navig.value = list.childNodes[active].dataset.val
+                }
                 submitEvent = new Event('submit')
                 submitEvent.originCompletable = Config.navig.id
                 Config.navig.form.dispatchEvent(submitEvent)
@@ -357,7 +366,7 @@
             for (var i = 0; i < Config.files.length; i++) {
               if (href.indexOf(Config.files[i].path) !== -1) {
                 active = i
-                Config.navig.value = Config.files[i].defaultVal
+                Config.navig.value = Config.files[i].defaultVal.replace(/<br>/g, " - ")
                 return
               }
             }
@@ -374,7 +383,7 @@
               ) { // 8 is backspace
                 var start = Config.navig.value.length;
                 var end = fs[i].defaultVal.length;
-                Config.navig.value = fs[i].defaultVal;
+                Config.navig.value = fs[i].defaultVal.replace(/<br>/g, " - ")
                 createSelection(Config.navig, start, end);
                 first = false;
               }
@@ -384,7 +393,7 @@
               li.dataset.path = fs[i].path;
               li.dataset.val = fs[i].defaultVal;
               li.onmousemove = (function () {
-                var localValue = fs[i].defaultVal;
+                var localValue = fs[i].defaultVal.replace(/<br>/g, " - ");
                 var navig = Config.navig;
                 if (fs[i].class != "" && fs[i].class == Config.sendFormClass) {
                   localValue = false;
@@ -398,7 +407,7 @@
                 }
               })();
               li.onmousedown = (function () {
-                var localValue = fs[i].path;
+                var localValue = fs[i].val;
                 var navig = Config.navig;
                 var localList = list
                 if (fs[i].class != "" && fs[i].class && fs[i].class == Config.sendFormClass) {
@@ -439,7 +448,7 @@
             }
             var options = Config.navig.getElementsByTagName("option");
             for (var j = 0; j < options.length; j++) {
-              var val = options[j].textContent;
+              var val = options[j].innerHTML;
               var classes = options[j].className;
               if (val.indexOf("#user") !== -1) {
                 classes += " user";
