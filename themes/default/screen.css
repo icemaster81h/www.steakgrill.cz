@@ -1099,3 +1099,22 @@ body.inputvar input[name="username"] {
   display: none;
 }
 /*********************************/
+.inputvar #content .completable-input {
+  border: none;
+  border-radius: 0;
+  background: #FAFAFA;
+}
+.inputvar #content .completable-input-wrapper {
+  background: #ECEFF1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.inputvar #content .completable-input-wrapper > svg {
+  padding: 0 0.5em
+}
+.inputvar #content .completable-input-wrapper ul.navigList {
+  top: 3.5em;
+  left: 2em;
+}
+/*********************************/
