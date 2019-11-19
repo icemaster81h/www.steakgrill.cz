@@ -1141,23 +1141,3 @@ body.inputvar input[name="username"] {
   left: 2em;
 }
 /*********************************/
-body[data-link="/novinky"] #content > *:not(.hdesc),
-body[data-link="/news"] #content > *:not(.hdesc) {
-  max-width: 62em !important;
-  margin: 0 auto;
-}
-body[data-link="/novinky"] h3,
-body[data-link="/news"] h3 {
-  font-size: 1.5em;
-}
-body[data-link="/novinky"] h2,
-body[data-link="/novinky"] h3,
-body[data-link="/news"] h2,
-body[data-link="/news"] h3 {
-  /*text-align: left;*/
-}
-body[data-link="/novinky"] dt,
-body[data-link="/news"] dt {
-  font-weight: bold;
-}
-/*********************************/
