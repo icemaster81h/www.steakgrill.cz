@@ -798,10 +798,10 @@ p.desc {
 }
 #dotazy, #dotazy + p.description,
 #contact_form, #contact_form + p.description, 
-#novinky, #novinky + p.description,
+.section #novinky, .section #novinky + p.description,
 #questions, #questions + p.description,
 #contact_form, #contact_form + p.description, 
-#news, #news + p.description {
+.section #news, .section #news + p.description {
   text-align: left;
   max-width: 40rem;
   margin-left: 0;
@@ -809,10 +809,10 @@ p.desc {
 }
 #dotazy, #dotazy + p.description:after,
 #contact_form + p.description:after,
-#novinky + p.description:after,
+.section #novinky + p.description:after,
 #questions, #questions + p.description:after,
 #contact_form + p.description:after,
-#news + p.description:after {
+.section #news + p.description:after {
   content: none;
 }
 .faq {
@@ -830,24 +830,22 @@ p.desc {
   font-style: italic;
   max-width: 36em;
 }
-.news form dl {
+#news dl {
   display: flex;
   align-items: flex-end;
 }
 @media all and (max-width: 42em) {
-  .news form dl {
+  #news dl {
     flex-wrap: wrap;
   } 
 }
-.news form dl {
-}
-.news form dt {
+#news dt {
   display: none;
 }
-.news form dt + dd {
+#news dt + dd {
   margin: 0
 }
-.news form dt + dd + dd {
+#news dt + dd + dd {
   margin: 1em 0 0 0.5em;
   padding-left: 0;
   display: inline-block;
@@ -1141,5 +1139,14 @@ body.inputvar input[name="username"] {
 .inputvar #content .completable-input-wrapper ul.navigList {
   top: 3.5em;
   left: 2em;
+}
+/*********************************/
+body[data-link="/novinky"] h3,
+body[data-link="/news"] h3 {
+  font-size: 1.5em;
+}
+body[data-link="/novinky"] dt,
+body[data-link="/news"] dt {
+  font-weight: bold;
 }
 /*********************************/
