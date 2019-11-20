@@ -67,7 +67,7 @@ Spodně kvašený ležák plzeňského typu vařený dvourmutovým způsobem z n
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">http://www.slunceveskle.cz/wp-content/uploads/2013/08/Zichovec.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">V pondělí dne 18.11.2019 bude restaurace otevřena do 16h. Děkujeme za pochopení. Tým Steakgrill</var>
+  <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
 na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
 
