@@ -1,0 +1,44 @@
+form.file-list dt {
+  display: none;
+}
+form.file-list dd {
+  display: flex;
+  position: relative;
+  float: none;
+  margin: 0 auto;
+}
+form.file-list dd,
+form.file-list input[type="text"] {
+  max-width: 45em;
+}
+form.file-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form.file-list .js-completable-input {
+  color: black;
+  padding: 0.5em 1em !important;
+  border-bottom: thin solid #333;
+}
+form.file-list .js-completable-wrapper {
+  width: 100%;
+}
+form.file-list .js-completable-navig {
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  display: block;
+}
+form.file-list .js-completable-navig li {
+  color: black;
+  width: 100%;
+  text-align: left !important;
+  margin: 0 !important;
+}
+form.file-list input[type="submit"] {
+  border: none;
+  padding: 0.5em 1em;
+  background: #607d8b;
+  color: #fff;
+}
