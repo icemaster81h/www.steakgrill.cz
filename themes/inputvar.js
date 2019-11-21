@@ -7,7 +7,7 @@
         select.id = id
         for (var i = 0; i < data.length; i++) {
           var option = document.createElement("option")
-          option.innerHTML = data[i].name + "<br>" + data[i].desc
+          option.innerHTML = data[i].name + " – " + data[i].desc
           option.setAttribute("data-name", data[i].name)
           option.setAttribute("data-date", data[i].date)
           option.setAttribute("data-desc", data[i].desc)
