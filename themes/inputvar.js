@@ -47,7 +47,13 @@
                 close()
               }
             })()
-          })
+          }),
+          decorateListItem: function (itemValue) {
+            return itemValue.replace(/ – /g, "</br>")
+          },
+          undecorateListItem: function (itemValue) {
+            return itemValue.replace(/<\/br>/g, " – ")
+          }
         }
       }
     })
