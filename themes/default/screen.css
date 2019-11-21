@@ -1050,7 +1050,7 @@ body.inputvar dl dt {
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-body.inputvar dl dd {
+body.inputvar #content dl dd {
   margin: 0;
 }
 body.inputvar textarea {
