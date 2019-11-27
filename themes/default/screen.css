@@ -1141,3 +1141,10 @@ body.inputvar input[name="username"] {
   left: 2em;
 }
 /*********************************/
+#contactform-catering input[type="text"],
+#contactform-catering input[type="email"],
+#contactform-catering input[type="number"],
+#contactform-catering textarea,
+#contactform-catering select {
+  background: #F5F5F5;
+}
