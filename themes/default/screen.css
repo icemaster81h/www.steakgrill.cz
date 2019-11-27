@@ -1170,4 +1170,7 @@ body.inputvar input[name="username"] {
 #contactform-catering .form-desc {
   margin-left: 1em;
 }
+.catering #content {
+  background: #F5F5F5;
+}
 /*********************************/
