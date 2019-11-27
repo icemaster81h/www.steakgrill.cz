@@ -24,7 +24,7 @@
   <jsFile id="js33" append="body" if-xpath="//body[@class='inputvar'] | //select">themes/completable.js</jsFile>
   <stylesheet id="ss1" if-xpath="//body[@class='inputvar'] | //select[contains(@class, 'completable')]">themes/completable.css</stylesheet>
   
-  <jsFile append="body" if-xpath="//body[@class='catering']">themes/catering.js</jsFile>
+  <jsFile append="body">themes/catering.js</jsFile>
   
   <allow_domain>en.steakgrill.cz</allow_domain>
   
