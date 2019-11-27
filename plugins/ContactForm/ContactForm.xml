@@ -32,7 +32,39 @@ $inputvar-service_plain
       <dd class="noprint"><input type="submit" class="button send" id="submit" value="Odeslat"/></dd>
     </dl>
   </form>
-  
+    <message for="catering">
+Datum konání: $date
+Začátek: $start
+Konec: $end
+Místo konání: $place
+Funkce cateringu: $type
+
+Celé jméno: $name
+Adresa: $address
+E-mailová adresa: $email
+Telefon: $telephone
+IČ: $ic
+DIČ: $dic
+Preferovaný kontakt: $contact
+
+Dospělí: $adults
+Děti do 12 let: $children
+Cena za osobu: $price Kč
+
+Hlavní jídlo 1 (počet): $main1 ($main1-cnt)
+Hlavní jídlo 2 (počet): $main2 ($main2-cnt)
+Hlavní jídlo 3 (počet): $main3 ($main3-cnt)
+Předkrm (počet): $starter ($starter-cnt)
+Přípitek (počet): $drink ($drink-cnt)
+
+Poznámky:
+$notes
+
+--
+Odesláno z IP adresy $cms-ip
+Formulář $form_id
+$inputvar-service_plain
+  </message>  
   <form id="catering">
     
     <fieldset>
