@@ -184,7 +184,7 @@ $inputvar-service_plain
         <dd class="form-desc">Předkrm je nutno obědnat minimálně 2 až 5 dní předem</dd>
         <dd>
           <select id="starter" required="required">
-            <option selected="selected" value="–">–</option>
+            <option selected="selected" value="none">–</option>
             <option>Caesar salát</option>
             <option value="Roastbeef">Roastbeef – 70 g až 100 g na porci, minimálně 2 kg</option>
             <option value="Tatarský steak">Tatarský steak – 50 g na porci, minimálně 300 g</option>
@@ -202,7 +202,7 @@ $inputvar-service_plain
         <dt><label for="drink">Přípitek</label></dt>
         <dd>
           <select id="drink" required="required">
-            <option selected="selected" value="–">–</option>
+            <option selected="selected" value="none">–</option>
             <option value="Kir Royal">Kir Royal – francouzský sekt s likérem Crème de cassis</option>
             <option>Aperol Spritz</option>
             <option value="Louis Perdier">Louis Perdier – francouzský sekt (demi sec/brut)</option>
