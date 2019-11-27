@@ -128,7 +128,7 @@ $inputvar-service_plain
             <option>Rib eye steak</option>
             <option>New York strips steak au Poivre</option>
             <option>Caesar salát s grilovaným kuřecím steakem</option>
-            <option></option>
+            <option>Grilovaná panenka Madagaskar</option>
           </select>
         </dd>
         <dd>
@@ -147,6 +147,7 @@ $inputvar-service_plain
             <option>Rib eye steak</option>
             <option>New York strips steak au Poivre</option>
             <option>Caesar salát s grilovaným kuřecím steakem</option>
+            <option>Grilovaná panenka Madagaskar</option>
             <option></option>
           </select>
         </dd>
@@ -166,6 +167,7 @@ $inputvar-service_plain
             <option>Rib eye steak</option>
             <option>New York strips steak au Poivre</option>
             <option>Caesar salát s grilovaným kuřecím steakem</option>
+            <option>Grilovaná panenka Madagaskar</option>
             <option></option>
           </select>
         </dd>
