@@ -38,16 +38,16 @@ $inputvar-service_plain
     <fieldset>
       <legend>Obecné</legend>
       <dl>
-        <dt><label for="date">Datum konání</label></dt>
+        <dt><label for="date">Datum konání <em>(povinné)</em></label></dt>
         <dd><input type="text" id="date" required="required" placeholder="1. 2. 2018" pattern="\s*([1-9]|1[0-9]|2[0-9]|3[01]).\s*([1-9]|1[012]).\s*([0-9]{4})?\s*"/></dd>
 
-        <dt><label for="start">Začátek</label></dt>
+        <dt><label for="start">Začátek <em>(povinné)</em></label></dt>
         <dd><input type="text" id="start" required="required" placeholder="12:30" pattern="\s*([0-9]|0[0-9]|1[0-9]|2[0-3])\s*(:\s*[0-5][0-9])?\s*"/></dd>
 
         <dt><label for="end">Konec</label></dt>
-        <dd><input type="text" id="end" required="required" placeholder="18:30" pattern="\s*([0-9]|0[0-9]|1[0-9]|2[0-3])\s*(:\s*[0-5][0-9])?\s*"/></dd>
+        <dd><input type="text" id="end" placeholder="18:30" pattern="\s*([0-9]|0[0-9]|1[0-9]|2[0-3])\s*(:\s*[0-5][0-9])?\s*"/></dd>
 
-        <dt><label for="place">Místo konání</label></dt>
+        <dt><label for="place">Místo konání <em>(povinné)</em></label></dt>
         <dd>
           <select id="place" required="required">
             <option selected="selected">jakékoli</option>
@@ -58,23 +58,23 @@ $inputvar-service_plain
         </dd>
 
         <dt><label for="type">Funkce cateringu</label></dt>
-        <dd><input type="text" pattern=".*\S+.*" id="type" required="required" placeholder="oslava narozenin"/></dd>
+        <dd><input type="text" pattern=".*\S+.*" id="type" placeholder="oslava narozenin"/></dd>
       </dl>
     </fieldset>
 
     <fieldset>
       <legend>Kontaktní informace</legend>
       <dl>
-        <dt><label for="name">Celé jméno</label></dt>
+        <dt><label for="name">Celé jméno <em>(povinné)</em></label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="name" required="required" placeholder="Josef Novák"/></dd>
 
         <dt><label for="address">Adresa</label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="address" placeholder="Koněvova 1, 130 00 Praha 3 – Žižkov"/></dd>
 
-        <dt><label for="email">E-mailová adresa</label></dt>
+        <dt><label for="email">E-mailová adresa <em>(povinné)</em></label></dt>
         <dd><input type="email" id="email" required="required" placeholder="josef.novak@seznam.cz"/></dd>
 
-        <dt><label for="telephone">Telefon</label></dt>
+        <dt><label for="telephone">Telefon <em>(povinné)</em></label></dt>
         <dd><input type="text" required="required" pattern=".*(\d\D*){9,}" id="telephone" placeholder="+420 777123456"/></dd>
 
         <dt><label for="ic">IČ</label></dt>
@@ -97,13 +97,13 @@ $inputvar-service_plain
     <fieldset>
       <legend>Počet lidí</legend>
       <dl>
-        <dt><label for="adults">Dospělí</label></dt>
+        <dt><label for="adults">Dospělí <em>(povinné)</em></label></dt>
         <dd><input type="number" min="0" value="10" id="adults" required="required"/></dd>
 
-        <dt><label for="children">Děti do 12 let</label></dt>
+        <dt><label for="children">Děti do 12 let <em>(povinné)</em></label></dt>
         <dd><input type="number" min="0" value="0" id="children" required="required"/></dd>
 
-        <dt><label for="price">Cena za osobu (Kč)</label></dt>
+        <dt><label for="price">Cena za osobu (Kč) <em>(povinné)</em></label></dt>
         <dd><input type="number" min="50" value="500" id="price" required="required"/></dd>
       </dl>
     </fieldset>
@@ -112,6 +112,7 @@ $inputvar-service_plain
       <dl>
         <dt><label for="main1">Hlavní jídlo</label></dt>
         <dd class="form-desc">Maximálně 3 druhy</dd>
+        <dd class="form-desc">Minimálně 1 jídlo</dd>
         <dd>
           <select id="main1" required="required">
             <option>Filírované kachní prso sous-vide</option>
