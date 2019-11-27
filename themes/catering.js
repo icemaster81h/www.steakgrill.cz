@@ -23,19 +23,19 @@
     return validateCnt(localEvent, localCnt)
   }, false)
   
-  var meal2 = document.getElementById("contactform-catering-meal2")
-  var meal2Cnt = document.getElementById("contactform-catering-meal2-cnt")
-  meal2.addEventListener("change", function (event) {
+  var main2 = document.getElementById("contactform-catering-main2")
+  var main2Cnt = document.getElementById("contactform-catering-main2-cnt")
+  main2.addEventListener("change", function (event) {
     var localEvent = event
-    var localCnt = meal2Cnt
+    var localCnt = main2Cnt
     return validateCnt(localEvent, localCnt)
   }, false)
   
-  var meal3 = document.getElementById("contactform-catering-meal3")
-  var meal3Cnt = document.getElementById("contactform-catering-meal3-cnt")
-  meal3.addEventListener("change", function (event) {
+  var main3 = document.getElementById("contactform-catering-main3")
+  var main3Cnt = document.getElementById("contactform-catering-main3-cnt")
+  main3.addEventListener("change", function (event) {
     var localEvent = event
-    var localCnt = meal3Cnt
+    var localCnt = main3Cnt
     return validateCnt(localEvent, localCnt)
   }, false)
 
