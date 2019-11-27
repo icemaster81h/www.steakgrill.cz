@@ -196,6 +196,8 @@ $inputvar-service_plain
             <option value="Kanapky">Kanapky (chuťovky) – 2 ks na porci, minimálně 10 porcí</option>
           </select>
         </dd>
+        <dt><label for="starter-cnt">Počet předkrmů</label></dt>
+        <dd><input type="number" min="0" value="0" id="starter-cnt" required="required"/></dd>
         
         <dt><label for="drink">Přípitek</label></dt>
         <dd>
@@ -207,6 +209,8 @@ $inputvar-service_plain
             <option>Cinzano bianco</option>
           </select>
         </dd>
+        <dt><label for="drink-cnt">Počet přípitků</label></dt>
+        <dd><input type="number" min="0" value="0" id="drink-cnt" required="required"/></dd>
       </dl>
     </fieldset>
     
