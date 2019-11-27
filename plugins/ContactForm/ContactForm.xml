@@ -205,9 +205,7 @@ $inputvar-service_plain
       <dl>
         <dt><label for="notes">Zvláštní instrukce / poznámky</label></dt>
         <dd><textarea id="notes" placeholder="Květinová výzdoba, raut"></textarea></dd>
-
-        <dt class="noprint"><label for="sendcopy">Poslat kopii této zprávy na uvedený e-mail</label></dt>
-        <dd class="noprint"><input type="checkbox" id="sendcopy"/></dd>
+        <dd class="noprint"><label><input type="checkbox" id="sendcopy"/> Poslat kopii této zprávy na uvedený e-mail</label></dd>
         <dd class="noprint"><input type="submit" class="button send" id="submit" value="Odeslat"/></dd>
       </dl>
     </fieldset>
