@@ -111,7 +111,7 @@ $inputvar-service_plain
       <legend>Výběr jídla</legend>
       <dl>
         <dt><label for="main1">Hlavní jídlo</label></dt>
-        <dd>Maximálně 3 druhy</dd>
+        <dd class="form-desc">Maximálně 3 druhy</dd>
         <dd>
           <select id="main1" required="required">
             <option>Filírované kachní prso sous-vide</option>
@@ -170,8 +170,8 @@ $inputvar-service_plain
         </dd>
      
         <dt><label for="starter">Předkrm</label></dt>
-        <dd>Pouze jeden druh na skupinu</dd>
-        <dd>Předkrm je nutno obědnat minimálně 2 až 5 dní předem</dd>
+        <dd class="form-desc">Pouze jeden druh na skupinu</dd>
+        <dd class="form-desc">Předkrm je nutno obědnat minimálně 2 až 5 dní předem</dd>
         <dd>
           <select id="starter" required="required">
             <option selected="selected">–</option>
