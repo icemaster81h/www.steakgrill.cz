@@ -1,6 +1,6 @@
 (function () {
   function validateCnt (event, cntInput) {
-    if (event.target.innerText == "–") {
+    if (event.target.text == "–") {
       cntInput.setAttribute("min", 0)
       return
     }
