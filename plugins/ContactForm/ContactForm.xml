@@ -208,7 +208,7 @@ $inputvar-service_plain
 
         <dt class="noprint"><label for="sendcopy">Poslat kopii této zprávy na uvedený e-mail</label></dt>
         <dd class="noprint"><input type="checkbox" id="sendcopy"/></dd>
-        <dd class="noprint"><input type="submit" id="submit" value="Odeslat"/></dd>
+        <dd class="noprint"><input type="submit" class="button send" id="submit" value="Odeslat"/></dd>
       </dl>
     </fieldset>
   </form>
