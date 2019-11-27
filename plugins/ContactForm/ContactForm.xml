@@ -41,7 +41,7 @@ Funkce cateringu: $type
 
 Celé jméno: $name
 Adresa: $address
-E-mailová adresa: $email
+E-mail: $email
 Telefon: $telephone
 IČ: $ic
 DIČ: $dic
