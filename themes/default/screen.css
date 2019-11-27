@@ -1146,7 +1146,7 @@ body.inputvar input[name="username"] {
 #contactform-catering input[type="number"],
 #contactform-catering textarea,
 #contactform-catering select {
-  background: #F5F5F5;
+  /* background: #F5F5F5; */
   max-width: 29em;
   width: 100%;
   box-sizing: border-box;
