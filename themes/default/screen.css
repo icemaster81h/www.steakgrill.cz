@@ -1174,6 +1174,6 @@ body.inputvar input[name="username"] {
   background: #F5F5F5;
 }
 .hideable-nohide a.hideable-switch:before {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Courier, monospace !important;
 }
 /*********************************/
