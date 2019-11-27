@@ -103,8 +103,8 @@ $inputvar-service_plain
         <dt><label for="children">Děti do 12 let <em>(povinné)</em></label></dt>
         <dd><input type="number" min="0" value="0" id="children" required="required"/></dd>
 
-        <dt><label for="price">Cena za osobu (Kč) <em>(povinné)</em></label></dt>
-        <dd><input type="number" min="50" value="500" id="price" required="required"/></dd>
+        <dt><label for="price">Cena za osobu (Kč)</label></dt>
+        <dd><input type="number" value="500" id="price"/></dd>
       </dl>
     </fieldset>
     <fieldset class="vyber-jidla">
