@@ -25,7 +25,7 @@
   
   var meal2 = document.getElementById("contactform-catering-meal2")
   var meal2Cnt = document.getElementById("contactform-catering-meal2-cnt")
-  starter.addEventListener("change", function (event) {
+  meal2.addEventListener("change", function (event) {
     var localEvent = event
     var localCnt = meal2Cnt
     return validateCnt(localEvent, localCnt)
@@ -33,7 +33,7 @@
   
   var meal3 = document.getElementById("contactform-catering-meal3")
   var meal3Cnt = document.getElementById("contactform-catering-meal3-cnt")
-  starter.addEventListener("change", function (event) {
+  meal3.addEventListener("change", function (event) {
     var localEvent = event
     var localCnt = meal3Cnt
     return validateCnt(localEvent, localCnt)
