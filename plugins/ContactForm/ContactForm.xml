@@ -162,7 +162,7 @@ $inputvar-service_plain
             <option>Grilovaná panenka Madagaskar</option>
           </select>
         </dd>
-        <dt><label for="main1-cnt">Počet kusů 1. hlavního jídla</label></dt>
+        <dt><label for="main1-cnt">Počet porcí 1. hlavního jídla</label></dt>
         <dd><input type="number" min="0" value="10" id="main1-cnt" required="required"/></dd>
         <dt><label for="main2">Hlavní jídlo 2</label></dt>
         <dd>
@@ -185,7 +185,7 @@ $inputvar-service_plain
             <option></option>
           </select>
         </dd>
-        <dt><label for="main2-cnt">Počet kusů 2. hlavního jídla</label></dt>
+        <dt><label for="main2-cnt">Počet porcí 2. hlavního jídla</label></dt>
         <dd><input type="number" min="0" value="0" id="main2-cnt" required="required"/></dd>
         <dt><label for="main3">Hlavní jídlo 3</label></dt>
         <dd>
@@ -208,7 +208,7 @@ $inputvar-service_plain
             <option></option>
           </select>
         </dd>
-        <dt><label for="main3-cnt">Počet kusů 3. hlavního jídla</label></dt>
+        <dt><label for="main3-cnt">Počet porcí 3. hlavního jídla</label></dt>
         <dd><input type="number" min="0" value="0" id="main3-cnt" required="required"/></dd>
      
         <dt><label for="starter">Předkrm</label></dt>
