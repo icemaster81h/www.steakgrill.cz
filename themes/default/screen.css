@@ -1148,3 +1148,14 @@ body.inputvar input[name="username"] {
 #contactform-catering select {
   background: #F5F5F5;
 }
+#contactform-catering select {
+  width: 100%;
+}
+#contactform-catering {
+  max-width: 26em;
+  margin: 0 auto;
+}
+#contactform-catering dt + dd + dd:not(:last-child) {
+  padding: 0;
+}
+/*********************************/
