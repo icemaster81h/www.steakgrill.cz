@@ -51,15 +51,13 @@ Nakládané brusinky, nakládané cibulky, opečená bageta.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Pečený beef chuck eyeroll&#13;
 Hovězí část zádového svalu s bohatou chutí a jemností masa, pařížské brambory, krémový špenát, silná masová šťáva. (300g masa v syrovém stavu).&#13;
 329 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Jelen se šípkovou omáčkou&#13;
-Jelení kýta dušená v omáčce z kořenové zeleniny, slaniny a šípkového džemu, naše perníkové knedlíky, citron, brusinky.&#13;
-259 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Beef stroganoff&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Beef stroganoff&#13;
 Jihoamerická vyzrálá hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony a kyselou okurkou, jasmínová rýže.&#13;
 229 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo4">Bažant pečený na slanině&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Bažant pečený na slanině&#13;
 Pomalu pečený bažant se slaninou a cibulí, kroketové hrušky williams, ragů s hlívou ústričnou na bílém víně se smetanou.&#13;
 249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Grifel 14° (víkendová nabídka)&#13;
