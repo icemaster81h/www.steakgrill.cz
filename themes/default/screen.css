@@ -92,7 +92,7 @@ ol.contentlink-bc > li+li:before {
   text-transform: uppercase;
 }
 #header > div .globalmenu {
-  margin-top: 1.2rem;
+  margin-top: 0.2rem;
   background: rgba(0, 0, 0, 0.6);
   border-top: thin solid rgba(255, 255, 255, 0.14);
 }
@@ -158,10 +158,13 @@ ol.contentlink-bc > li+li:before {
     background-image: url("/files/full/design/about-header.jpg");
   }  
 }
-.logo img {
+#content .logo {
   margin-top: -6em;
   width: 16em;
   position: relative;
+}
+#content .logo .imgwrap {
+  background: none;
 }
 /*********************************/
 #footer {
@@ -171,6 +174,8 @@ ol.contentlink-bc > li+li:before {
 }
 #footer a {
   color: white;
+  padding: 0.5em 0;
+  display: inline-block;
 }
 /*
 #footer:before {
@@ -640,10 +645,10 @@ svg.fa-facebook {
   text-align: center;
   max-width: 27em;
 }
-.content-img .photoswipe img,
-.jaroslav_honzajk .photoswipe img {
-  width: 35em;
-  max-width: 100%;
+.content-img .photoswipe .imgwrap,
+.jaroslav_honzajk .photoswipe .imgwrap {
+  width: 100%;
+  max-width: 35em;
 }
 @media all and (min-width: 62em) {
   .content-img {
@@ -675,8 +680,8 @@ svg.fa-facebook {
     padding-left: 4rem;
     padding-right: 4rem;
   }
-  .content-img .photoswipe img,
-  .jaroslav_honzajk .photoswipe img {
+  .content-img .photoswipe .imgwrap,
+  .jaroslav_honzajk .photoswipe .imgwrap {
     width: 38em;
     max-width: 48vw;
   }
@@ -701,8 +706,12 @@ svg.fa-facebook {
   max-width: 25em;
   padding-bottom: 5em !important;
 }
-.part.references dt img {
+.part.references .citation dt {
   max-width: 8em;
+  margin: 0 auto;
+}
+.part.references .citation .imgwrap {
+  background: none;
 }
 .part.references dd {
   font-style: italic;
@@ -789,10 +798,10 @@ p.desc {
 }
 #dotazy, #dotazy + p.description,
 #contact_form, #contact_form + p.description, 
-#novinky, #novinky + p.description,
+.section #novinky, .section #novinky + p.description,
 #questions, #questions + p.description,
 #contact_form, #contact_form + p.description, 
-#news, #news + p.description {
+.section #news, .section #news + p.description {
   text-align: left;
   max-width: 40rem;
   margin-left: 0;
@@ -800,10 +809,10 @@ p.desc {
 }
 #dotazy, #dotazy + p.description:after,
 #contact_form + p.description:after,
-#novinky + p.description:after,
+.section #novinky + p.description:after,
 #questions, #questions + p.description:after,
 #contact_form + p.description:after,
-#news + p.description:after {
+.section #news + p.description:after {
   content: none;
 }
 .faq {
@@ -821,24 +830,22 @@ p.desc {
   font-style: italic;
   max-width: 36em;
 }
-.news form dl {
+#news dl {
   display: flex;
   align-items: flex-end;
 }
 @media all and (max-width: 42em) {
-  .news form dl {
+  #news dl {
     flex-wrap: wrap;
   } 
 }
-.news form dl {
-}
-.news form dt {
+#news dt {
   display: none;
 }
-.news form dt + dd {
+#news dt + dd {
   margin: 0
 }
-.news form dt + dd + dd {
+#news dt + dd + dd {
   margin: 1em 0 0 0.5em;
   padding-left: 0;
   display: inline-block;
@@ -880,10 +887,18 @@ dl.klima {
 }
 dl.klima dd {
   margin-top: 0.5em;
+  margin-left: 0;
 }
 dl.klima dt:first-child + dd {
   font-size: 1.5em;
   margin-top: 1em;
+}
+dl.klima dt:first-child {
+  width: 11em;
+  margin: 0 auto;
+}
+dl.klima dt:first-child .imgwrap {
+  background: none;
 }
 @media (min-width: 42em) {
   #content dl.klima {
@@ -891,7 +906,7 @@ dl.klima dt:first-child + dd {
   }
   dl.klima dt:first-child  {
     float: left;
-    width: auto;
+    height: 15em;
     margin-right: 4em;
   }
 }
@@ -925,9 +940,15 @@ dl.klima dt:first-child + dd {
   margin-left: 0;
   font-style: italic;
 }
-.part.steaks .multiple img {
-  max-width: 8em;
-  max-height: 11em;
+.part.steaks .multiple dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 12em;
+  margin: 0 auto;
+}
+.part.steaks .multiple .imgwrap {
+  background: none;
 }
 .part.steaks .content-card p.description {
   max-width: 27em;
@@ -972,12 +993,13 @@ dl.klima dt:first-child + dd {
 #footer ul.social,
 #footer ul.globalmenu {
   display: inline-block;
-  height: 7em;
+  height: 9em;
   vertical-align: bottom;
   text-transform: uppercase;
 }
 #footer ul.globalmenu + ul {
   justify-content: left;
+  align-items: center;
 }
 #footer ul li {
   text-align: left;
@@ -987,6 +1009,7 @@ dl.klima dt:first-child + dd {
   display: inline-flex;
   align-items: center;
   text-transform: none;
+  padding: 0.5em 0;
 }
 #footer ul.social li a svg {
   margin-right: 0.25em;
@@ -1027,7 +1050,7 @@ body.inputvar dl dt {
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
-body.inputvar dl dd {
+body.inputvar #content dl dd {
   margin: 0;
 }
 body.inputvar textarea {
@@ -1097,5 +1120,60 @@ body.inputvar input[name="username"] {
 }
 .gallery li + li {
   display: none;
+}
+/*********************************/
+.inputvar #content .js-completable-input {
+  border: none;
+  border-radius: 0;
+  background: #FAFAFA;
+}
+.inputvar #content .js-completable-wrapper {
+  background: #ECEFF1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.inputvar #content .js-completable-wrapper > svg {
+  padding: 0 0.5em
+}
+.inputvar #content .js-completable-wrapper ul.navigList {
+  top: 3.5em;
+  left: 2em;
+}
+/*********************************/
+#contactform-catering input[type="text"],
+#contactform-catering input[type="email"],
+#contactform-catering input[type="number"],
+#contactform-catering textarea,
+#contactform-catering select {
+  max-width: 29em;
+  width: 100%;
+  box-sizing: border-box;
+}
+#contactform-catering textarea {
+  border: thin solid #999;
+  border-radius: 0;
+}
+#contactform-catering dd {
+  max-width: 29em;
+}
+#contactform-catering {
+  max-width: 29em;
+  margin: 0 auto;
+}
+#contactform-catering dt + dd + dd:not(:last-child) {
+  padding: 0;
+}
+#contactform-catering dt {
+  font-weight: 500;
+}
+#contactform-catering .form-desc {
+  margin-left: 1em;
+}
+.catering #content {
+  background: #F5F5F5;
+}
+.hideable-nohide a.hideable-switch:before {
+  font-family: "Lucida Console", Monaco, monospace;
 }
 /*********************************/
