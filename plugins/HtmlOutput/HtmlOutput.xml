@@ -5,7 +5,7 @@
   <xslt>themes/delna.xsl</xslt>
   <xslt>themes/default/part.xsl</xslt>
   <xslt>themes/contenttoc.xsl</xslt>
-  <xslt>themes/inputvar.xsl</xslt>
+  <xslt if-xpath="//body[@class='inputvar']">themes/inputvar.xsl</xslt>
   <xslt>themes/icons.xsl</xslt>
   <xslt>themes/menu.xsl</xslt>
   <xslt>themes/visibility.xsl</xslt>
