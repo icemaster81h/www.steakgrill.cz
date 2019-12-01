@@ -9,7 +9,7 @@
   
   <xsl:template match="legend">
     <xsl:choose>
-      <xsl:when test="@class='nohide">
+      <xsl:when test="@class='nohide'">
         <h2 class="hideable">
           <xsl:copy-of select="text()"/>
         </h2>
