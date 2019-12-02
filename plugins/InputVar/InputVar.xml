@@ -33,7 +33,7 @@ velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Beef stroganoff&#13;
-Uruguayská hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony a kyselou okurkou, jasmínová rýže.&#13;
+Jihoamerická vyzrálá hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony a kyselou okurkou, jasmínová rýže.&#13;
 189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Bažant pečený na slanině&#13;
 Pomalu pečený bažant se slaninou a cibulí, kroketové hrušky williams, ragů s hlívou ústričnou na bílém víně se smetanou.&#13;
