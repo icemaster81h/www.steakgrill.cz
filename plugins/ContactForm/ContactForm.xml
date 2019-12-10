@@ -68,7 +68,7 @@ $inputvar-service_plain
   <form id="catering">
     
     <fieldset>
-      <legend>Obecné</legend>
+      <legend class="nohide">Obecné</legend>
       <dl>
         <dt><label for="date">Datum konání <em>(povinné)</em></label></dt>
         <dd><input type="text" id="date" required="required" placeholder="1. 2. 2018" pattern="\s*([1-9]|1[0-9]|2[0-9]|3[01]).\s*([1-9]|1[012]).\s*([0-9]{4})?\s*"/></dd>
@@ -95,7 +95,7 @@ $inputvar-service_plain
     </fieldset>
 
     <fieldset>
-      <legend>Kontaktní informace</legend>
+      <legend class="nohide">Kontaktní informace</legend>
       <dl>
         <dt><label for="name">Celé jméno <em>(povinné)</em></label></dt>
         <dd><input type="text" pattern=".*\S+.*" id="name" required="required" placeholder="Josef Novák"/></dd>
@@ -127,7 +127,7 @@ $inputvar-service_plain
     </fieldset>
 
     <fieldset>
-      <legend>Počet lidí</legend>
+      <legend class="nohide">Počet lidí</legend>
       <dl>
         <dt><label for="adults">Dospělí <em>(povinné)</em></label></dt>
         <dd><input type="number" min="0" value="10" id="adults" required="required"/></dd>
@@ -140,7 +140,7 @@ $inputvar-service_plain
       </dl>
     </fieldset>
     <fieldset class="vyber-jidla">
-      <legend>Výběr jídla</legend>
+      <legend class="nohide">Výběr jídla</legend>
       <dl>
         <dt><label for="main1">Hlavní jídlo 1</label></dt>
         <dd class="form-desc">Maximálně 3 druhy, minimálně jedno jídlo</dd>
@@ -247,7 +247,7 @@ $inputvar-service_plain
     </fieldset>
     
     <fieldset>
-      <legend>Odeslání formuláře</legend>
+      <legend class="nohide">Odeslání formuláře</legend>
       <dl>
         <dt><label for="notes">Zvláštní instrukce / poznámky</label></dt>
         <dd><textarea id="notes" placeholder="Květinová výzdoba, raut"></textarea></dd>
