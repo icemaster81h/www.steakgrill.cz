@@ -20,7 +20,8 @@
         printButtonClass: "noprint fas fa-print",
         printButtonText: "Print",
         childrenSelector: [],
-        allChildren: false
+        allChildren: false,
+        copies: 16
       },
       w = window,
       d = document,
@@ -53,7 +54,7 @@
           }
         }
 
-        for (var i = 0; i < 16; i++) {
+        for (var i = 0; i < Config.copies; i++) {
           printWin.document.write(wrap.innerHTML);
         }
         printWin.document.write('</body></html>');
@@ -213,7 +214,8 @@
     
     var printable = new Printable()
     printable.init({
-      styles: styles,
+      styles: styles + 'body > div { height: 33.3vh; }',
+      copies: 12,
       parentSelector: '#denni_nabidka, #daily_offer',
 //       printButtonText: 'Vytisknout denní nabídku',
       printButtonText: '',
