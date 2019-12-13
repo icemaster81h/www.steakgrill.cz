@@ -214,12 +214,13 @@
     
     var printable = new Printable()
     printable.init({
-      styles: styles + 'body > div { height: 33.3vh; }',
+      styles: styles + 'body > div { height: 33.3vh; } h1 { padding: 4mm 1rem; } dl { padding: 0 1rem 4mm 1rem; } body > div:before { content: ""; position: absolute; left: 0; bottom: 0; width: calc(100% - 3mm); margin: 0 1.5mm; height: 17mm; background:  rgba(0, 0, 0, 0.05); z-index: 1; }',
       copies: 12,
       parentSelector: '#denni_nabidka, #daily_offer',
 //       printButtonText: 'Vytisknout denní nabídku',
       printButtonText: '',
-      childrenSelector: [".daily_offer dl.meal[data-type='Soup']", ".daily_offer dl.meal[data-type='Main meal']"]
+      childrenSelector: [".daily_offer dl.meal[data-type='Soup']", ".daily_offer dl.meal[data-type='Main meal']"],
+      allChildren: true
     })
     
     var printable2 = new Printable()
