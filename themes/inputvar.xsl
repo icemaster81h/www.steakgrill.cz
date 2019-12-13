@@ -15,7 +15,8 @@
         </h2>
       </xsl:when>
       <xsl:otherwise>
-        <h2 class="hideable hideable-hidden">
+<!--         <h2 class="hideable hideable-hidden"> -->
+        <h2 class="hideable hideable-nohide">
           <xsl:copy-of select="text()"/>
         </h2>
       </xsl:otherwise>
