@@ -9,5 +9,5 @@ for commit in $(git log --format=format:%H -- plugins/InputVar/InputVar.xml); do
     [[ -z "$txt" ]] && continue
     echo
     echo -n "$cdate;$txt"
-  done < <(git show "$commit:plugins/InputVar/InputVar.xml" | hxselect -s '\n' "var[id^='$1']" | sed ':a;N;$!ba;s/&#13;\n/;/g')
+  done < <(git show "$commit:plugins/InputVar/InputVar.xml" | hxselect -s '\n' "var[id='$1']" | sed ':a;N;$!ba;s/&#13;\n/;/g')
 done
