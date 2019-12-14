@@ -23,7 +23,7 @@
       for (var i = 0; i < data.length; i++) {
         var name = data[i].name
         for (var j = 0; j < inputs.length; j++) {
-          if (!inputs[j].name === name) {
+          if (!inputs[j].name.startsWith(name)) {
             continue;
           }
           var selectId = "select-" + name + j
