@@ -32,7 +32,7 @@
   
   function close (el) {
     el.parentNode.parentNode.parentNode.removeChild(el.parentNode.parentNode)
-    setCookie("closed", true, 24)
+    setCookie("closed", true, 1)
     return false
   }
 
