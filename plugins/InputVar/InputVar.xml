@@ -26,8 +26,8 @@
   <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 16. prosince 2019</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Žampionový krém&#13;
-S máslovými krutony.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Dršťková polévka&#13;
+Taková jaká má být, plná hovězích drštěk.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
@@ -56,12 +56,9 @@ V sádle pomalu pečená krkovice s kořením a česnekem, mléčná bramborová
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Falkenštejn APA 13° (víkendová nabídka)&#13;
-Polotmavé speciální pivo svrchně kvašené (American Pale Ale) uvařené ze tří druhů sladu a chmelené americkými odrůdami Amarillo, Cascade a Citra, které kromě výrazné hořkosti zanechávají ve vůni i v chuti znatelné aroma tropického ovoce. Pivo je nefiltrované a nepasterované.&#13;
-0,3 l 35 Kč&#13;
-0,5 l 55 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo"/>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka-tabor.cz/user/documents/upload/Loga%20pivovar%C5%AF/falkenstejn.png</var>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
