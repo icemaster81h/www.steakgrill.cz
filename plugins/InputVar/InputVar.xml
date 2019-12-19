@@ -63,7 +63,7 @@ Polotmavé speciální spodně kvašené pivo uvařené ze tří druhů sladů P
 0,3 l 38 Kč&#13;
 0,5 l 62 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.facebook.com/2263401717274380/photos/2314231165524768/</var>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://pivovari.cz/wp-content/uploads/2019/11/pivovar-libertas-logo.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
