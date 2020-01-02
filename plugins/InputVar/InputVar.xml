@@ -36,7 +36,7 @@ velká 55 Kč</var>
 Krájená na plátky, dušená s cibulí a slaninou, jasmínová rýže.&#13;
 169 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Pfeffer steak&#13;
-Vyzrálá uruguayská hovězí svíčková krájená na tenké plátky v delikátní pepřové omáčce s červeným vínem, paprikou, rajčaty, cibulí, česnekem a cukrovým hráškem, jasmínová rýže.&#13;
+Vyzrálá uruguayská hovězí svíčková krájená na tenké plátky v delikátní pepřové omáčce s červeným vínem, paprikou, rajčaty, cibulí, česnekem a hráškem, jasmínová rýže.&#13;
 199 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 28. prosince až 29. prosince 2019</var>
