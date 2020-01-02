@@ -48,19 +48,24 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Beef Stroganoff&#13;
-Uruguayská hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony a kyselou okurkou, hranolky.&#13;
-239 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečená krůta&#13;
-Porce mladé krůty s přírodní šťávou, náš bramborový knedlík, kyselé zelí a smažená cibulka.&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Francouzská kachní roláda&#13;
+Pomalu pečená roláda z vykostěných kachen s provensálským kořením, naše bramborové knedlíky, červené vinné zelí, masová šťáva, smažená cibulka.&#13;
 229 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečené vepřové koleno&#13;
+Pomalu pečené přední vepřové koleno s cibulí a česnekem, mléčná bramborová kaše, míchaný listový salát s sherry rajčátky.&#13;
+239 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Segedínský guláš&#13;
+Krájená vepřová plec a krkovice ve smetanové omáčce s kysaným zelím, červenou paprikou a náš houskový knedlík.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo"/>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Falkenštejn Ostroff 12° (víkendová nabídka)&#13;
+Polotmavý ležák Ostroff je spodně kvašené pivo českého typu uvařené tradiční technologií z pěti druhů sladu, chmelené odrůdami Sládek a Žatecký poloraný červeňák. Pivo jantarové barvy, které osloví vyvážeností karamelových tónů a jemné hořkosti.&#13;
+0,3 l 32 Kč&#13;
+0,5 l 47 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka.cz/data/temp/product-images/15/falkenstejn-product-detail-large.jpg?v=2968890511</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
