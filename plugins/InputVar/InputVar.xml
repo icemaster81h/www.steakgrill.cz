@@ -33,7 +33,7 @@ velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Telecí na houbách&#13;
-Dušené telecí maso v delikátní smetanové omáčce s lesními houbami a cibulí, jasmínová rýže.&#13;
+Na kostky krájené dušené telecí maso s lesními houbami a cibulí, jasmínová rýže.&#13;
 189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Pečené vepřové koleno&#13;
 Pomalu pečené přední vepřové koleno s cibulí a česnekem, mléčná bramborová kaše, míchaný listový salát s sherry rajčátky.&#13;
