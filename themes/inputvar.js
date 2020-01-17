@@ -18,23 +18,23 @@
       }
 
       var data = IGCMS.InputVar.data
-      var inputs = document.querySelectorAll("textarea, input")
+      var textareas = document.getElementsByTagName("textarea")
 
       for (var i = 0; i < data.length; i++) {
         var name = data[i].name
-        for (var j = 0; j < inputs.length; j++) {
-          if (!inputs[j].name.startsWith(name) || inputs[j].name.startsWith(name + "-")) {
+        for (var j = 0; j < textareas.length; j++) {
+          if (!textareas[j].name.startsWith(name)) {
             continue;
           }
           var selectId = "select-" + name + j
           var completable = createSelect(data[i].data, selectId)
-          inputs[j].parentNode.appendChild(completable)
+          textareas[j].parentNode.appendChild(completable)
           IGCMS.Completable.init({
             selectSelector: "#" + selectId,
             placeholder: "Pro doplnění jídla začněte psát..",
             label: "<span class='fas fa-magic'></span>",
             onSend: (function () {
-              var textarea = inputs[j]
+              var textarea = textareas[j]
               return function (navig, file, close) {
                 if (!navig.value || !file) {
                   return
