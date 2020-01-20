@@ -1,5 +1,5 @@
-*.[0-9]*
-.inotify
-files/
-.watch_user
-plugins/ValidateForm/
+*
+!.gitignore
+!napojovy_listek.html
+!stala_nabidka.html
+!vinny_listek.html
