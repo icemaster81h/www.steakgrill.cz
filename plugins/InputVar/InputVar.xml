@@ -23,18 +23,18 @@
   </fn>
   <fn id="formatpivologo" fn="pregreplace" pattern="\s*(.+)\s*" replacement="&lt;img src=&quot;$1&quot; alt=&quot;Logo piva&quot; /&gt;"/>
   <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 17. ledna 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 20. ledna 2020</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Špenátový krém&#13;
-Krémová polévka ze špenátu, cibule a smetany s máslovými krutony.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Gulášová&#13;
+Taková jaká má být, s kousky hovězího masa.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Pečený králík na cibulce a slanině&#13;
-Králík z domácího chovu, chlupaté knedlíky, kyselé zelí.&#13;
-219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Španělský ptáček&#13;
+Z australské hovězí kýty s vložkou ze slaniny, cibule, kyselé okurky a salámu, jasmínová rýže.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 18. ledna až 19. ledna 2020</var>
@@ -52,13 +52,11 @@ Tence pokrájený hovězí brisket (hrudí), naložené s kořením, následné 
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Reuben sendvič&#13;
 Tence pokrájený hovězí brisket (hrudí) zapečený s kyselým zelí, plátkem sýra, dresink tisíc ostrovů, podmáslový chléb, kyselá okurka, hranolky.&#13;
 249 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Španělský ptáček&#13;
-Z australské hovězí kýty s vložkou ze slaniny, cibule, kyselé okurky, salámu a jasmínová rýže.&#13;
-209 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Bob's Amber Lager 13° (víkendová nabídka)&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Bob's Amber Lager 13°&#13;
 Polotmavé speciální spodně kvašené pivo uvařené ze tří druhů sladů Plzeňský Swaen, Swaen Munich light a Goldswaen Red a chmelené Žateckým poloraným červeňákem a Premiantem.Pivo má bohatou, plnou chuť s úžasnou barvou.&#13;
 0,3 l 38 Kč&#13;
 0,5 l 62 Kč</var>
