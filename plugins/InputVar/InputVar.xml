@@ -56,7 +56,7 @@ Tence pokrájený hovězí brisket (hrudí) zapečený s kyselým zelí, plátke
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Bob's Amber Lager 13° (víkendová nabídka)&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Bob's Amber Lager 13°&#13;
 Polotmavé speciální spodně kvašené pivo uvařené ze tří druhů sladů Plzeňský Swaen, Swaen Munich light a Goldswaen Red a chmelené Žateckým poloraným červeňákem a Premiantem.Pivo má bohatou, plnou chuť s úžasnou barvou.&#13;
 0,3 l 38 Kč&#13;
 0,5 l 62 Kč</var>
