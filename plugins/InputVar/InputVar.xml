@@ -37,7 +37,7 @@ Pomalu pečená vepřová krkovice s cibulí a česnekem, naše chlupaté a karl
 179 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 18. ledna až 19. ledna 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 25. ledna až 26. ledna 2020</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové 50 g / 150 g&#13;
@@ -46,18 +46,22 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Reuben sendvič&#13;
-Tence pokrájený hovězí brisket (hrudí) zapečený s kyselým zelí, plátkem sýra, dresink tisíc ostrovů, podmáslový chléb, kyselá okurka, hranolky.&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Hovězí po Burgundsku&#13;
+Dušená, vyzrálá uruguayská kýta na červeném víně s mrkví, cibulkami a žampiony, mléčná bramborová kaše s baby špenátem.&#13;
 249 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Konfitovaná krkovice&#13;
+V sádle pomalu pečená krkovice, mléčná bramborová kaše s baby špenátem, míchaný salát s našim dresinkem.&#13;
+229 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Dančí guláš&#13;
+Dušené daňčí maso s divokým kořením, cibule, mletá paprika, česnek, naše špekové knedlíky.&#13;
+239 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Bob's Amber Lager 13°&#13;
-Polotmavé speciální spodně kvašené pivo uvařené ze tří druhů sladů Plzeňský Swaen, Swaen Munich light a Goldswaen Red a chmelené Žateckým poloraným červeňákem a Premiantem.Pivo má bohatou, plnou chuť s úžasnou barvou.&#13;
-0,3 l 38 Kč&#13;
-0,5 l 62 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">American Pale Ale 11° (víkendová nabídka)&#13;
+Speciální pivo svrchně kvašené (APA) uvařené z několika druhů sladu a kvalitních amerických chmelů, vyvážená sladová chuť s tóny karamele, doplněna citrusovou chmelovou hořkostí.&#13;
+0,3 l 34 Kč&#13;
+0,5 l 54 Kč</var>
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://pivovari.cz/wp-content/uploads/2019/11/pivovar-libertas-logo.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
