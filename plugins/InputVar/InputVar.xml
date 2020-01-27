@@ -52,9 +52,7 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
 Dušené daňčí maso s divokým kořením, cibule, mletá paprika, česnek, naše špekové knedlíky.&#13;
 239 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Dančí guláš&#13;
-Dušené daňčí maso s divokým kořením, cibule, mletá paprika, česnek, naše špekové knedlíky.&#13;
-239 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
