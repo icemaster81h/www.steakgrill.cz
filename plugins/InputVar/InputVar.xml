@@ -65,7 +65,7 @@ Polotmavé speciální pivo svrchně kvašené (American Pale Ale) uvařené ze 
   <set type="text" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka.cz/data/temp/product-images/15/falkenstejn-product-detail-large.jpg?v=2968890511</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">Rezervace na Valentýna - OBSAZENO. Rezervace nepřijímáme z důvodu naplnění kapacity restaurace. Děkujeme za pochopení.</var>
+  <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
 na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
 
