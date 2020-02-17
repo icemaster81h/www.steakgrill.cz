@@ -47,6 +47,7 @@
                 close()
               }
             })(),
+            submitOnEnter: false,
             sendOnEmpty: true,
             decorateListItem: function (itemValue) {
               return itemValue.replace(/ – /g, "</br>")
