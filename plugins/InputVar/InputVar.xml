@@ -23,19 +23,21 @@
   </fn>
   <fn id="formatpivologo" fn="pregreplace" pattern="\s*(.+)\s*" replacement="&lt;img src=&quot;$1&quot; alt=&quot;Logo piva&quot; /&gt;"/>
   <set type="text" for="nabidka" pattern="Denní nabídka, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní nabídka, 16. dubna 2018">Denní nabídka, datum</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 15. února 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní nabídka, 17. února 2020</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Dýňová polévka&#13;
-Krémová polévka z dýně hokaido se smetanou, pražená dýňová semínka, dýňový olej.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Kančí vývar&#13;
+S masem zeleninou a nudlemi.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Beef Steak Wellington&#13;
-Vyzrálá uruguayská hovězí svíčková zapečená v listovém těstě se směsí hub, slaniny, cibule a petrželky, smetanové pyré z černého kořene a brambor, na másle dušená brokolice s karotkou, silná masová šťáva.&#13;
-279 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Beef Stroganoff&#13;
+Jihoamerická vyzrálá hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony, kyselou okurkou, hranolky.&#13;
+179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Škvarková placka naší Aničky&#13;
+Mouka, vepřové škvarky, kmín a sůl.&#13;
+19 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 15. února až 16. února 2020</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
