@@ -32,9 +32,9 @@ malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Beef Stroganoff&#13;
-Jihoamerická vyzrálá hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony, kyselou okurkou, hranolky.&#13;
-179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Kančí guláš&#13;
+Dušené maso z mladého divokého prasete s divokým kořením, červené víno, paprika, česnek, naše špekové knedlíky.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Škvarková placka naší Aničky&#13;
 Mouka, vepřové škvarky, kmín a sůl.&#13;
 19 Kč</var>
@@ -48,12 +48,10 @@ S červeným vínem, nakládané brusinky, nakládané cibulky, opečená bageta
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Kančí guláš&#13;
-Dušené maso z mladého divokého prasete s divokým kořením, červené víno, paprika, česnek, naše špekové knedlíky, mrkev s rozinkami.&#13;
-239 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Trhaná vepřová krkovice&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Trhaná vepřová krkovice&#13;
 Pomalu pečená vepřová krkovice obalená ve směsi koření, mléčná bramborová kaše, míchaný salát s balkánským sýrem.&#13;
 219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Beef Stroganoff&#13;
 Jihoamerická vyzrálá hovězí svíčková krájená na nudličky v delikátní smetanové omáčce se žampiony, kyselou okurkou, hranolky.&#13;
 229 Kč</var>
