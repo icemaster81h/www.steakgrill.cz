@@ -37,29 +37,33 @@ V trojobalu dozlatova smažené karbanátky z mletého hovězího a vepřového 
 169 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 15. února až 16. února 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 22. února až 23. února 2020</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Husí paštika &#13;
-S červeným vínem, nakládané brusinky, nakládané cibulky, opečená bageta.&#13;
-89 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové 50 g / 150 g&#13;
+Námi míchaný, topinky s česnekem a kapary.&#13;
+129 Kč / 289 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Trhaná vepřová krkovice&#13;
-Pomalu pečená vepřová krkovice obalená ve směsi koření, mléčná bramborová kaše, míchaný salát s balkánským sýrem.&#13;
-219 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">BURRITO S HOVĚZÍM MASEM&#13;
+Zapečená pšeničná placka plněná tence krájeným hovězím pastrami, ledový salát, guacamole, ředkvičky, červená cibule, koriandr, cayenské papričky, sýr čedar, tortilla chips, sýrová a mexicana salsa.&#13;
+249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Grilované kuřecí prso supréme&#13;
+Kuřecí prso ze zlatého kuřete s kůží a části křídla, naloženo v bylinkové marinádě, lahůdkové brambory s máslem a pažitkou, mrkvové pyré.&#13;
+229 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo3">Hovězí na smetaně zvaná svíčková&#13;
+Vyzrálá hovězí kýta z USA v delikátní omáčce z kořenové zeleniny, smetany a divokým kořením, naše karlovarské knedlíky, citron, brusinky.&#13;
+239 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
   <set type="textarea" for="nabidka-pivo" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*.(\n\d,\d l \d+ Kč)+" placeholder="Benedict ležák 12°&#10;Klasická světlá dvanáctka z Břevnovského klášterního pivovaru. Vyrobena tradičním způsobem. Vyznačuje se plností a silnou chutí s jemnou hořkostí.&#10;0,3 l 32 Kč&#10;0,5 l 47 Kč">Speciální nabídka piva</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Falkenšten APA 13°&#13;
-Polotmavé speciální pivo svrchně kvašené (American Pale Ale) uvařené ze tří druhů sladu a chmelené americkými odrůdami Amarillo, Cascade a Citra, které kromě výrazné hořkosti zanechávají ve vůni i v chuti znatelné aroma tropického ovoce. Pivo je nefiltrované a nepasterované.&#13;
-0,3 l 35 Kč&#13;
-0,5 l 55 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-pivo">Falkenštejn Ostroff 12° (víkendová nabídka)&#13;
+Polotmavý ležák Ostroff je spodně kvašené pivo českého typu uvařené tradiční technologií z pěti druhů sladu, chmelené odrůdami Sládek a Žatecký poloraný červeňák. Pivo jantarové barvy, které osloví vyvážeností karamelových tónů a jemné hořkosti.&#13;
+0,3 l 32 Kč&#13;
+0,5 l 47 Kč</var>
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
-  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka.cz/data/temp/product-images/15/falkenstejn-product-detail-large.jpg?v=2968890511</var>
+  <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://www.pivoteka-tabor.cz/user/documents/upload/Loga%20pivovar%C5%AF/falkenstejn.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni"/>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
