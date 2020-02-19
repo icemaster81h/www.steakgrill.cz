@@ -46,7 +46,7 @@ Námi míchaný, topinky s česnekem a kapary.&#13;
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+(, \d+ g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč)*" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">BURRITO S HOVĚZÍM MASEM&#13;
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Burrito s hovězím masem&#13;
 Zapečená pšeničná placka plněná tence krájeným hovězím pastrami, ledový salát, guacamole, ředkvičky, červená cibule, koriandr, cayenské papričky, sýr čedar, tortilla chips, sýrová a mexicana salsa.&#13;
 249 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Grilované kuřecí prso supréme&#13;
