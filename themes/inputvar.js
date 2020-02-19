@@ -23,7 +23,7 @@
       for (var i = 0; i < data.length; i++) {
         var name = data[i].name
         for (var j = 0; j < textareas.length; j++) {
-          if (!textareas[j].name.startsWith(name)) {
+          if (!textareas[j].name.startsWith(name) || textareas[j].name.startsWith(name + "-")) {
             continue;
           }
           var selectId = "select-" + name + j

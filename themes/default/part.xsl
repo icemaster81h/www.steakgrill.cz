@@ -53,7 +53,7 @@
       <xsl:when test="@id='steaky'">steaks</xsl:when>
       <xsl:when test="@id='videoarchiv'">video-archives</xsl:when>
       <xsl:when test="@id='nabidka'">menu</xsl:when>
-      <xsl:when test="@id='denni_nabidka'">daily_offer</xsl:when>
+      <xsl:when test="@id='denni_specialita'">daily_offer</xsl:when>
       <xsl:when test="@id='akce'">weekend_events</xsl:when>
       <xsl:when test="@id='reference'">references</xsl:when>
       <xsl:when test="@id='staly_listek'">regular_menu</xsl:when>
