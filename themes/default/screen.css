@@ -23,6 +23,7 @@ strong {
 }
 .contentlink-bc a {
   border: none;
+  /* border-color: #84797d; */
 }
 /*********************************/
 h1 {
@@ -122,6 +123,7 @@ ol.contentlink-bc > li+li:before {
 .hdesc.steakgrill {
   padding-top: 6.2em;
   background-image: url("/files/design/header.jpg");
+  text-align: center;
 }
 .hdesc.steakgrill .description {
   display: none;
@@ -206,7 +208,7 @@ ol.contentlink-bc > li+li:before {
   text-transform: uppercase;
   padding: 1.2em 1.5em;
   transition: 0.25s ease-out;
-  color: black;
+  color: black !important;
   background: white;
   max-width: 19em;
   display: inline-flex;
@@ -265,6 +267,8 @@ svg.fa-facebook {
   justify-content: center;
   color: #b6150d;
   flex-wrap: nowrap;
+  padding: 0.9em 1.5em;
+  padding-left: 1.3em;
 }
 #content .button-img-inline svg {
   flex: 0 1 auto;
@@ -291,6 +295,7 @@ svg.fa-facebook {
   #content .button-img-inline svg {
     flex: 0 1 auto;
     margin-right: 0.5em;
+    font-size: 2em;
   }
   #content .contentbalancer-simple .button {
     max-width: none;
@@ -705,9 +710,11 @@ svg.fa-facebook {
   text-align: center;
   max-width: 25em;
   padding-bottom: 5em !important;
+  min-height: 27em;
+  width: auto;
 }
 .part.references .citation dt {
-  max-width: 8em;
+  max-width: 6em;
   margin: 0 auto;
 }
 .part.references .citation .imgwrap {
@@ -719,7 +726,8 @@ svg.fa-facebook {
 }
 .part.references dt + dd {
   font-size: 1.5em;
-  max-width: 15em;
+  width: 15em;
+  max-width: 100%;
   margin: 1em auto 0.5em auto;
 }
 .part.references dt + dd q:before,
@@ -729,6 +737,45 @@ svg.fa-facebook {
 .part.references dl svg {
   color: #b6150d;
   margin-top: 0.5em;
+}
+.js-slideable-left,
+.js-slideable-right {
+  transition: 0.25s ease-out;
+  position: absolute;
+  top: 50%;
+  color: #616161 !important;
+  color: rgba(97, 97, 97, 0.39) !important;
+  border-bottom: none !important;
+}
+.js-slideable-left {
+  left: -4em !important;
+}
+.js-slideable-right {
+  right: -4em !important;
+}
+@media all and (max-width: 35em) {
+  .js-slideable-left,
+  .js-slideable-right {
+    top: 1.55em;
+  }
+  .js-slideable-left {
+    left: 5% !important;
+  }
+  .js-slideable-right {
+    right: 5% !important;
+  }
+}
+.js-slideable-left:hover,
+.js-slideable-right:hover,
+.js-slideable-left:focus,
+.js-slideable-right:focus {
+  color: #616161 !important;
+}
+.js-slideable-left {
+  left: -1em;
+}
+.js-slideable-right {
+  right: -1em;
 }
 /*********************************/
 #content .contenttoc {

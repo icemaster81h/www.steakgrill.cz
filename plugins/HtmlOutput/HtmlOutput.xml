@@ -10,6 +10,7 @@
   <xslt>themes/menu.xsl</xslt>
   <xslt>themes/visibility.xsl</xslt>
   <xslt>themes/special.xsl</xslt>
+  <xslt>themes/headerbutton.xsl</xslt>
 <!--   <jsFile append="head">themes/webfont.js</jsFile> -->
 <!--   <jsFile append="head">themes/fontloader.js</jsFile> -->
 <!--   <jsFile append="head">themes/gtm.js</jsFile> -->
@@ -17,12 +18,12 @@
   <jsFile append="body">themes/alert.js</jsFile>
   <jsFile append="body">themes/fa.js</jsFile>
   <jsFile append="body">themes/slideable.js</jsFile>
-  <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.data.js</jsFile>
-  <jsFile append="body" if-xpath="//body[@class='inputvar']">themes/inputvar.js</jsFile>
+  <jsFile append="body" if-xpath="//body[contains(@class, 'inputvar')]">themes/inputvar.data.js</jsFile>
+  <jsFile append="body" if-xpath="//body[contains(@class, 'inputvar')]">themes/inputvar.js</jsFile>
   
-  <jsFile id="js32" append="body" if-xpath="//body[@class='inputvar'] | //select">lib/mousetrap.min.js</jsFile>
-  <jsFile id="js33" append="body" if-xpath="//body[@class='inputvar'] | //select">themes/completable.js</jsFile>
-  <stylesheet id="ss1" if-xpath="//body[@class='inputvar'] | //select[contains(@class, 'completable')]">themes/completable.css</stylesheet>
+  <jsFile id="js32" append="body" if-xpath="//body[contains(@class, 'inputvar')] | //select">lib/mousetrap.min.js</jsFile>
+  <jsFile id="js33" append="body" if-xpath="//body[contains(@class, 'inputvar')] | //select">themes/completable.js</jsFile>
+  <stylesheet id="ss1" if-xpath="//body[contains(@class, 'inputvar')] | //select[contains(@class, 'completable')]">themes/completable.css</stylesheet>
   
   <jsFile append="body" if-xpath="//body[contains(@class, 'catering')]">themes/catering.js</jsFile>
   

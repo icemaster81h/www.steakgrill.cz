@@ -23,19 +23,20 @@
 #header div.hideable-button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1em;
 }
 #header div.hideable-button a {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  padding: 1em;
+  padding: 0.5rem;
   visibility: hidden;
   width: 1em;
 }
 #header div.hideable-button a:before {
   content:'\2630';
   visibility: visible;
+  font-size: 2em;
 }
 #header > div .globalmenu a {
   text-transform: uppercase;

@@ -531,7 +531,7 @@ require('IGCMS', function () { IGCMS.InputVar = {}; IGCMS.InputVar.data = [
 {data:'2018-06-01',name:'Pomalu pečené telecí',desc:'lahůdkové brambory, Jus, krémový špenát',price:'219 Kč'},
 ]},
 {name:'akce-predkrm',data:[
-{data:'2019-10-18',name:'Tatarský steak ze svíčkové 50 g',desc:'Námi míchaný, topinky s česnekem a kapary.',price:'129 Kč'},
+{data:'2019-10-18',name:'Tatarský steak ze svíčkové',desc:'Námi míchaný, topinky s česnekem a kapary.',price:'50 g 129 Kč~150 g 289 Kč'},
 {data:'2019-09-24',name:'Tartar z lososa',desc:'Jemně sekaný marinovaný losos, opečená bageta s bylinkovým máslem, malý míchaný salát.',price:'129 Kč'},
 {data:'2019-09-18',name:'Marinovaný losos Gravlax',desc:'Podávaný s gravlax omáčkou, salát z rukoly a listových salátů, bageta.',price:'129 Kč'},
 {data:'2019-09-11',name:'Tatarský steak ze svíčkové, 50 g',desc:'Námi míchaný, topinky s česnekem a kapary.',price:'129 Kč'},
@@ -541,7 +541,6 @@ require('IGCMS', function () { IGCMS.InputVar = {}; IGCMS.InputVar.data = [
 {data:'2019-06-25',name:'Pečené zlaté kuře',desc:'Půlka pečeného kuřete, míchaný zeleninový salát, rozpečený dalamánek, barbecue dip.',price:'239 Kč'},
 {data:'2019-06-20',name:'Rožněná hovězí kýta z plemene Wagyu',desc:'Na bukovém dřevě s kouřovým aroma, lahůdkové brambory, krémový špenát, přírodní šťáva.',price:'269 Kč'},
 {data:'2019-06-13',name:'Trhané vepřové v sezamové bulce',desc:'Česnekový dip, mix salátů, rajče, červená cibulka, hranolky a coleslaw.',price:'239 Kč'},
-{data:'2019-06-05',name:'Tatarský steak ze svíčkové, 50 g',desc:'Námi míchaný, topinky s česnekem.',price:'129 Kč'},
 {data:'2019-05-16',name:'Pomalu pečená hovězí kýta',desc:'Vyzrálá australská hovězí kýta, pošírovaný zelený chřest se sýrovou omáčkou, lahůdkové brambory orestované na másle s pažitkou.',price:'269 Kč'},
 {data:'2019-04-18',name:'Pho Bo Tai Lan',desc:'Vietnamská polévka s grilovaným vyzrálým uruguayským nízkým roštěncem, rýžovými nudlemi a bylinkami.',price:'189 Kč'},
 {data:'2019-01-23',name:'Roastbeef',desc:'Dorůžova při nízké teplotě pečený vyzrálý uruguayský roštěnec, čerstvý podmáslový chléb, kyselá okurka, tatarská omáčka.',price:'129 Kč'},

@@ -153,7 +153,7 @@
         <dd>— <a href="https://goo.gl/maps/JzMPRWeyQXjKHtGg8">Jaroslav Zelenka</a></dd>
         <dd><span class="fas fa-3x fa-quote-right">i</span></dd>
       </dl>
-      <h data-id="regular_menu" id="staly_listek" src="stala_nabidka.html">Stálá nabídka jídel</h>
+      <h dat-id="regular_menu" id="staly_listek" src="stala_nabidka.html">Stálá nabídka jídel</h>
       <desc>Stálá nabídka jídel není k&#160;dispozici</desc>
       <h data-id="beverages" id="napojovy_listek" src="napojovy_listek.html">Nápojový lístek</h>
       <desc>Nápojový lístek není k&#160;dispozici</desc>

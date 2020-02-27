@@ -8,19 +8,11 @@
   </xsl:template>
   
   <xsl:template match="legend">
-    <xsl:choose>
-      <xsl:when test="@class='nohide'">
-        <h2 class="hideable hideable-nohide">
-          <xsl:copy-of select="text()"/>
-        </h2>
-      </xsl:when>
-      <xsl:otherwise>
-<!--         <h2 class="hideable hideable-hidden"> -->
-        <h2 class="hideable hideable-nohide">
-          <xsl:copy-of select="text()"/>
-        </h2>
-      </xsl:otherwise>
-    </xsl:choose>
+    <xsl:element name="h2">
+      <xsl:attribute name="class">hideable hideable-nohide</xsl:attribute>
+<!--       <xsl:attribute name="id"><xsl:copy-of select="generate-id()"/></xsl:attribute> -->
+      <xsl:copy-of select="text()"/>
+    </xsl:element>
   </xsl:template>
   
   <xsl:template match="form[contains(@id, 'inputvarform')]">
