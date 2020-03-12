@@ -32,9 +32,9 @@ malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^/0-9]+(, \d{1,4} g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n(.+ )?\d{3} Kč){1,2}" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Tagliatelle s boloňským ragů&#13;
-Mleté hovězí maso, slanina, mrkev, řapíkatý celer, rajčata, červené víno, sýr Gran Biraghi a olivový olej.&#13;
-179 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Kuře na paprice&#13;
+V delikátní smetanové omáčce s červenou paprikou, naše špecle.&#13;
+169 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 7. března až 8. března 2020</var>
