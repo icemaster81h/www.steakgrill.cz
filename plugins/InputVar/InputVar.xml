@@ -40,10 +40,9 @@ V delikátní smetanové omáčce s červenou paprikou, naše špecle.&#13;
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 7. března až 8. března 2020</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
   <set type="textarea" for="akce-predkrm\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^/0-9]+(, \d{1,4} g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n(.+ )?\d{2,3} Kč){1,2}" placeholder="Tatarský steak ze svíčkové, 50 g&#10;Námi míchaný 50g tataráček s topinkami a česnekem.&#10;129 Kč">Předkrmy</set>
-  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Tatarský steak ze svíčkové&#13;
-Námi míchaný, topinky s česnekem a kapary.&#13;
-50 g 129 Kč&#13;
-150 g 289 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-predkrm1" required="required">Husí paštika&#13;
+S červeným vínem, nakládané brusinky, nakládané cibulky, opečená bageta.&#13;
+89 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-predkrm3"/>
   <set type="textarea" for="akce-jidlo\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^/0-9]+(, \d{1,4} g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n(.+ )?\d{2,3} Kč){1,2}" placeholder="Tatarský steak ze svíčkové, 150 g&#10;Námi míchaný 150g tataráček s topinkami a česnekem.&#10;289 Kč">Hlavní jídla</set>
