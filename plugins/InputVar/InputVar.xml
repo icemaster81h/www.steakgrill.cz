@@ -64,7 +64,9 @@ Světlý ležák spodně kvašený uvařené tradiční technologií ze dvou dru
   <var var="cms-server" id="upozorneni"/>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
-  <var id="hlavicka-akce" fn="formathlavickaakce"/>
+  <var id="hlavicka-akce" fn="formathlavickaakce">!!!!Změna otevírací doby!!!&#13;
+Na základě usnesení vlády české republiky dne 12.3.2020 bude restaurace každý den otevřena do 20h. Děkujeme za pochopení.&#13;
+fas fa-bullhorn</var>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
 na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
 
