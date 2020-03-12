@@ -62,7 +62,7 @@ Příjemná hořkost v chuti s intenzivním chmelovým aroma pocházející z am
 0,5 l 54 Kč</var>
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://pivovari.cz/wp-content/uploads/2019/11/pivovar-libertas-logo.png</var>
-  <set type="textarea" for="upozorneni" pattern=".{0,150}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
+  <set type="textarea" for="upozorneni" pattern=".{0,250}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
   <var var="cms-server" id="upozorneni">Změna otevírací doby restaurace. Otevřeno každý den od 10h do 20h. Na objednávky jídla sebou nebudeme účtovat balné. Volejte 777330050.</var>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
