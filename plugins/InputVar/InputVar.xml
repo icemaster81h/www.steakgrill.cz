@@ -23,19 +23,21 @@
   </fn>
   <fn id="formatpivologo" fn="pregreplace" pattern="\s*(.+)\s*" replacement="&lt;img src=&quot;$1&quot; alt=&quot;Logo piva&quot; /&gt;"/>
   <set type="text" for="nabidka" pattern="Denní specialita, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní specialita, 16. dubna 2018">Denní specialita, datum</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 13. března 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 20. března 2020</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Lososový krém&#13;
-Krémová polévka s kousky lososa a cukrovou kukuřicí.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Hrášková polévka Saint-Germain&#13;
+Populární krémová polévka hrášku, smetany máslové krutony.&#13;
 malá 49 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^/0-9]+(, \d{1,4} g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n(.+ )?\d{2,3} Kč){1,2}" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Hovězí na česneku&#13;
-Dušená vyzrálá australská hovězí kýta s česnekem a cibulí, naše bramborové knedlíky s na másle opečenou houskou, smažená cibulka, krémový špenát.&#13;
-189 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2"/>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Pečený muflon&#13;
+Pomalu pečená kýta z muflona s rozmarýnem, česnekem a slaninou, bramborové špalíčky, smažená cibulka, náš krémový špenát.&#13;
+219 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Chicken Kung-Pao&#13;
+Kousky kuřete restované v čínském woku se zálivkou ze sojové omáčky a sladkého bílého vína, arašídy, chilli papričky, jasmínová rýže, mrkev s rozinkami&#13;
+195 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 7. března až 8. března 2020</var>
   <var var="cms-server" id="akce-popis">Přes víkendy nabízíme jídla z otevřené kuchyně a v letní sezoně grilování a rožnění v naší unikátní venkovní peci.</var>
@@ -49,9 +51,7 @@ S červeným vínem, nakládané brusinky, nakládané cibulky, opečená bageta
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo1" required="required">Jarní kuřátko pečené na másle&#13;
 Půlka pečeného francouzského kukuřičného kuřátka, pečené brambory grenaille s rozmarýnovým olejem, nádivka s medvědím česnekem, hráškové pyré.&#13;
 219 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2">Pečený muflon&#13;
-Pomalu pečená kýta z muflona s rozmarýnem, česnekem a slaninou, bramborové špalíčky, smažená cibulka, náš krémový špenát.&#13;
-249 Kč</var>
+  <var var="cms-server" fn="formatjidlo" id="akce-jidlo2"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo3"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo4"/>
   <var var="cms-server" fn="formatjidlo" id="akce-jidlo5"/>
@@ -63,7 +63,7 @@ Příjemná hořkost v chuti s intenzivním chmelovým aroma pocházející z am
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo">https://pivovari.cz/wp-content/uploads/2019/11/pivovar-libertas-logo.png</var>
   <set type="textarea" for="upozorneni" pattern=".{0,250}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">19.3.  máme pro vás připravenou denní nabídku jídel s sebou. Více informací na www.facebook.com/Steakgrill/</var>
+  <var var="cms-server" id="upozorneni">20.3.  máme pro vás připravenou denní nabídku jídel s sebou a rozvozy.Více informací na www.facebook.com/Steakgrill/</var>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
   <var id="hlavicka-akce" fn="formathlavickaakce" var="cms-server">JÍDLA S SEBOU (OKÉNKO)&#13;
