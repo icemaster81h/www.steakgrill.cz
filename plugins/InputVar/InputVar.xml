@@ -60,7 +60,7 @@ Půlka pečeného francouzského kukuřičného kuřátka, pečené brambory gre
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
   <set type="textarea" for="upozorneni" pattern=".{0,250}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">21.3.  máme pro vás připravenou denní nabídku jídel s sebou a rozvozy.Více informací na www.facebook.com/Steakgrill/</var>
+  <var var="cms-server" id="upozorneni">21.3. máme pro vás připravenou denní nabídku jídel s sebou a rozvozy. Více informací na www.facebook.com/Steakgrill/</var>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
   <var id="hlavicka-akce" fn="formathlavickaakce" var="cms-server">JÍDLA S SEBOU (OKÉNKO)&#13;
