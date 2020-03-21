@@ -36,7 +36,7 @@ velká 55 Kč</var>
 Pomalu pečená kýta z muflona s rozmarýnem, česnekem a slaninou, bramborové špalíčky, smažená cibulka, náš krémový špenát.&#13;
 219 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Tortilla s grilovaným kuřecím masem&#13;
-Pšeničná placka, kuřecí prsa, ledový a listový salát, rajčata, sýr gouda, hranolky, rajčatový salsa.&#13;
+Pšeničná placka, kuřecí prsa, ledový a listový salát, rajčata, sýr gouda, hranolky, rajčatová salsa.&#13;
 179 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 7. března až 8. března 2020</var>
