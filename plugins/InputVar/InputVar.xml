@@ -23,7 +23,7 @@
   </fn>
   <fn id="formatpivologo" fn="pregreplace" pattern="\s*(.+)\s*" replacement="&lt;img src=&quot;$1&quot; alt=&quot;Logo piva&quot; /&gt;"/>
   <set type="text" for="nabidka" pattern="Denní specialita, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní specialita, 16. dubna 2018">Denní specialita, datum</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 18. dubna 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 19. dubna 2020</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Dršťková polévka&#13;
@@ -33,8 +33,8 @@ velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
   <set type="textarea" for="nabidka-jidlo\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][^/0-9]+(, \d{1,4} g)?\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n(.+ )?\d{2,3} Kč){1,2}" placeholder="Telecí kýta na paprice&#10;Telecí kýta s delikátní smetanovou omáčkou s paprikou a s našimi houskovými knedlíky.&#10;179 Kč (volitelně)">Hlavní jídla</set>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Pečená krkovice&#13;
-Pomalu pečená v naší unikátní peci na tvrdém dřevě s kouřovým aroma, náš bramborový salát.&#13;
-179 Kč</var>
+Pomalu pečená v naší unikátní peci na tvrdém dřevě s kouřovým aroma, pečené lahůdkové brambory, ragú z hlívy ústřičné a žampionů s bílým vínem a smetanou.&#13;
+189 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Tortilla s hovězím masem&#13;
 Pšeničná placka plněná pečeným vyzrálým roastbeefem, sýrovou salsou, ledovým salátem, rajčaty a sýrem goudou, hranolky, nakládané jalapeňos papričky.&#13;
 199 Kč</var>
@@ -60,11 +60,11 @@ Půlka pečeného francouzského kukuřičného kuřátka, pečené brambory gre
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
   <set type="textarea" for="upozorneni" pattern=".{0,250}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">18.4. máme pro vás připravenou denní nabídku jídel s sebou a rozvozy. Více informací na www.facebook.com/Steakgrill/</var>
+  <var var="cms-server" id="upozorneni">19.4. máme pro vás připravenou denní nabídku jídel s sebou a rozvozy. Více informací na www.facebook.com/Steakgrill/</var>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
   <var id="hlavicka-akce" fn="formathlavickaakce" var="cms-server">JÍDLA S SEBOU (OKÉNKO)&#13;
-https://mailchi.mp/8a6c1605e23f/steakgrill-nabdka-18755000&#13;
+https://mailchi.mp/bdf35337cb9d/steakgrill-nabdka-18759092&#13;
 fas fa-burger-soda</var>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
 na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
