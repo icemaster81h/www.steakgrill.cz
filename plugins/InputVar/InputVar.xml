@@ -23,11 +23,11 @@
   </fn>
   <fn id="formatpivologo" fn="pregreplace" pattern="\s*(.+)\s*" replacement="&lt;img src=&quot;$1&quot; alt=&quot;Logo piva&quot; /&gt;"/>
   <set type="text" for="nabidka" pattern="Denní specialita, \d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Denní specialita, 16. dubna 2018">Denní specialita, datum</set>
-  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 1. května 2020</var>
+  <var var="cms-server" fn="formatheadingnbsp" id="nabidka" required="required">Denní specialita, 2. května 2020</var>
   <var var="cms-server" id="nabidka-popis">Každý všední den vaříme obědové menu z čerstvých surovin.</var>
   <set type="textarea" for="nabidka-polevka\d+" pattern="[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].+\n\s*[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ].*\.(\n.*\d+ Kč){2}" placeholder="Scotch Broth&#10;Skotská polévka ze skopového masa se zeleninou, kroupami a tymiánem.&#10;malá 43 Kč&#10;velká 49 Kč">Polévky</set>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Chřestová polévka&#13;
-Bílý chřest, šalotka, smetana, máslová jíška, máslové krutony.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-polevka1" required="required">Gulášová&#13;
+Taková jaká má být, s kousky hovězího masa.&#13;
 malá 0 Kč&#13;
 velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-polevka2"/>
@@ -35,8 +35,8 @@ velká 55 Kč</var>
   <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo1" required="required">Pečené hovězí hrudí&#13;
 Vyzrálé hovězí hrudí - brisket, pečený v naší unikátní peci na bukovém dříví s kouřovým aroma, krájené na plátky, lahůdkové brambory s rozmarýnem, náš krémový špenát.&#13;
 219 Kč</var>
-  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Hovězí na smetaně (zvaná svíčková)&#13;
-Dušený nízký roštěnec v delikátní omáčce z kořenové zeleniny a smetany, naše karlovarské knedlíky.&#13;
+  <var var="cms-server" fn="formatjidlo" id="nabidka-jidlo2">Smažený řízek z krkovice 200g&#13;
+V trojobalu dozlatova smažený, mléčná bramborová kaše, pikantní salát z kysaného zelí.&#13;
 189 Kč</var>
   <set type="text" for="vikendova-akce" pattern="Víkendová akce(.+)?, \d?\d.( ledna| února| března| dubna| května| června| července| srpna| září| října| listopadu| prosince)?( až |–| – )\d?\d. (ledna|února|března|dubna|května|června|července|srpna|září|října|listopadu|prosince) 20\d\d" placeholder="Víkendová nabídka z otevřené kuchyně, 14. až 15. dubna 2018">Akce, od–do</set>
   <var var="cms-server" fn="formatheadingnbsp" id="vikendova-akce" required="required">Víkendová akce, 7. března až 8. března 2020</var>
@@ -60,11 +60,11 @@ Půlka pečeného francouzského kukuřičného kuřátka, pečené brambory gre
   <set type="textarea" for="nabidka-pivo-logo" pattern="https?:\/\/.+" placeholder="http://www.zpravy.pivovary.info/wp-content/gallery/galerie-klasterniho-minipivovaru-praha-brevnov/brevnov_logo.png">Speciální nabídka logo piva</set>
   <var var="cms-server" fn="formatpivologo" id="nabidka-pivo-logo"/>
   <set type="textarea" for="upozorneni" pattern=".{0,250}" placeholder="Dne 22. ledna 2019 bude restaurace z technických důvodů uzavřena. Děkujeme za pochopení.">Upozornění</set>
-  <var var="cms-server" id="upozorneni">1.5. máme pro vás připravenou denní nabídku jídel s sebou a rozvozy. Více informací na www.facebook.com/Steakgrill/</var>
+  <var var="cms-server" id="upozorneni">2.5. máme pro vás připravenou denní nabídku jídel s sebou a rozvozy. Více informací na www.facebook.com/Steakgrill/</var>
   <fn id="formathlavickaakce" fn="pregreplace" pattern="(.+)\n(.+)\n(.+)" replacement="&lt;a href='\2' class='button button-img button-img-inline'&gt;&lt;span class='\3'&gt;i&lt;/span&gt; \1&lt;/a&gt;"/>
   <set type="textarea" for="hlavicka-akce" pattern="[^\n]{4,30}\n\s*https?://[^\n]+\n\s*fa[sr] [a-z]{2}(-[a-z]{2,})+" placeholder="Velikonoční rožnění&#10;https://www.facebook.com/events/2265134597146002&#10;far fa-egg">Tlačítko akce</set>
   <var id="hlavicka-akce" fn="formathlavickaakce" var="cms-server">JÍDLA S SEBOU (OKÉNKO)&#13;
-https://mailchi.mp/856757b809e9/steakgrill-nabdka-18800492&#13;
+https://mailchi.mp/250331ed69cd/steakgrill-nabdka-18804812&#13;
 fas fa-burger-soda</var>
   <message to=" honzajk@steakgrill.cz lisec.tom@seznam.cz pavel.petrzela@internetguru.cz jiri.pavelka@internetguru.cz pavlina.militka@gmail.com lukasbula41@gmail.com denisa.volakova96@seznam.cz madmann@seznam.cz vithavlu@gmail.com" subject="Administrace jídel $cms-url">Dobrý den,
 na adrese $cms-url/listek došlo k uživatelské úpravě jídel.
